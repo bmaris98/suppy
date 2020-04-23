@@ -1,0 +1,7 @@
+from enum import Enum
+
+class Notification(Enum):
+    INPUT_STREAM_HAS_INPUT = 1
+    INPUT_STREAM_TRANSFER_COMPLETE = 2
+    OUTPUT_STREAM_TRANSFER_COMPLETE = 3
+    OUTPUT_STREAM_CONSUMED = 4
