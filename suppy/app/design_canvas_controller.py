@@ -1,4 +1,4 @@
-from suppy.utils.stats_constants import BUFFER, CONVERGENCE, CUSTOM, END, RANDOM_ERROR, REPAIR, START, TEST, TRANSPORT
+from suppy.utils.stats_constants import BUFFER, CONVERGENCE, CUSTOM, DIVERGENCE, END, RANDOM_ERROR, REPAIR, START, TEST, TRANSPORT
 from suppy.app.image_loader import ImageLoader
 from tkinter.constants import NW
 from suppy.app.node import Node
@@ -51,14 +51,15 @@ class DesignCanvasController(Frame):
     def _get_popup_menu(self):
         menu = Menu(self, tearoff=0)
         menu.add_command(label='Add Start', command=self._add_prompt_start)
-        menu.add_command(label='Add End', command=self._add_prompt_end)
         menu.add_command(label='Add Custom', command=self._add_prompt_custom)
         menu.add_command(label='Add Transport', command=self._add_prompt_transport)
         menu.add_command(label='Add Buffer', command=self._add_prompt_buffer)
+        menu.add_command(label='Add Confluence', command=self._add_prompt_convergence)
+        menu.add_command(label='Add Divergence', command=self._add_prompt_divergence)
         menu.add_command(label='Add Verification', command=self._add_prompt_verification)
-        menu.add_command(label='Add Convergence', command=self._add_prompt_convergence)
         menu.add_command(label='Add Repair', command=self._add_prompt_repair)
         menu.add_command(label='Add Error Generator', command=self._add_prompt_error)
+        menu.add_command(label='Add End', command=self._add_prompt_end)
         return menu
 
     def _add_prompt_start(self):
@@ -87,6 +88,9 @@ class DesignCanvasController(Frame):
 
     def _add_prompt_error(self):
         self._attach_node_to_canvas(RANDOM_ERROR)
+
+    def _add_prompt_divergence(self):
+        self._attach_node_to_canvas(DIVERGENCE)
 
     def move_start(self, event):
         if not self._is_dragging_node:

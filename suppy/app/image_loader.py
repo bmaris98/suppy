@@ -1,13 +1,13 @@
 from pathlib import Path
 from suppy.app.visual_constants import NODE_HEIGHT, NODE_WIDTH
 from PIL import ImageTk, Image
-from suppy.utils.stats_constants import BUFFER, CONVERGENCE, CUSTOM, END, RANDOM_ERROR, REPAIR, START, TEST, TRANSPORT
+from suppy.utils.stats_constants import DIVERGENCE, BUFFER, CONVERGENCE, CUSTOM, END, RANDOM_ERROR, REPAIR, START, TEST, TRANSPORT
 
 class ImageLoader:
 
     def __init__(self):
         self._assets_path = Path(__file__).parent / '../data/assets'
-        self._node_types = [BUFFER, CUSTOM, RANDOM_ERROR, TEST, CONVERGENCE, TRANSPORT, START, END, REPAIR]
+        self._node_types = [DIVERGENCE, BUFFER, CUSTOM, RANDOM_ERROR, TEST, CONVERGENCE, TRANSPORT, START, END, REPAIR]
         self._images = {}
         self._load_images()
 
