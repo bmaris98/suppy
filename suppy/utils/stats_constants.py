@@ -19,6 +19,7 @@ REPAIRS = 'repairs'
 NON_REPAIRS = 'non_repairs'
 WITH_ERROR_COUNT = 'with_error_count'
 WITHOUT_ERROR_COUNT = 'without_error_count'
+SEMI_FINITE = 'semi_finite'
 
 CUSTOM = 'custom'
 START = 'start'

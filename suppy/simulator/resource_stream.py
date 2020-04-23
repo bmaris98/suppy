@@ -12,6 +12,12 @@ class ResourceStream:
         self._input_pin: Optional[Resource] = None
         self._output_pin: Optional[Resource] = None
 
+    def peek_input(self) -> Optional[Resource]:
+        return deepcopy(self._input_pin)
+
+    def peek_output(self) -> Optional[Resource]:
+        return deepcopy(self._output_pin)
+
     def try_load(self, resource: Resource): 
         if not self._input_pin == None:
             return False

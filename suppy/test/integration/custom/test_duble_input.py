@@ -1,4 +1,4 @@
-from suppy.utils.stats_constants import ACTIVE_TIME, CALIBRATION_COUNT, CALIBRATION_LEFT, CALIBRATION_TIME, CUSTOM, END, ERRORS, HAS_CALIBRATION, IDLE_TIME, NAME, NOT_USED_RESOURCES, RESOURCE_COUNT, START, TOTAL_ACTIVE_COST, TOTAL_CALIBRATION_COST, TYPE, VALID_RESOURCE_COUNT
+from suppy.utils.stats_constants import ACTIVE_TIME, CALIBRATION_COUNT, CALIBRATION_LEFT, CALIBRATION_TIME, CUSTOM, END, ERRORS, HAS_CALIBRATION, IDLE_TIME, NAME, NOT_USED_RESOURCES, RESOURCE_COUNT, SEMI_FINITE, START, TOTAL_ACTIVE_COST, TOTAL_CALIBRATION_COST, TYPE, VALID_RESOURCE_COUNT
 from suppy.simulator.event_handler import EventHandler
 from suppy.simulator.atomic_network import AtomicNetwork
 from suppy.simulator.resource_stream import ResourceStream
@@ -16,7 +16,7 @@ def test_double_input():
     uid_custom = '2'
     uid_end = '3'
     resource_count1 = 41
-    resource_count2 = 42
+    resource_count2 = 43
     calibration_cost = 5
     duration = 100
     cost = 5
@@ -59,13 +59,18 @@ def test_double_input():
     assert start_stats1[RESOURCE_COUNT] == resource_count1
     assert start_stats1[HAS_CALIBRATION] == False
     assert start_stats1[NOT_USED_RESOURCES] == 0
+    assert start_stats1[SEMI_FINITE] == [] 
 
     start_stats2 = start_atomic2.get_stats()
     assert start_stats2[NAME] == 'Start Node2'
     assert start_stats2[TYPE] == START
     assert start_stats2[RESOURCE_COUNT] == resource_count2
     assert start_stats2[HAS_CALIBRATION] == False
-    assert start_stats2[NOT_USED_RESOURCES] == 1
+    assert start_stats2[NOT_USED_RESOURCES] == 0
+    semi = start_stats2[SEMI_FINITE]
+    assert len(semi) == 2
+    assert semi[0].category == type3
+    assert semi[1].category == type3
 
     custom_stats = custom_atomic.get_stats()
     assert custom_stats[NAME] == 'Custom Node'

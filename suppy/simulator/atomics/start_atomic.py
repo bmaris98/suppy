@@ -26,15 +26,6 @@ class StartAtomic(Atomic):
         stats = Atomic.get_stats(self)
         stats[TYPE] = START
         stats[RESOURCE_COUNT] = self._initial_count
-        stats[NOT_USED_RESOURCES] = self._get_not_used()
+        stats[NOT_USED_RESOURCES] = self._count
         stats[RESOURCE_TYPE] = self._output_type
         return stats
-
-    def _get_not_used(self):
-        out_stream = self._output_streams[0]
-        extra = 0
-        if out_stream.has_input:
-            extra += 1
-        if out_stream.has_output:
-            extra += 1
-        return self._count + extra
