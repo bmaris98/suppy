@@ -1,3 +1,5 @@
+from suppy.utils.stats_constants import BUFFER, CONVERGENCE, CUSTOM, END, RANDOM_ERROR, REPAIR, START, TEST, TRANSPORT
+from suppy.app.image_loader import ImageLoader
 from tkinter.constants import NW
 from suppy.app.node import Node
 from suppy.app.visual_constants import HOLD_LEFT_CLICK, MASTER_CANVAS_BACKGROUND_COLOR, MASTER_CANVAS_HEIGHT, MASTER_CANVAS_WIDTH, NODE_HEIGHT, NODE_WIDTH, RELEASE_LEFT_CLICK
@@ -13,12 +15,12 @@ class DesignCanvasController(Frame):
 
     def __init__(self, root):
         Frame.__init__(self, root)
+        self._image_loader = ImageLoader()
         self._node_insertion_position = Position(100, 100)
         self._node_count = 0
         self._is_dragging_node: bool = False
         self._last_dragging_position: Position
         self._nodes: List[Node] = []
-        self._mario = self._get_mario()
         self._right_click_position = Position(0, 0) 
 
         self.canvas = Canvas(self, width=MASTER_CANVAS_WIDTH, height=MASTER_CANVAS_HEIGHT, background=MASTER_CANVAS_BACKGROUND_COLOR)
@@ -48,16 +50,43 @@ class DesignCanvasController(Frame):
     
     def _get_popup_menu(self):
         menu = Menu(self, tearoff=0)
-        menu.add_command(label='Add Start', command=self.add_node)
-        menu.add_command(label='Add End', command=self.add_node)
-        menu.add_command(label='Add Custom', command=self.add_node)
-        menu.add_command(label='Add Transport', command=self.add_node)
-        menu.add_command(label='Add Buffer', command=self.add_node)
-        menu.add_command(label='Add Verification', command=self.add_node)
-        menu.add_command(label='Add Convergence', command=self.add_node)
-        menu.add_command(label='Add Repair', command=self.add_node)
-        menu.add_command(label='Add Error Generator', command=self.add_node)
+        menu.add_command(label='Add Start', command=self._add_prompt_start)
+        menu.add_command(label='Add End', command=self._add_prompt_end)
+        menu.add_command(label='Add Custom', command=self._add_prompt_custom)
+        menu.add_command(label='Add Transport', command=self._add_prompt_transport)
+        menu.add_command(label='Add Buffer', command=self._add_prompt_buffer)
+        menu.add_command(label='Add Verification', command=self._add_prompt_verification)
+        menu.add_command(label='Add Convergence', command=self._add_prompt_convergence)
+        menu.add_command(label='Add Repair', command=self._add_prompt_repair)
+        menu.add_command(label='Add Error Generator', command=self._add_prompt_error)
         return menu
+
+    def _add_prompt_start(self):
+        self._attach_node_to_canvas(START)
+
+    def _add_prompt_end(self):
+        self._attach_node_to_canvas(END)
+
+    def _add_prompt_custom(self):
+        self._attach_node_to_canvas(CUSTOM)
+
+    def _add_prompt_transport(self):
+        self._attach_node_to_canvas(TRANSPORT)
+
+    def _add_prompt_buffer(self):
+        self._attach_node_to_canvas(BUFFER)
+
+    def _add_prompt_verification(self):
+        self._attach_node_to_canvas(TEST)
+
+    def _add_prompt_convergence(self):
+        self._attach_node_to_canvas(CONVERGENCE)
+
+    def _add_prompt_repair(self):
+        self._attach_node_to_canvas(REPAIR)
+
+    def _add_prompt_error(self):
+        self._attach_node_to_canvas(RANDOM_ERROR)
 
     def move_start(self, event):
         if not self._is_dragging_node:
@@ -67,15 +96,12 @@ class DesignCanvasController(Frame):
         if not self._is_dragging_node:
             self.canvas.scan_dragto(event.x, event.y, gain=1)
 
-    def add_node(self) -> None:
-        self._attach_node_to_canvas(self._right_click_position)
-
-    def _attach_node_to_canvas(self, position: Position) -> None:
-        x, y = position.value
+    def _attach_node_to_canvas(self, node_type: str) -> None:
+        x, y = self._right_click_position.value
         tag_id = self._generate_node_id()
-        image = self._get_mario()
+        image = self._image_loader.get_image(node_type)
 
-        node_id: int = self.canvas.create_image(x, y, image=self._mario, anchor=NW, tags=tag_id)
+        node_id: int = self.canvas.create_image(x, y, image=image, anchor=NW, tags=tag_id)
         #node_id: int = self.canvas.create_rectangle(x1, y1, x2, y2, fill=color, tags=tag_id)
         new_node = Node(node_id, tag_id)
         new_node.load_image(image)
@@ -116,13 +142,3 @@ class DesignCanvasController(Frame):
     def _handle_node_left_click_release(self, event) -> None:
         self._is_dragging_node = False
         self.canvas.configure(scrollregion = self.canvas.bbox("all"))
-
-    def _get_mario(self):
-        img = Image.open(self._get_path())
-        img = img.resize((NODE_WIDTH, NODE_HEIGHT))
-        return ImageTk.PhotoImage(img)
-
-    def _get_path(self):
-        base_path = Path(__file__).parent
-        file_path = (base_path / '../data/assets/mario.png').resolve()
-        return file_path
