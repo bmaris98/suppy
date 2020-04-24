@@ -4,23 +4,16 @@ from typing import Any, Dict
 
 class Node:
 
-    def __init__(self, view_id: int, tag_id: str):
-        self._view_id = view_id
-        self._tag_id = tag_id
-        self._type: str
-        self._properties: Dict[str, Any] = {}
-        self._position: Position
-        self._input_ports_count: int
-        self._output_ports_count: int
-        self._image = None
-
-    @property
-    def view_id(self):
-        return self._view_id
-
-    @property
-    def tag_id(self):
-        return self._tag_id
-
-    def load_image(self, image):
-        self._image = image
+    def __init__(self):
+        self.view_id: str
+        self.tag_id: str
+        self.type: str = 'default'
+        self.properties: Dict[str, Any] = {}
+        self.position: Position
+        self.has_input_port: bool = False
+        self.has_output_port: bool = False
+        self.multiple_inputs: bool = False
+        self.multiple_outputs: bool = False
+        self.input_id: int = -1
+        self.output_id: int = -1
+        self.secondary_output_id: int = -1
