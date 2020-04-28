@@ -6,5 +6,6 @@ RELEASE_LEFT_CLICK = '<ButtonRelease-1>'
 LEFT_CLICK = '<Button-1>'
 MOTION = '<Motion>'
 DOUBLE_CLICK = '<Double-Button-1>'
+RIGHT_CLICK = '<Button-3>'
 NODE_WIDTH = 90
 NODE_HEIGHT = 90

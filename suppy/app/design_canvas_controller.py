@@ -3,7 +3,7 @@ from suppy.utils.stats_constants import BUFFER, CONVERGENCE, CUSTOM, DIVERGENCE,
 from suppy.app.image_loader import ImageLoader, PORT1, PORT1ERR, PORT1OK, PORTN
 from tkinter.constants import LAST, LEFT, NE, NO, NW
 from suppy.app.node import Node
-from suppy.app.visual_constants import DOUBLE_CLICK, HOLD_LEFT_CLICK, LEFT_CLICK, MASTER_CANVAS_BACKGROUND_COLOR, MASTER_CANVAS_HEIGHT, MASTER_CANVAS_WIDTH, NODE_HEIGHT, NODE_WIDTH, RELEASE_LEFT_CLICK
+from suppy.app.visual_constants import DOUBLE_CLICK, HOLD_LEFT_CLICK, LEFT_CLICK, MASTER_CANVAS_BACKGROUND_COLOR, MASTER_CANVAS_HEIGHT, MASTER_CANVAS_WIDTH, MOTION, NODE_HEIGHT, NODE_WIDTH, RELEASE_LEFT_CLICK, RIGHT_CLICK
 import tkinter.ttk as ttk
 import datetime
 from typing import Any, Dict, List, Tuple
@@ -39,17 +39,24 @@ class DesignCanvasController(Frame):
         self.canvas.bind("<B1-Motion>", self.move_move)
 
         self._popup_menu = self._get_popup_menu()
-        self.canvas.bind('<Button-3>', self.open_canvas_menu)
+        self._node_menu = self._get_node_menu()
+        self._node_menu_target = None
+        self.canvas.bind(RIGHT_CLICK, self.open_canvas_menu)
         self._is_drawing_line = False
         self._current_drawing_line = None
         self._current_drawing_line_start: Tuple[int, int]
         self._drawing_args: Dict[str, Any] = {}
-        self.canvas.bind('<Motion>', self._handle_canvas_motion)
+        self.canvas.bind(MOTION, self._handle_canvas_motion)
         self.lines: List[Line] = []
         self.messagebox = None
         self._bind_line_double_click()
 
+        self._surpress_popup_menu = False
+
     def open_canvas_menu(self, event):
+        if self._surpress_popup_menu:
+            self._surpress_popup_menu = False
+            return
         self._right_click_position = Position(self.canvas.canvasx(event.x), self.canvas.canvasy(event.y))
         try:
             self._popup_menu.tk_popup(event.x_root, event.y_root, '')
@@ -61,8 +68,29 @@ class DesignCanvasController(Frame):
 
     def _delete_line(self, event):
         view_id = event.widget.find_closest(self.canvas.canvasx(event.x), self.canvas.canvasy(event.y))[0]
+        self._delete_line_by_view_id(view_id)
+
+    def _delete_line_by_view_id(self, view_id):
         self.lines = [line for line in self.lines if not line.view_id == view_id]
         self.canvas.delete(view_id)
+
+
+    def _get_node_menu(self):
+        menu = Menu(self, tearoff=0)
+        menu.add_command(label='Update Node', command=print(1))
+        menu.add_command(label='Delete Node', command=self._delete_menu_taget_node) 
+        return menu
+
+    def _delete_menu_taget_node(self):
+        self._nodes = [node for node in self._nodes if node.tag_id != self._node_menu_target.tag_id]
+        for line in self.lines:
+            if line.origin_node.tag_id == self._node_menu_target.tag_id or line.target_node.tag_id == self._node_menu_target.tag_id:
+                self._delete_line_by_view_id(line.view_id)
+        self.canvas.delete(self._node_menu_target.view_id)
+        port_ids = [self._node_menu_target.input_id, self._node_menu_target.output_id, self._node_menu_target.secondary_output_id]
+        for port_id in port_ids:
+            if not port_id == -1:
+                self.canvas.delete(port_id)
 
     def _get_popup_menu(self):
         menu = Menu(self, tearoff=0)
@@ -210,7 +238,8 @@ class DesignCanvasController(Frame):
     def _bind_default_listeners_to_node(self, node: Node) -> None:
         self.canvas.tag_bind(node.tag_id, HOLD_LEFT_CLICK, lambda event: self._handle_node_left_click_hold(event, node))
         self.canvas.tag_bind(node.tag_id, RELEASE_LEFT_CLICK, lambda event: self._handle_node_left_click_release(event))
-        
+        self.canvas.tag_bind(node.tag_id, RIGHT_CLICK, lambda event: self._handle_node_right_click(event, node))
+
         if node.has_output_port:
             if node.type == TEST:
                 self.canvas.tag_bind(node.tag_id + 'out_err', LEFT_CLICK, lambda event: self._handle_output_left_click(event, node, True))
@@ -218,6 +247,15 @@ class DesignCanvasController(Frame):
         
         if node.has_input_port:
             self.canvas.tag_bind(node.tag_id + 'in', LEFT_CLICK, lambda event: self._handle_input_left_click(event, node))
+
+    def _handle_node_right_click(self, event, node):
+        self._surpress_popup_menu = True
+        self._node_menu_target = node
+        self._right_click_position = Position(self.canvas.canvasx(event.x), self.canvas.canvasy(event.y))
+        try:
+            self._node_menu.tk_popup(event.x_root, event.y_root, '')
+        finally:
+            self._node_menu.grab_release()
 
     def _handle_input_left_click(self, event, node):
         if self._current_drawing_line == None:
