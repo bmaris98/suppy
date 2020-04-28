@@ -1,22 +1,27 @@
+from suppy.app.menu_bar import MenuBar
 from suppy.app.visual_constants import NODE_HEIGHT, NODE_WIDTH
 from suppy.app.design_canvas_controller import DesignCanvasController
 import tkinter as tk
 import tkinter.ttk as ttk
 from ttkthemes import ThemedStyle
 
+from tkinter import Menu
+
 class DesignView:
 
     def __init__(self):
         self._main_window = tk.Tk()
-        self._main_window.attributes('-fullscreen', True)
+        #self._main_window.attributes('-fullscreen', True)
+        w, h = self._main_window.winfo_screenwidth(), self._main_window.winfo_screenheight()
+        self._main_window.geometry("%dx%d+0+0" % (w, h))
         self._is_full_screen = False
         style = ThemedStyle(self._main_window)
         style.set_theme('arc')
         self._design_canvas_controller = None
-        self._render_view_elements()
-
+        MenuBar(self._main_window)
         self._main_window.bind('<F5>', self._toggle_full_screen)
         self._main_window.bind('<Escape>', self._exit_full_screen)
+        self._render_view_elements()
 
     def _toggle_full_screen(self, event):
         self._is_full_screen = not self._is_full_screen

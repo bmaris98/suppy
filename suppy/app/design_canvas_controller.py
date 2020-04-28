@@ -330,13 +330,13 @@ class DesignCanvasController(Frame):
         self._drawing_args['node'] = node
         self._drawing_args['output'] = port_id
         self._drawing_args['is_secondary'] = is_secondary
-        mouse_x = self.canvas.winfo_pointerx()
-        mouse_y = self.canvas.winfo_pointery()
-        cx = self.canvas.canvasx(mouse_x)
-        cy = self.canvas.canvasy(mouse_y)
+        mouse_x = self.canvas.canvasx(self.canvas.winfo_pointerx()) - self.canvas.winfo_rootx()
+        mouse_y = self.canvas.canvasy(self.canvas.winfo_pointery()) - self.canvas.winfo_rooty()
+        # cx = self.canvas.canvasx(mouse_x)
+        # cy = self.canvas.canvasy(mouse_y)
         middle_x, middle_y = self._get_port_middle(port_id)
         self._current_drawing_line_start = (middle_x, middle_y)
-        self._draw_line(middle_x, middle_y, cx , cy, True)
+        self._draw_line(middle_x, middle_y, mouse_x , mouse_y, True)
         
     def _can_draw_another_output(self, port_id: int, node: Node) -> bool:
         if port_id == node.secondary_output_id:
@@ -354,19 +354,21 @@ class DesignCanvasController(Frame):
     def _handle_canvas_motion(self, event):
         if self._current_drawing_line == None:
             return
-        mouse_x = self.canvas.winfo_pointerx()
-        mouse_y = self.canvas.winfo_pointery()
-        cx = self.canvas.canvasx(mouse_x)
-        cy = self.canvas.canvasy(mouse_y)
+        x = self.canvas.canvasx(self.canvas.winfo_pointerx())
+        y = self.canvas.canvasy(self.canvas.winfo_pointery())
+        mouse_x = x - self.canvas.winfo_rootx()
+        mouse_y = y - self.canvas.winfo_rooty()
+        # cx = self.canvas.canvasx(mouse_x)
+        # cy = self.canvas.canvasy(mouse_y)
         self.canvas.delete(self._current_drawing_line)
         start_x, start_y = self._current_drawing_line_start
-        dx = 1
-        dy = 1
-        if start_x > cx:
-            dx = -1
-        if start_y > cy:
-            dy = -1 
-        self._draw_line(start_x, start_y, cx - dx, cy - dy, True)
+        dx = 3
+        dy = 3
+        if start_x > x:
+            dx = -3
+        if start_y > y:
+            dy = -3 
+        self._draw_line(start_x, start_y, mouse_x - dx, mouse_y - dy, True)
 
     def _draw_line(self, start_x, start_y, end_x, end_y, motion=False) -> int:
         self._delete_active_line_drawing()
