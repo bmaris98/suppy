@@ -23,6 +23,7 @@ ERRORS_FOUND = 'errors_found'
 ERRORS_MISSED = 'errors_missed'
 SEMI_FINITE = 'semi_finite'
 RUNS = 'runs'
+RESOURCES = 'resources'
 
 CUSTOM = 'custom'
 START = 'start'

@@ -1,3 +1,4 @@
+import json
 from suppy.app.position import Position
 from typing import Any, Dict
 
@@ -17,3 +18,6 @@ class Node:
         self.input_id: int = -1
         self.output_id: int = -1
         self.secondary_output_id: int = -1
+
+    def toJSON(self):
+        return json.dumps(self, default=lambda o: o.__dict__, sort_keys=True, indent=4)

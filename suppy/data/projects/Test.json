@@ -1,0 +1,137 @@
+{
+    "lines": [
+        {
+            "is_from_secondary": false,
+            "origin_node": {
+                "has_input_port": false,
+                "has_output_port": true,
+                "input_id": -1,
+                "multiple_inputs": false,
+                "multiple_outputs": false,
+                "output_id": 2,
+                "position": {
+                    "_x": 157.0,
+                    "_y": 69.0
+                },
+                "properties": {},
+                "secondary_output_id": -1,
+                "tag_id": "1588112161.454579",
+                "type": "start",
+                "view_id": "1"
+            },
+            "origin_port_id": 2,
+            "target_node": {
+                "has_input_port": true,
+                "has_output_port": true,
+                "input_id": 4,
+                "multiple_inputs": false,
+                "multiple_outputs": false,
+                "output_id": 5,
+                "position": {
+                    "_x": 579.0,
+                    "_y": 207.0
+                },
+                "properties": {},
+                "secondary_output_id": -1,
+                "tag_id": "1588112162.415381",
+                "type": "transport",
+                "view_id": "3"
+            },
+            "target_port_id": 4,
+            "view_id": 68
+        },
+        {
+            "is_from_secondary": false,
+            "origin_node": {
+                "has_input_port": true,
+                "has_output_port": true,
+                "input_id": 4,
+                "multiple_inputs": false,
+                "multiple_outputs": false,
+                "output_id": 5,
+                "position": {
+                    "_x": 579.0,
+                    "_y": 207.0
+                },
+                "properties": {},
+                "secondary_output_id": -1,
+                "tag_id": "1588112162.415381",
+                "type": "transport",
+                "view_id": "3"
+            },
+            "origin_port_id": 5,
+            "target_node": {
+                "has_input_port": true,
+                "has_output_port": false,
+                "input_id": 7,
+                "multiple_inputs": false,
+                "multiple_outputs": false,
+                "output_id": -1,
+                "position": {
+                    "_x": 934.0,
+                    "_y": 351.0
+                },
+                "properties": {},
+                "secondary_output_id": -1,
+                "tag_id": "1588112164.669883",
+                "type": "end",
+                "view_id": "6"
+            },
+            "target_port_id": 7,
+            "view_id": 142
+        }
+    ],
+    "nodes": [
+        {
+            "has_input_port": false,
+            "has_output_port": true,
+            "input_id": -1,
+            "multiple_inputs": false,
+            "multiple_outputs": false,
+            "output_id": 2,
+            "position": {
+                "_x": 157.0,
+                "_y": 69.0
+            },
+            "properties": {},
+            "secondary_output_id": -1,
+            "tag_id": "1588112161.454579",
+            "type": "start",
+            "view_id": "1"
+        },
+        {
+            "has_input_port": true,
+            "has_output_port": true,
+            "input_id": 4,
+            "multiple_inputs": false,
+            "multiple_outputs": false,
+            "output_id": 5,
+            "position": {
+                "_x": 579.0,
+                "_y": 207.0
+            },
+            "properties": {},
+            "secondary_output_id": -1,
+            "tag_id": "1588112162.415381",
+            "type": "transport",
+            "view_id": "3"
+        },
+        {
+            "has_input_port": true,
+            "has_output_port": false,
+            "input_id": 7,
+            "multiple_inputs": false,
+            "multiple_outputs": false,
+            "output_id": -1,
+            "position": {
+                "_x": 934.0,
+                "_y": 351.0
+            },
+            "properties": {},
+            "secondary_output_id": -1,
+            "tag_id": "1588112164.669883",
+            "type": "end",
+            "view_id": "6"
+        }
+    ]
+}

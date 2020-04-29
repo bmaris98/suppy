@@ -1,0 +1,228 @@
+{
+    "lines": [
+        {
+            "is_from_secondary": false,
+            "origin_node": {
+                "has_input_port": true,
+                "has_output_port": true,
+                "input_id": 9,
+                "multiple_inputs": false,
+                "multiple_outputs": false,
+                "output_id": 10,
+                "position": {
+                    "_x": 1144.0,
+                    "_y": 358.0
+                },
+                "properties": {},
+                "secondary_output_id": -1,
+                "tag_id": "1588101346.528866",
+                "type": "buffer",
+                "view_id": "8"
+            },
+            "origin_port_id": 10,
+            "target_node": {
+                "has_input_port": true,
+                "has_output_port": true,
+                "input_id": 12,
+                "multiple_inputs": false,
+                "multiple_outputs": false,
+                "output_id": 13,
+                "position": {
+                    "_x": 1315.0,
+                    "_y": 345.0
+                },
+                "properties": {},
+                "secondary_output_id": 14,
+                "tag_id": "1588101353.219948",
+                "type": "test",
+                "view_id": "11"
+            },
+            "target_port_id": 12,
+            "view_id": 125
+        },
+        {
+            "is_from_secondary": false,
+            "origin_node": {
+                "has_input_port": true,
+                "has_output_port": true,
+                "input_id": 12,
+                "multiple_inputs": false,
+                "multiple_outputs": false,
+                "output_id": 13,
+                "position": {
+                    "_x": 1315.0,
+                    "_y": 345.0
+                },
+                "properties": {},
+                "secondary_output_id": 14,
+                "tag_id": "1588101353.219948",
+                "type": "test",
+                "view_id": "11"
+            },
+            "origin_port_id": 13,
+            "target_node": {
+                "has_input_port": true,
+                "has_output_port": false,
+                "input_id": 18,
+                "multiple_inputs": false,
+                "multiple_outputs": false,
+                "output_id": -1,
+                "position": {
+                    "_x": 1551.0,
+                    "_y": 220.0
+                },
+                "properties": {},
+                "secondary_output_id": -1,
+                "tag_id": "1588101359.074197",
+                "type": "end",
+                "view_id": "17"
+            },
+            "target_port_id": 18,
+            "view_id": 114
+        },
+        {
+            "is_from_secondary": true,
+            "origin_node": {
+                "has_input_port": true,
+                "has_output_port": true,
+                "input_id": 12,
+                "multiple_inputs": false,
+                "multiple_outputs": false,
+                "output_id": 13,
+                "position": {
+                    "_x": 1315.0,
+                    "_y": 345.0
+                },
+                "properties": {},
+                "secondary_output_id": 14,
+                "tag_id": "1588101353.219948",
+                "type": "test",
+                "view_id": "11"
+            },
+            "origin_port_id": 14,
+            "target_node": {
+                "has_input_port": true,
+                "has_output_port": false,
+                "input_id": 16,
+                "multiple_inputs": false,
+                "multiple_outputs": false,
+                "output_id": -1,
+                "position": {
+                    "_x": 1498.0,
+                    "_y": 438.0
+                },
+                "properties": {},
+                "secondary_output_id": -1,
+                "tag_id": "1588101357.124892",
+                "type": "end",
+                "view_id": "15"
+            },
+            "target_port_id": 16,
+            "view_id": 115
+        }
+    ],
+    "nodes": [
+        {
+            "has_input_port": false,
+            "has_output_port": true,
+            "input_id": -1,
+            "multiple_inputs": false,
+            "multiple_outputs": false,
+            "output_id": 2,
+            "position": {
+                "_x": 513.0,
+                "_y": 189.0
+            },
+            "properties": {},
+            "secondary_output_id": -1,
+            "tag_id": "1588101333.951199",
+            "type": "start",
+            "view_id": "1"
+        },
+        {
+            "has_input_port": false,
+            "has_output_port": true,
+            "input_id": -1,
+            "multiple_inputs": false,
+            "multiple_outputs": false,
+            "output_id": 7,
+            "position": {
+                "_x": 566.0,
+                "_y": 414.0
+            },
+            "properties": {},
+            "secondary_output_id": -1,
+            "tag_id": "1588101342.197208",
+            "type": "start",
+            "view_id": "6"
+        },
+        {
+            "has_input_port": true,
+            "has_output_port": true,
+            "input_id": 9,
+            "multiple_inputs": false,
+            "multiple_outputs": false,
+            "output_id": 10,
+            "position": {
+                "_x": 1144.0,
+                "_y": 358.0
+            },
+            "properties": {},
+            "secondary_output_id": -1,
+            "tag_id": "1588101346.528866",
+            "type": "buffer",
+            "view_id": "8"
+        },
+        {
+            "has_input_port": true,
+            "has_output_port": true,
+            "input_id": 12,
+            "multiple_inputs": false,
+            "multiple_outputs": false,
+            "output_id": 13,
+            "position": {
+                "_x": 1315.0,
+                "_y": 345.0
+            },
+            "properties": {},
+            "secondary_output_id": 14,
+            "tag_id": "1588101353.219948",
+            "type": "test",
+            "view_id": "11"
+        },
+        {
+            "has_input_port": true,
+            "has_output_port": false,
+            "input_id": 16,
+            "multiple_inputs": false,
+            "multiple_outputs": false,
+            "output_id": -1,
+            "position": {
+                "_x": 1498.0,
+                "_y": 438.0
+            },
+            "properties": {},
+            "secondary_output_id": -1,
+            "tag_id": "1588101357.124892",
+            "type": "end",
+            "view_id": "15"
+        },
+        {
+            "has_input_port": true,
+            "has_output_port": false,
+            "input_id": 18,
+            "multiple_inputs": false,
+            "multiple_outputs": false,
+            "output_id": -1,
+            "position": {
+                "_x": 1551.0,
+                "_y": 220.0
+            },
+            "properties": {},
+            "secondary_output_id": -1,
+            "tag_id": "1588101359.074197",
+            "type": "end",
+            "view_id": "17"
+        }
+    ]
+}

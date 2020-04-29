@@ -53,6 +53,10 @@ class DesignCanvasController(Frame):
 
         self._surpress_popup_menu = False
 
+    def get_info(self) -> Tuple[List[Node], List[Line]]:
+        self._update_all_node_positions()
+        return self._nodes, self.lines
+
     def open_canvas_menu(self, event):
         if self._surpress_popup_menu:
             self._surpress_popup_menu = False
@@ -285,7 +289,8 @@ class DesignCanvasController(Frame):
 
     def _attach_line(self, origin, target, is_secondary, view_id, override = False):
         line = Line()
-        self.canvas.delete(view_id)
+        if not view_id == -1:
+            self.canvas.delete(view_id)
         line.origin_node = self._get_node_by_tag_id(origin)
         line.target_node = self._get_node_by_tag_id(target)
         line.is_from_secondary = is_secondary
@@ -451,3 +456,16 @@ class DesignCanvasController(Frame):
                 return node
             elif node.secondary_output_id == port_id:
                 return node
+
+    def _update_all_node_positions(self):
+        for node in self._nodes:
+            coords = self.canvas.coords(node.view_id)
+            x = coords[0]
+            y = coords[1]
+            node.position = Position(x, y)
+
+    def load_project(self, nodes: List[Node], lines: List[Dict[str, Any]]):
+        for node in nodes:
+            self._attach_node_to_canvas(node)
+        for line in lines:
+            self._attach_line(line['origin_node'], line['target_node'], line['is_from_secondary'], -1, False)

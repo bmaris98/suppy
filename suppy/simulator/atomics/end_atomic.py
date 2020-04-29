@@ -1,5 +1,5 @@
 from copy import deepcopy
-from suppy.utils.stats_constants import END, ERRORS, RESOURCE_COUNT, TYPE, VALID_RESOURCE_COUNT
+from suppy.utils.stats_constants import END, ERRORS, RESOURCES, RESOURCE_COUNT, TYPE, VALID_RESOURCE_COUNT
 from suppy.models.resource import Resource
 from suppy.simulator.atomics.atomic import Atomic
 from typing import Any, Dict, List
@@ -21,6 +21,7 @@ class EndAtomic(Atomic):
         stats[RESOURCE_COUNT] = self._get_resource_count()
         stats[VALID_RESOURCE_COUNT] = self._get_valid_resource_count()
         stats[ERRORS] = self._get_errors()
+        stats[RESOURCES] = self._resources
 
         return stats
 
