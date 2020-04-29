@@ -91,6 +91,7 @@ class DesignCanvasController(Frame):
             if line.origin_node.tag_id == self._node_menu_target.tag_id or line.target_node.tag_id == self._node_menu_target.tag_id:
                 self._delete_line_by_view_id(line.view_id)
         self.canvas.delete(self._node_menu_target.view_id)
+        self.canvas.delete(self._node_menu_target.label_id)
         port_ids = [self._node_menu_target.input_id, self._node_menu_target.output_id, self._node_menu_target.secondary_output_id]
         for port_id in port_ids:
             if not port_id == -1:
@@ -123,6 +124,7 @@ class DesignCanvasController(Frame):
         node.has_input_port = True
         x, y = self._right_click_position.value
         node.position = Position(x, y)
+        node.properties['name'] = 'Node'
         return node
 
     def _add_prompt_end(self):
@@ -190,9 +192,16 @@ class DesignCanvasController(Frame):
         node.view_id = str(node_id)
         self._add_input_ports(node)
         self._add_output_ports(node)
+        self._add_label(node)
         self._nodes.append(node)
         self._bind_default_listeners_to_node(node)
         self.canvas.configure(scrollregion = self.canvas.bbox("all"))
+
+    def _add_label(self, node: Node):
+        name = node.properties['name']
+        x, y = node.position.value
+        width_half = int(NODE_WIDTH/2)
+        node.label_id = self.canvas.create_text(x+width_half, y-12, font='Times 14 bold', text=name)
 
     def _add_input_ports(self, node: Node):
         x, y = node.position.value
@@ -412,7 +421,7 @@ class DesignCanvasController(Frame):
             self.canvas.move(node.input_id, delta_x, delta_y)
         if not node.secondary_output_id == -1:
             self.canvas.move(node.secondary_output_id, delta_x, delta_y)
-
+        self.canvas.move(node.label_id, delta_x, delta_y)
         self._move_lines(node)
         self.canvas.configure(scrollregion = self.canvas.bbox("all"))
 

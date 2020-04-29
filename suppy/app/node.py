@@ -8,6 +8,7 @@ class Node:
     def __init__(self):
         self.view_id: str
         self.tag_id: str
+        self.label_id: int
         self.type: str = 'default'
         self.properties: Dict[str, Any] = {}
         self.position: Position
