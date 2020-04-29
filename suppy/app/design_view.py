@@ -93,3 +93,8 @@ class DesignView:
         self._is_project_loaded = True
         self._attach_design_canvas()
         self._design_canvas_controller.load_project(nodes, lines)
+
+    def new_project_handler(self):
+        self._is_project_loaded = False
+        self._project_name = None
+        self._attach_design_canvas()

@@ -1,0 +1,249 @@
+{
+    "lines": [
+        {
+            "is_from_secondary": false,
+            "origin_node": {
+                "has_input_port": false,
+                "has_output_port": true,
+                "input_id": -1,
+                "label_id": 3,
+                "multiple_inputs": false,
+                "multiple_outputs": false,
+                "output_id": 2,
+                "position": {
+                    "_x": 199.0,
+                    "_y": 240.0
+                },
+                "properties": {
+                    "count": 30,
+                    "name": "Start",
+                    "output_type": "TypeA"
+                },
+                "secondary_output_id": -1,
+                "tag_id": "1588158216.881908",
+                "type": "start",
+                "view_id": "1"
+            },
+            "origin_port_id": 2,
+            "target_node": {
+                "has_input_port": true,
+                "has_output_port": true,
+                "input_id": 5,
+                "label_id": 7,
+                "multiple_inputs": true,
+                "multiple_outputs": false,
+                "output_id": 6,
+                "position": {
+                    "_x": 505.0,
+                    "_y": 262.0
+                },
+                "properties": {
+                    "calibration_cost": 200,
+                    "calibration_duration": 400,
+                    "calibration_steps": 30,
+                    "cost": 25,
+                    "duration": 100,
+                    "name": "Transform",
+                    "output_type": "TypeB"
+                },
+                "secondary_output_id": -1,
+                "tag_id": "1588158218.161584",
+                "type": "custom",
+                "view_id": "4"
+            },
+            "target_port_id": 5,
+            "view_id": 58
+        },
+        {
+            "is_from_secondary": false,
+            "origin_node": {
+                "has_input_port": true,
+                "has_output_port": true,
+                "input_id": 5,
+                "label_id": 7,
+                "multiple_inputs": true,
+                "multiple_outputs": false,
+                "output_id": 6,
+                "position": {
+                    "_x": 505.0,
+                    "_y": 262.0
+                },
+                "properties": {
+                    "calibration_cost": 200,
+                    "calibration_duration": 400,
+                    "calibration_steps": 30,
+                    "cost": 25,
+                    "duration": 100,
+                    "name": "Transform",
+                    "output_type": "TypeB"
+                },
+                "secondary_output_id": -1,
+                "tag_id": "1588158218.161584",
+                "type": "custom",
+                "view_id": "4"
+            },
+            "origin_port_id": 6,
+            "target_node": {
+                "has_input_port": true,
+                "has_output_port": true,
+                "input_id": 9,
+                "label_id": 11,
+                "multiple_inputs": false,
+                "multiple_outputs": false,
+                "output_id": 10,
+                "position": {
+                    "_x": 805.0,
+                    "_y": 259.0
+                },
+                "properties": {
+                    "capacity": 20,
+                    "name": "Buffer"
+                },
+                "secondary_output_id": -1,
+                "tag_id": "1588158220.161188",
+                "type": "buffer",
+                "view_id": "8"
+            },
+            "target_port_id": 9,
+            "view_id": 131
+        },
+        {
+            "is_from_secondary": false,
+            "origin_node": {
+                "has_input_port": true,
+                "has_output_port": true,
+                "input_id": 9,
+                "label_id": 11,
+                "multiple_inputs": false,
+                "multiple_outputs": false,
+                "output_id": 10,
+                "position": {
+                    "_x": 805.0,
+                    "_y": 259.0
+                },
+                "properties": {
+                    "capacity": 20,
+                    "name": "Buffer"
+                },
+                "secondary_output_id": -1,
+                "tag_id": "1588158220.161188",
+                "type": "buffer",
+                "view_id": "8"
+            },
+            "origin_port_id": 10,
+            "target_node": {
+                "has_input_port": true,
+                "has_output_port": false,
+                "input_id": 13,
+                "label_id": 14,
+                "multiple_inputs": false,
+                "multiple_outputs": false,
+                "output_id": -1,
+                "position": {
+                    "_x": 1080.0,
+                    "_y": 259.0
+                },
+                "properties": {
+                    "name": "Warehouse"
+                },
+                "secondary_output_id": -1,
+                "tag_id": "1588158222.250052",
+                "type": "end",
+                "view_id": "12"
+            },
+            "target_port_id": 13,
+            "view_id": 168
+        }
+    ],
+    "nodes": [
+        {
+            "has_input_port": false,
+            "has_output_port": true,
+            "input_id": -1,
+            "label_id": 3,
+            "multiple_inputs": false,
+            "multiple_outputs": false,
+            "output_id": 2,
+            "position": {
+                "_x": 199.0,
+                "_y": 240.0
+            },
+            "properties": {
+                "count": 30,
+                "name": "Start",
+                "output_type": "TypeA"
+            },
+            "secondary_output_id": -1,
+            "tag_id": "1588158216.881908",
+            "type": "start",
+            "view_id": "1"
+        },
+        {
+            "has_input_port": true,
+            "has_output_port": true,
+            "input_id": 5,
+            "label_id": 7,
+            "multiple_inputs": true,
+            "multiple_outputs": false,
+            "output_id": 6,
+            "position": {
+                "_x": 505.0,
+                "_y": 262.0
+            },
+            "properties": {
+                "calibration_cost": 200,
+                "calibration_duration": 400,
+                "calibration_steps": 30,
+                "cost": 25,
+                "duration": 100,
+                "name": "Transform",
+                "output_type": "TypeB"
+            },
+            "secondary_output_id": -1,
+            "tag_id": "1588158218.161584",
+            "type": "custom",
+            "view_id": "4"
+        },
+        {
+            "has_input_port": true,
+            "has_output_port": true,
+            "input_id": 9,
+            "label_id": 11,
+            "multiple_inputs": false,
+            "multiple_outputs": false,
+            "output_id": 10,
+            "position": {
+                "_x": 805.0,
+                "_y": 259.0
+            },
+            "properties": {
+                "capacity": 20,
+                "name": "Buffer"
+            },
+            "secondary_output_id": -1,
+            "tag_id": "1588158220.161188",
+            "type": "buffer",
+            "view_id": "8"
+        },
+        {
+            "has_input_port": true,
+            "has_output_port": false,
+            "input_id": 13,
+            "label_id": 14,
+            "multiple_inputs": false,
+            "multiple_outputs": false,
+            "output_id": -1,
+            "position": {
+                "_x": 1080.0,
+                "_y": 259.0
+            },
+            "properties": {
+                "name": "Warehouse"
+            },
+            "secondary_output_id": -1,
+            "tag_id": "1588158222.250052",
+            "type": "end",
+            "view_id": "12"
+        }
+    ]
+}

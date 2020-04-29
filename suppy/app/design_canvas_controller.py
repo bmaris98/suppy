@@ -1,3 +1,4 @@
+from suppy.app.defaults import DEFAULT_BUFFER_PROPS, DEFAULT_CONVERGENCE_PROPS, DEFAULT_CUSTOM_PROPS, DEFAULT_DIVERGENCE_PROPS, DEFAULT_END_PROPS, DEFAULT_ERROR_PROPS, DEFAULT_REPAIR_PROPS, DEFAULT_START_PROPS, DEFAULT_TRANSPORT_PROPS, DEFAULT_VERIFICATION_PROPS
 from suppy.app.line import Line
 from suppy.utils.stats_constants import BUFFER, CONVERGENCE, CUSTOM, DIVERGENCE, END, RANDOM_ERROR, REPAIR, START, TEST, TRANSPORT
 from suppy.app.image_loader import ImageLoader, PORT1, PORT1ERR, PORT1OK, PORTN
@@ -6,6 +7,7 @@ from suppy.app.node import Node
 from suppy.app.visual_constants import DOUBLE_CLICK, HOLD_LEFT_CLICK, LEFT_CLICK, MASTER_CANVAS_BACKGROUND_COLOR, MASTER_CANVAS_HEIGHT, MASTER_CANVAS_WIDTH, MOTION, NODE_HEIGHT, NODE_WIDTH, RELEASE_LEFT_CLICK, RIGHT_CLICK
 import tkinter.ttk as ttk
 import datetime
+from copy import deepcopy
 from typing import Any, Dict, List, Tuple
 from suppy.app.position import Position
 from tkinter import Canvas, Frame, Menu
@@ -114,6 +116,7 @@ class DesignCanvasController(Frame):
     def _add_prompt_start(self):
         node = self._create_base_node()
         node.type = START
+        node.properties = deepcopy(DEFAULT_START_PROPS)
         node.has_input_port = False
         self._attach_node_to_canvas(node)
 
@@ -124,55 +127,63 @@ class DesignCanvasController(Frame):
         node.has_input_port = True
         x, y = self._right_click_position.value
         node.position = Position(x, y)
-        node.properties['name'] = 'Node'
         return node
 
     def _add_prompt_end(self):
         node = self._create_base_node()
         node.type = END
+        node.properties = deepcopy(DEFAULT_END_PROPS)
         node.has_output_port = False
         self._attach_node_to_canvas(node)
 
     def _add_prompt_custom(self):
         node = self._create_base_node()
         node.type = CUSTOM
+        node.properties = deepcopy(DEFAULT_CUSTOM_PROPS)
         node.multiple_inputs = True
         self._attach_node_to_canvas(node)
 
     def _add_prompt_transport(self):
         node = self._create_base_node()
         node.type = TRANSPORT
+        node.properties = deepcopy(DEFAULT_TRANSPORT_PROPS)
         self._attach_node_to_canvas(node)
 
     def _add_prompt_buffer(self):
         node = self._create_base_node()
         node.type = BUFFER
+        node.properties = deepcopy(DEFAULT_BUFFER_PROPS)
         self._attach_node_to_canvas(node)
 
     def _add_prompt_verification(self):
         node = self._create_base_node()
         node.type = TEST
+        node.properties = deepcopy(DEFAULT_VERIFICATION_PROPS)
         self._attach_node_to_canvas(node)
 
     def _add_prompt_convergence(self):
         node = self._create_base_node()
         node.type = CONVERGENCE
+        node.properties = deepcopy(DEFAULT_CONVERGENCE_PROPS)
         node.multiple_inputs = True
         self._attach_node_to_canvas(node)
 
     def _add_prompt_repair(self):
         node = self._create_base_node()
         node.type = REPAIR
+        node.properties = deepcopy(DEFAULT_REPAIR_PROPS)
         self._attach_node_to_canvas(node)
 
     def _add_prompt_error(self):
         node = self._create_base_node()
         node.type = RANDOM_ERROR
+        node.properties = deepcopy(DEFAULT_ERROR_PROPS)
         self._attach_node_to_canvas(node)
 
     def _add_prompt_divergence(self):
         node = self._create_base_node()
         node.type = DIVERGENCE
+        node.properties = deepcopy(DEFAULT_DIVERGENCE_PROPS)
         node.multiple_outputs = True
         self._attach_node_to_canvas(node)
 
