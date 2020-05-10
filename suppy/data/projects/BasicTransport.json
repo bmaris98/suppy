@@ -1,0 +1,168 @@
+{
+    "lines": [
+        {
+            "is_from_secondary": false,
+            "origin_node": {
+                "has_input_port": false,
+                "has_output_port": true,
+                "input_id": -1,
+                "label_id": 3,
+                "multiple_inputs": false,
+                "multiple_outputs": false,
+                "output_id": 2,
+                "position": {
+                    "_x": 101.0,
+                    "_y": 51.0
+                },
+                "properties": {
+                    "count": 30,
+                    "name": "Start",
+                    "output_type": "TypeA"
+                },
+                "secondary_output_id": -1,
+                "tag_id": "1588161931.204433",
+                "type": "start",
+                "view_id": "1"
+            },
+            "origin_port_id": 2,
+            "target_node": {
+                "has_input_port": true,
+                "has_output_port": true,
+                "input_id": 5,
+                "label_id": 7,
+                "multiple_inputs": false,
+                "multiple_outputs": false,
+                "output_id": 6,
+                "position": {
+                    "_x": 440.0,
+                    "_y": 85.0
+                },
+                "properties": {
+                    "cost": 50,
+                    "duration": 120,
+                    "name": "Transport"
+                },
+                "secondary_output_id": -1,
+                "tag_id": "1588161932.652332",
+                "type": "transport",
+                "view_id": "4"
+            },
+            "target_port_id": 5,
+            "view_id": 66
+        },
+        {
+            "is_from_secondary": false,
+            "origin_node": {
+                "has_input_port": true,
+                "has_output_port": true,
+                "input_id": 5,
+                "label_id": 7,
+                "multiple_inputs": false,
+                "multiple_outputs": false,
+                "output_id": 6,
+                "position": {
+                    "_x": 440.0,
+                    "_y": 85.0
+                },
+                "properties": {
+                    "cost": 50,
+                    "duration": 120,
+                    "name": "Transport"
+                },
+                "secondary_output_id": -1,
+                "tag_id": "1588161932.652332",
+                "type": "transport",
+                "view_id": "4"
+            },
+            "origin_port_id": 6,
+            "target_node": {
+                "has_input_port": true,
+                "has_output_port": false,
+                "input_id": 9,
+                "label_id": 10,
+                "multiple_inputs": false,
+                "multiple_outputs": false,
+                "output_id": -1,
+                "position": {
+                    "_x": 688.0,
+                    "_y": 75.0
+                },
+                "properties": {
+                    "name": "Warehouse"
+                },
+                "secondary_output_id": -1,
+                "tag_id": "1588161933.811946",
+                "type": "end",
+                "view_id": "8"
+            },
+            "target_port_id": 9,
+            "view_id": 119
+        }
+    ],
+    "nodes": [
+        {
+            "has_input_port": false,
+            "has_output_port": true,
+            "input_id": -1,
+            "label_id": 3,
+            "multiple_inputs": false,
+            "multiple_outputs": false,
+            "output_id": 2,
+            "position": {
+                "_x": 101.0,
+                "_y": 51.0
+            },
+            "properties": {
+                "count": 30,
+                "name": "Start",
+                "output_type": "TypeA"
+            },
+            "secondary_output_id": -1,
+            "tag_id": "1588161931.204433",
+            "type": "start",
+            "view_id": "1"
+        },
+        {
+            "has_input_port": true,
+            "has_output_port": true,
+            "input_id": 5,
+            "label_id": 7,
+            "multiple_inputs": false,
+            "multiple_outputs": false,
+            "output_id": 6,
+            "position": {
+                "_x": 440.0,
+                "_y": 85.0
+            },
+            "properties": {
+                "cost": 50,
+                "duration": 120,
+                "name": "Transport"
+            },
+            "secondary_output_id": -1,
+            "tag_id": "1588161932.652332",
+            "type": "transport",
+            "view_id": "4"
+        },
+        {
+            "has_input_port": true,
+            "has_output_port": false,
+            "input_id": 9,
+            "label_id": 10,
+            "multiple_inputs": false,
+            "multiple_outputs": false,
+            "output_id": -1,
+            "position": {
+                "_x": 688.0,
+                "_y": 75.0
+            },
+            "properties": {
+                "name": "Warehouse"
+            },
+            "secondary_output_id": -1,
+            "tag_id": "1588161933.811946",
+            "type": "end",
+            "view_id": "8"
+        }
+    ]
+}

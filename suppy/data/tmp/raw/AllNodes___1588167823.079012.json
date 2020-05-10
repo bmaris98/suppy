@@ -1,0 +1,277 @@
+{
+    "stats": [
+        {
+            "active_time": 0,
+            "has_calibration": false,
+            "idle_time": 3500,
+            "name": "Start",
+            "not_used_resources": 0,
+            "resource_count": 30,
+            "resource_type": "TypeA",
+            "runs": 30,
+            "semi_finite": [],
+            "total_cost": 0,
+            "type": "start",
+            "uid": "1588158250.169575"
+        },
+        {
+            "active_time": 3000,
+            "calibration_count": 1,
+            "calibration_left": 30,
+            "calibration_time": 400,
+            "has_calibration": true,
+            "idle_time": 100,
+            "name": "Transform",
+            "runs": 30,
+            "semi_finite": [],
+            "total_calibration_cost": 200,
+            "total_cost": 750,
+            "type": "custom",
+            "uid": "1588158251.050637"
+        },
+        {
+            "active_time": 0,
+            "capacity": 20,
+            "has_calibration": false,
+            "idle_time": 3500,
+            "name": "Buffer",
+            "runs": 30,
+            "semi_finite": [],
+            "total_cost": 0,
+            "type": "buffer",
+            "uid": "1588158253.194242",
+            "was_full": false
+        },
+        {
+            "active_time": 0,
+            "has_calibration": false,
+            "idle_time": 3500,
+            "name": "Confluence",
+            "runs": 30,
+            "semi_finite": [],
+            "total_cost": 0,
+            "type": "convergence",
+            "uid": "1588158254.073597"
+        },
+        {
+            "active_time": 0,
+            "has_calibration": false,
+            "idle_time": 3500,
+            "name": "Divergence",
+            "runs": 30,
+            "semi_finite": [],
+            "total_cost": 0,
+            "type": "convergence",
+            "uid": "1588158256.553466"
+        },
+        {
+            "active_time": 1500,
+            "calibration_count": 0,
+            "calibration_left": 30,
+            "calibration_time": 0,
+            "errors_found": 7,
+            "errors_missed": 6,
+            "has_calibration": true,
+            "idle_time": 2000,
+            "name": "Test Fixture",
+            "runs": 15,
+            "semi_finite": [],
+            "total_calibration_cost": 0,
+            "total_cost": 375,
+            "type": "test",
+            "uid": "1588158257.985637",
+            "with_error_count": 13,
+            "without_error_count": 17
+        },
+        {
+            "active_time": 700,
+            "calibration_count": 0,
+            "calibration_left": 23,
+            "calibration_time": 0,
+            "has_calibration": true,
+            "idle_time": 2800,
+            "name": "Transform",
+            "non_repairs": 0,
+            "repairs": 7,
+            "runs": 7,
+            "semi_finite": [],
+            "total_calibration_cost": 0,
+            "total_cost": 175,
+            "type": "repair",
+            "uid": "1588158259.241464"
+        },
+        {
+            "active_time": 0,
+            "has_calibration": false,
+            "idle_time": 3500,
+            "name": "Error generator",
+            "runs": 30,
+            "semi_finite": [],
+            "total_cost": 0,
+            "type": "random_error",
+            "uid": "1588158260.417369"
+        },
+        {
+            "active_time": 0,
+            "errors": {
+                "ERR": 6
+            },
+            "has_calibration": false,
+            "idle_time": 3500,
+            "name": "Warehouse",
+            "resource_count": 30,
+            "resources": [
+                {
+                    "_category": "TypeB",
+                    "_errors": [
+                        "ERR"
+                    ]
+                },
+                {
+                    "_category": "TypeB",
+                    "_errors": []
+                },
+                {
+                    "_category": "TypeB",
+                    "_errors": []
+                },
+                {
+                    "_category": "TypeB",
+                    "_errors": []
+                },
+                {
+                    "_category": "TypeB",
+                    "_errors": [
+                        "ERR"
+                    ]
+                },
+                {
+                    "_category": "TypeB",
+                    "_errors": []
+                },
+                {
+                    "_category": "TypeB",
+                    "_errors": [
+                        "ERR"
+                    ]
+                },
+                {
+                    "_category": "TypeB",
+                    "_errors": []
+                },
+                {
+                    "_category": "TypeB",
+                    "_errors": [
+                        "ERR"
+                    ]
+                },
+                {
+                    "_category": "TypeB",
+                    "_errors": []
+                },
+                {
+                    "_category": "TypeB",
+                    "_errors": []
+                },
+                {
+                    "_category": "TypeB",
+                    "_errors": []
+                },
+                {
+                    "_category": "TypeB",
+                    "_errors": []
+                },
+                {
+                    "_category": "TypeB",
+                    "_errors": []
+                },
+                {
+                    "_category": "TypeB",
+                    "_errors": []
+                },
+                {
+                    "_category": "TypeB",
+                    "_errors": []
+                },
+                {
+                    "_category": "TypeB",
+                    "_errors": [
+                        "ERR"
+                    ]
+                },
+                {
+                    "_category": "TypeB",
+                    "_errors": []
+                },
+                {
+                    "_category": "TypeB",
+                    "_errors": [
+                        "ERR"
+                    ]
+                },
+                {
+                    "_category": "TypeB",
+                    "_errors": []
+                },
+                {
+                    "_category": "TypeB",
+                    "_errors": []
+                },
+                {
+                    "_category": "TypeB",
+                    "_errors": []
+                },
+                {
+                    "_category": "TypeB",
+                    "_errors": []
+                },
+                {
+                    "_category": "TypeB",
+                    "_errors": []
+                },
+                {
+                    "_category": "TypeB",
+                    "_errors": []
+                },
+                {
+                    "_category": "TypeB",
+                    "_errors": []
+                },
+                {
+                    "_category": "TypeB",
+                    "_errors": []
+                },
+                {
+                    "_category": "TypeB",
+                    "_errors": []
+                },
+                {
+                    "_category": "TypeB",
+                    "_errors": []
+                },
+                {
+                    "_category": "TypeB",
+                    "_errors": []
+                }
+            ],
+            "runs": 30,
+            "semi_finite": [],
+            "total_cost": 0,
+            "type": "end",
+            "uid": "1588158261.649799",
+            "valid_resource_count": 24
+        },
+        {
+            "active_time": 0,
+            "has_calibration": false,
+            "idle_time": 3500,
+            "name": "Confluence",
+            "runs": 30,
+            "semi_finite": [],
+            "total_cost": 0,
+            "type": "convergence",
+            "uid": "1588158286.801523"
+        }
+    ],
+    "time": 3500
+}

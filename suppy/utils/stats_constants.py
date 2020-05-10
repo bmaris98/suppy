@@ -24,6 +24,7 @@ ERRORS_MISSED = 'errors_missed'
 SEMI_FINITE = 'semi_finite'
 RUNS = 'runs'
 RESOURCES = 'resources'
+UID = 'uid'
 
 CUSTOM = 'custom'
 START = 'start'

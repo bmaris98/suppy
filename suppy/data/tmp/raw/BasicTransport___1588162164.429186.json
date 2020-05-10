@@ -1,0 +1,166 @@
+{
+    "stats": [
+        {
+            "active_time": 0,
+            "has_calibration": false,
+            "idle_time": 3600,
+            "name": "Start",
+            "not_used_resources": 0,
+            "resource_count": 30,
+            "resource_type": "TypeA",
+            "runs": 30,
+            "semi_finite": [],
+            "total_cost": 0,
+            "type": "start",
+            "uid": "1588161931.204433"
+        },
+        {
+            "active_time": 3600,
+            "has_calibration": false,
+            "idle_time": 0,
+            "name": "Transport",
+            "runs": 30,
+            "semi_finite": [],
+            "total_cost": 1500,
+            "type": "transport",
+            "uid": "1588161932.652332"
+        },
+        {
+            "active_time": 0,
+            "errors": {},
+            "has_calibration": false,
+            "idle_time": 3600,
+            "name": "Warehouse",
+            "resource_count": 30,
+            "resources": [
+                {
+                    "_category": "TypeA",
+                    "_errors": []
+                },
+                {
+                    "_category": "TypeA",
+                    "_errors": []
+                },
+                {
+                    "_category": "TypeA",
+                    "_errors": []
+                },
+                {
+                    "_category": "TypeA",
+                    "_errors": []
+                },
+                {
+                    "_category": "TypeA",
+                    "_errors": []
+                },
+                {
+                    "_category": "TypeA",
+                    "_errors": []
+                },
+                {
+                    "_category": "TypeA",
+                    "_errors": []
+                },
+                {
+                    "_category": "TypeA",
+                    "_errors": []
+                },
+                {
+                    "_category": "TypeA",
+                    "_errors": []
+                },
+                {
+                    "_category": "TypeA",
+                    "_errors": []
+                },
+                {
+                    "_category": "TypeA",
+                    "_errors": []
+                },
+                {
+                    "_category": "TypeA",
+                    "_errors": []
+                },
+                {
+                    "_category": "TypeA",
+                    "_errors": []
+                },
+                {
+                    "_category": "TypeA",
+                    "_errors": []
+                },
+                {
+                    "_category": "TypeA",
+                    "_errors": []
+                },
+                {
+                    "_category": "TypeA",
+                    "_errors": []
+                },
+                {
+                    "_category": "TypeA",
+                    "_errors": []
+                },
+                {
+                    "_category": "TypeA",
+                    "_errors": []
+                },
+                {
+                    "_category": "TypeA",
+                    "_errors": []
+                },
+                {
+                    "_category": "TypeA",
+                    "_errors": []
+                },
+                {
+                    "_category": "TypeA",
+                    "_errors": []
+                },
+                {
+                    "_category": "TypeA",
+                    "_errors": []
+                },
+                {
+                    "_category": "TypeA",
+                    "_errors": []
+                },
+                {
+                    "_category": "TypeA",
+                    "_errors": []
+                },
+                {
+                    "_category": "TypeA",
+                    "_errors": []
+                },
+                {
+                    "_category": "TypeA",
+                    "_errors": []
+                },
+                {
+                    "_category": "TypeA",
+                    "_errors": []
+                },
+                {
+                    "_category": "TypeA",
+                    "_errors": []
+                },
+                {
+                    "_category": "TypeA",
+                    "_errors": []
+                },
+                {
+                    "_category": "TypeA",
+                    "_errors": []
+                }
+            ],
+            "runs": 30,
+            "semi_finite": [],
+            "total_cost": 0,
+            "type": "end",
+            "uid": "1588161933.811946",
+            "valid_resource_count": 30
+        }
+    ],
+    "time": 3600
+}

@@ -1,5 +1,5 @@
 from abc import abstractmethod
-from suppy.utils.stats_constants import ACTIVE_TIME, HAS_CALIBRATION, IDLE_TIME, NAME, RUNS, SEMI_FINITE, TOTAL_ACTIVE_COST
+from suppy.utils.stats_constants import ACTIVE_TIME, HAS_CALIBRATION, IDLE_TIME, NAME, RUNS, SEMI_FINITE, TOTAL_ACTIVE_COST, UID
 from suppy.models.resource import Resource
 from suppy.simulator.notification import Notification
 from suppy.simulator.atomics.atomic_states import AtomicStates
@@ -30,6 +30,7 @@ class Atomic:
         stats[TOTAL_ACTIVE_COST] = self._runs * self._cost
         stats[SEMI_FINITE] = self._get_semi_finite()
         stats[RUNS] = self._runs
+        stats[UID] = self._uid
         return stats
 
     def _get_active_time(self) -> int:

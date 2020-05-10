@@ -11,5 +11,5 @@ class MenuBar:
         fileMenu.add_command(label = "Open existing project", command=window_controller._load_existing_project)
         menuBar.add_cascade(menu = fileMenu, label = "Project")
         menuBar.add_command(label = "Save", command=window_controller.save_handler)
-        menuBar.add_command(label = "Run")
+        menuBar.add_command(label = "Run", command=window_controller.do_run)
         window.config(menu=menuBar)

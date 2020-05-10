@@ -1,5 +1,6 @@
 import json
 from pathlib import Path
+from suppy.app.simulation_facade import SimulationFacade
 from suppy.app.line import Line
 from suppy.app.node import Node
 from typing import Any, Dict, List
@@ -98,3 +99,12 @@ class DesignView:
         self._is_project_loaded = False
         self._project_name = None
         self._attach_design_canvas()
+
+    def do_run(self):
+        nodes, lines = self._design_canvas_controller.get_info()
+        sf = SimulationFacade()
+        sf.load_atomics_from_nodes(nodes)
+        sf.load_resource_streams_from_lines(lines)
+        sf.perform_analysis(self._project_name)
+
+        

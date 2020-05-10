@@ -6,10 +6,10 @@
                 "has_input_port": false,
                 "has_output_port": true,
                 "input_id": -1,
-                "label_id": 7,
+                "label_id": 3,
                 "multiple_inputs": false,
                 "multiple_outputs": false,
-                "output_id": 6,
+                "output_id": 2,
                 "position": {
                     "_x": 280.0,
                     "_y": 180.0
@@ -22,17 +22,17 @@
                 "secondary_output_id": -1,
                 "tag_id": "1588158250.169575",
                 "type": "start",
-                "view_id": "5"
+                "view_id": "1"
             },
-            "origin_port_id": 6,
+            "origin_port_id": 2,
             "target_node": {
                 "has_input_port": true,
                 "has_output_port": true,
-                "input_id": 9,
-                "label_id": 11,
+                "input_id": 5,
+                "label_id": 7,
                 "multiple_inputs": true,
                 "multiple_outputs": false,
-                "output_id": 10,
+                "output_id": 6,
                 "position": {
                     "_x": 464.0,
                     "_y": 194.0
@@ -49,64 +49,10 @@
                 "secondary_output_id": -1,
                 "tag_id": "1588158251.050637",
                 "type": "custom",
-                "view_id": "8"
+                "view_id": "4"
             },
-            "target_port_id": 9,
-            "view_id": 68
-        },
-        {
-            "is_from_secondary": false,
-            "origin_node": {
-                "has_input_port": true,
-                "has_output_port": true,
-                "input_id": 9,
-                "label_id": 11,
-                "multiple_inputs": true,
-                "multiple_outputs": false,
-                "output_id": 10,
-                "position": {
-                    "_x": 464.0,
-                    "_y": 194.0
-                },
-                "properties": {
-                    "calibration_cost": 200,
-                    "calibration_duration": 400,
-                    "calibration_steps": 30,
-                    "cost": 25,
-                    "duration": 100,
-                    "name": "Transform",
-                    "output_type": "TypeB"
-                },
-                "secondary_output_id": -1,
-                "tag_id": "1588158251.050637",
-                "type": "custom",
-                "view_id": "8"
-            },
-            "origin_port_id": 10,
-            "target_node": {
-                "has_input_port": true,
-                "has_output_port": true,
-                "input_id": 13,
-                "label_id": 15,
-                "multiple_inputs": false,
-                "multiple_outputs": false,
-                "output_id": 14,
-                "position": {
-                    "_x": 646.0,
-                    "_y": 185.0
-                },
-                "properties": {
-                    "cost": 50,
-                    "duration": 120,
-                    "name": "Transport"
-                },
-                "secondary_output_id": -1,
-                "tag_id": "1588158252.193611",
-                "type": "transport",
-                "view_id": "12"
-            },
-            "target_port_id": 13,
-            "view_id": 119
+            "target_port_id": 5,
+            "view_id": 44
         },
         {
             "is_from_secondary": false,
@@ -119,17 +65,16 @@
                 "multiple_outputs": false,
                 "output_id": 14,
                 "position": {
-                    "_x": 646.0,
-                    "_y": 185.0
+                    "_x": 743.0,
+                    "_y": 219.0
                 },
                 "properties": {
-                    "cost": 50,
-                    "duration": 120,
-                    "name": "Transport"
+                    "capacity": 20,
+                    "name": "Buffer"
                 },
                 "secondary_output_id": -1,
-                "tag_id": "1588158252.193611",
-                "type": "transport",
+                "tag_id": "1588158253.194242",
+                "type": "buffer",
                 "view_id": "12"
             },
             "origin_port_id": 14,
@@ -138,24 +83,23 @@
                 "has_output_port": true,
                 "input_id": 17,
                 "label_id": 19,
-                "multiple_inputs": false,
+                "multiple_inputs": true,
                 "multiple_outputs": false,
                 "output_id": 18,
                 "position": {
-                    "_x": 800.0,
-                    "_y": 247.0
+                    "_x": 944.0,
+                    "_y": 274.0
                 },
                 "properties": {
-                    "capacity": 20,
-                    "name": "Buffer"
+                    "name": "Confluence"
                 },
                 "secondary_output_id": -1,
-                "tag_id": "1588158253.194242",
-                "type": "buffer",
+                "tag_id": "1588158254.073597",
+                "type": "convergence",
                 "view_id": "16"
             },
             "target_port_id": 17,
-            "view_id": 159
+            "view_id": 474
         },
         {
             "is_from_secondary": false,
@@ -164,20 +108,19 @@
                 "has_output_port": true,
                 "input_id": 17,
                 "label_id": 19,
-                "multiple_inputs": false,
+                "multiple_inputs": true,
                 "multiple_outputs": false,
                 "output_id": 18,
                 "position": {
-                    "_x": 800.0,
-                    "_y": 247.0
+                    "_x": 944.0,
+                    "_y": 274.0
                 },
                 "properties": {
-                    "capacity": 20,
-                    "name": "Buffer"
+                    "name": "Confluence"
                 },
                 "secondary_output_id": -1,
-                "tag_id": "1588158253.194242",
-                "type": "buffer",
+                "tag_id": "1588158254.073597",
+                "type": "convergence",
                 "view_id": "16"
             },
             "origin_port_id": 18,
@@ -186,23 +129,180 @@
                 "has_output_port": true,
                 "input_id": 21,
                 "label_id": 23,
-                "multiple_inputs": true,
-                "multiple_outputs": false,
+                "multiple_inputs": false,
+                "multiple_outputs": true,
                 "output_id": 22,
                 "position": {
-                    "_x": 973.0,
-                    "_y": 245.0
+                    "_x": 1127.0,
+                    "_y": 307.0
+                },
+                "properties": {
+                    "name": "Divergence"
+                },
+                "secondary_output_id": -1,
+                "tag_id": "1588158256.553466",
+                "type": "DIVERGENCE",
+                "view_id": "20"
+            },
+            "target_port_id": 21,
+            "view_id": 475
+        },
+        {
+            "is_from_secondary": true,
+            "origin_node": {
+                "has_input_port": true,
+                "has_output_port": true,
+                "input_id": 25,
+                "label_id": 28,
+                "multiple_inputs": false,
+                "multiple_outputs": false,
+                "output_id": 26,
+                "position": {
+                    "_x": 1474.0,
+                    "_y": 291.0
+                },
+                "properties": {
+                    "calibration_cost": 200,
+                    "calibration_duration": 400,
+                    "calibration_steps": 30,
+                    "cost": 25,
+                    "duration": 100,
+                    "error_type": "ERR",
+                    "name": "Test Fixture",
+                    "test_rate": 2
+                },
+                "secondary_output_id": 27,
+                "tag_id": "1588158257.985637",
+                "type": "test",
+                "view_id": "24"
+            },
+            "origin_port_id": 27,
+            "target_node": {
+                "has_input_port": true,
+                "has_output_port": true,
+                "input_id": 30,
+                "label_id": 32,
+                "multiple_inputs": false,
+                "multiple_outputs": false,
+                "output_id": 31,
+                "position": {
+                    "_x": 1615.0,
+                    "_y": 422.0
+                },
+                "properties": {
+                    "calibration_cost": 200,
+                    "calibration_duration": 400,
+                    "calibration_steps": 30,
+                    "cost": 25,
+                    "duration": 100,
+                    "error_type": "ERR",
+                    "name": "Transform"
+                },
+                "secondary_output_id": -1,
+                "tag_id": "1588158259.241464",
+                "type": "repair",
+                "view_id": "29"
+            },
+            "target_port_id": 30,
+            "view_id": 49
+        },
+        {
+            "is_from_secondary": false,
+            "origin_node": {
+                "has_input_port": true,
+                "has_output_port": true,
+                "input_id": 41,
+                "label_id": 43,
+                "multiple_inputs": true,
+                "multiple_outputs": false,
+                "output_id": 42,
+                "position": {
+                    "_x": 1772.0,
+                    "_y": 238.0
                 },
                 "properties": {
                     "name": "Confluence"
                 },
                 "secondary_output_id": -1,
-                "tag_id": "1588158254.073597",
+                "tag_id": "1588158286.801523",
                 "type": "convergence",
-                "view_id": "20"
+                "view_id": "40"
             },
-            "target_port_id": 21,
-            "view_id": 197
+            "origin_port_id": 42,
+            "target_node": {
+                "has_input_port": true,
+                "has_output_port": false,
+                "input_id": 38,
+                "label_id": 39,
+                "multiple_inputs": false,
+                "multiple_outputs": false,
+                "output_id": -1,
+                "position": {
+                    "_x": 2196.0,
+                    "_y": 271.0
+                },
+                "properties": {
+                    "name": "Warehouse"
+                },
+                "secondary_output_id": -1,
+                "tag_id": "1588158261.649799",
+                "type": "end",
+                "view_id": "37"
+            },
+            "target_port_id": 38,
+            "view_id": 484
+        },
+        {
+            "is_from_secondary": false,
+            "origin_node": {
+                "has_input_port": true,
+                "has_output_port": true,
+                "input_id": 30,
+                "label_id": 32,
+                "multiple_inputs": false,
+                "multiple_outputs": false,
+                "output_id": 31,
+                "position": {
+                    "_x": 1615.0,
+                    "_y": 422.0
+                },
+                "properties": {
+                    "calibration_cost": 200,
+                    "calibration_duration": 400,
+                    "calibration_steps": 30,
+                    "cost": 25,
+                    "duration": 100,
+                    "error_type": "ERR",
+                    "name": "Transform"
+                },
+                "secondary_output_id": -1,
+                "tag_id": "1588158259.241464",
+                "type": "repair",
+                "view_id": "29"
+            },
+            "origin_port_id": 31,
+            "target_node": {
+                "has_input_port": true,
+                "has_output_port": true,
+                "input_id": 41,
+                "label_id": 43,
+                "multiple_inputs": true,
+                "multiple_outputs": false,
+                "output_id": 42,
+                "position": {
+                    "_x": 1772.0,
+                    "_y": 238.0
+                },
+                "properties": {
+                    "name": "Confluence"
+                },
+                "secondary_output_id": -1,
+                "tag_id": "1588158286.801523",
+                "type": "convergence",
+                "view_id": "40"
+            },
+            "target_port_id": 41,
+            "view_id": 51
         },
         {
             "is_from_secondary": false,
@@ -211,305 +311,46 @@
                 "has_output_port": true,
                 "input_id": 21,
                 "label_id": 23,
-                "multiple_inputs": true,
-                "multiple_outputs": false,
+                "multiple_inputs": false,
+                "multiple_outputs": true,
                 "output_id": 22,
                 "position": {
-                    "_x": 973.0,
-                    "_y": 245.0
+                    "_x": 1127.0,
+                    "_y": 307.0
                 },
                 "properties": {
-                    "name": "Confluence"
+                    "name": "Divergence"
                 },
                 "secondary_output_id": -1,
-                "tag_id": "1588158254.073597",
-                "type": "convergence",
+                "tag_id": "1588158256.553466",
+                "type": "DIVERGENCE",
                 "view_id": "20"
             },
             "origin_port_id": 22,
             "target_node": {
                 "has_input_port": true,
                 "has_output_port": true,
-                "input_id": 25,
-                "label_id": 27,
-                "multiple_inputs": false,
-                "multiple_outputs": true,
-                "output_id": 26,
-                "position": {
-                    "_x": 1127.0,
-                    "_y": 307.0
-                },
-                "properties": {
-                    "name": "Divergence"
-                },
-                "secondary_output_id": -1,
-                "tag_id": "1588158256.553466",
-                "type": "DIVERGENCE",
-                "view_id": "24"
-            },
-            "target_port_id": 25,
-            "view_id": 223
-        },
-        {
-            "is_from_secondary": false,
-            "origin_node": {
-                "has_input_port": true,
-                "has_output_port": true,
-                "input_id": 25,
-                "label_id": 27,
-                "multiple_inputs": false,
-                "multiple_outputs": true,
-                "output_id": 26,
-                "position": {
-                    "_x": 1127.0,
-                    "_y": 307.0
-                },
-                "properties": {
-                    "name": "Divergence"
-                },
-                "secondary_output_id": -1,
-                "tag_id": "1588158256.553466",
-                "type": "DIVERGENCE",
-                "view_id": "24"
-            },
-            "origin_port_id": 26,
-            "target_node": {
-                "has_input_port": true,
-                "has_output_port": true,
-                "input_id": 29,
-                "label_id": 32,
-                "multiple_inputs": false,
-                "multiple_outputs": false,
-                "output_id": 30,
-                "position": {
-                    "_x": 1276.0,
-                    "_y": 303.0
-                },
-                "properties": {
-                    "calibration_cost": 200,
-                    "calibration_duration": 400,
-                    "calibration_steps": 30,
-                    "cost": 25,
-                    "duration": 100,
-                    "error_type": "ERR",
-                    "name": "Test Fixture",
-                    "test_rate": 2
-                },
-                "secondary_output_id": 31,
-                "tag_id": "1588158257.985637",
-                "type": "test",
-                "view_id": "28"
-            },
-            "target_port_id": 29,
-            "view_id": 243
-        },
-        {
-            "is_from_secondary": true,
-            "origin_node": {
-                "has_input_port": true,
-                "has_output_port": true,
-                "input_id": 29,
-                "label_id": 32,
-                "multiple_inputs": false,
-                "multiple_outputs": false,
-                "output_id": 30,
-                "position": {
-                    "_x": 1276.0,
-                    "_y": 303.0
-                },
-                "properties": {
-                    "calibration_cost": 200,
-                    "calibration_duration": 400,
-                    "calibration_steps": 30,
-                    "cost": 25,
-                    "duration": 100,
-                    "error_type": "ERR",
-                    "name": "Test Fixture",
-                    "test_rate": 2
-                },
-                "secondary_output_id": 31,
-                "tag_id": "1588158257.985637",
-                "type": "test",
-                "view_id": "28"
-            },
-            "origin_port_id": 31,
-            "target_node": {
-                "has_input_port": true,
-                "has_output_port": true,
                 "input_id": 34,
                 "label_id": 36,
                 "multiple_inputs": false,
                 "multiple_outputs": false,
                 "output_id": 35,
                 "position": {
-                    "_x": 1412.0,
-                    "_y": 479.0
+                    "_x": 1307.0,
+                    "_y": 292.0
                 },
                 "properties": {
-                    "calibration_cost": 200,
-                    "calibration_duration": 400,
-                    "calibration_steps": 30,
-                    "cost": 25,
-                    "duration": 100,
+                    "error_rate": 0.5,
                     "error_type": "ERR",
-                    "name": "Transform"
+                    "name": "Error generator"
                 },
                 "secondary_output_id": -1,
-                "tag_id": "1588158259.241464",
-                "type": "repair",
+                "tag_id": "1588158260.417369",
+                "type": "random_error",
                 "view_id": "33"
             },
             "target_port_id": 34,
-            "view_id": 310
-        },
-        {
-            "is_from_secondary": false,
-            "origin_node": {
-                "has_input_port": true,
-                "has_output_port": true,
-                "input_id": 29,
-                "label_id": 32,
-                "multiple_inputs": false,
-                "multiple_outputs": false,
-                "output_id": 30,
-                "position": {
-                    "_x": 1276.0,
-                    "_y": 303.0
-                },
-                "properties": {
-                    "calibration_cost": 200,
-                    "calibration_duration": 400,
-                    "calibration_steps": 30,
-                    "cost": 25,
-                    "duration": 100,
-                    "error_type": "ERR",
-                    "name": "Test Fixture",
-                    "test_rate": 2
-                },
-                "secondary_output_id": 31,
-                "tag_id": "1588158257.985637",
-                "type": "test",
-                "view_id": "28"
-            },
-            "origin_port_id": 30,
-            "target_node": {
-                "has_input_port": true,
-                "has_output_port": true,
-                "input_id": 38,
-                "label_id": 40,
-                "multiple_inputs": false,
-                "multiple_outputs": false,
-                "output_id": 39,
-                "position": {
-                    "_x": 1477.0,
-                    "_y": 310.0
-                },
-                "properties": {
-                    "error_rate": 0.5,
-                    "error_type": "ERR",
-                    "name": "Error generator"
-                },
-                "secondary_output_id": -1,
-                "tag_id": "1588158260.417369",
-                "type": "random_error",
-                "view_id": "37"
-            },
-            "target_port_id": 38,
-            "view_id": 339
-        },
-        {
-            "is_from_secondary": false,
-            "origin_node": {
-                "has_input_port": true,
-                "has_output_port": true,
-                "input_id": 38,
-                "label_id": 40,
-                "multiple_inputs": false,
-                "multiple_outputs": false,
-                "output_id": 39,
-                "position": {
-                    "_x": 1477.0,
-                    "_y": 310.0
-                },
-                "properties": {
-                    "error_rate": 0.5,
-                    "error_type": "ERR",
-                    "name": "Error generator"
-                },
-                "secondary_output_id": -1,
-                "tag_id": "1588158260.417369",
-                "type": "random_error",
-                "view_id": "37"
-            },
-            "origin_port_id": 39,
-            "target_node": {
-                "has_input_port": true,
-                "has_output_port": true,
-                "input_id": 312,
-                "label_id": 314,
-                "multiple_inputs": true,
-                "multiple_outputs": false,
-                "output_id": 313,
-                "position": {
-                    "_x": 1638.0,
-                    "_y": 392.0
-                },
-                "properties": {
-                    "name": "Confluence"
-                },
-                "secondary_output_id": -1,
-                "tag_id": "1588158286.801523",
-                "type": "convergence",
-                "view_id": "311"
-            },
-            "target_port_id": 312,
-            "view_id": 551
-        },
-        {
-            "is_from_secondary": false,
-            "origin_node": {
-                "has_input_port": true,
-                "has_output_port": true,
-                "input_id": 312,
-                "label_id": 314,
-                "multiple_inputs": true,
-                "multiple_outputs": false,
-                "output_id": 313,
-                "position": {
-                    "_x": 1638.0,
-                    "_y": 392.0
-                },
-                "properties": {
-                    "name": "Confluence"
-                },
-                "secondary_output_id": -1,
-                "tag_id": "1588158286.801523",
-                "type": "convergence",
-                "view_id": "311"
-            },
-            "origin_port_id": 313,
-            "target_node": {
-                "has_input_port": true,
-                "has_output_port": false,
-                "input_id": 42,
-                "label_id": 43,
-                "multiple_inputs": false,
-                "multiple_outputs": false,
-                "output_id": -1,
-                "position": {
-                    "_x": 1817.0,
-                    "_y": 389.0
-                },
-                "properties": {
-                    "name": "Warehouse"
-                },
-                "secondary_output_id": -1,
-                "tag_id": "1588158261.649799",
-                "type": "end",
-                "view_id": "41"
-            },
-            "target_port_id": 42,
-            "view_id": 571
+            "view_id": 52
         },
         {
             "is_from_secondary": false,
@@ -522,35 +363,91 @@
                 "multiple_outputs": false,
                 "output_id": 35,
                 "position": {
-                    "_x": 1412.0,
-                    "_y": 479.0
+                    "_x": 1307.0,
+                    "_y": 292.0
                 },
                 "properties": {
-                    "calibration_cost": 200,
-                    "calibration_duration": 400,
-                    "calibration_steps": 30,
-                    "cost": 25,
-                    "duration": 100,
+                    "error_rate": 0.5,
                     "error_type": "ERR",
-                    "name": "Transform"
+                    "name": "Error generator"
                 },
                 "secondary_output_id": -1,
-                "tag_id": "1588158259.241464",
-                "type": "repair",
+                "tag_id": "1588158260.417369",
+                "type": "random_error",
                 "view_id": "33"
             },
             "origin_port_id": 35,
             "target_node": {
                 "has_input_port": true,
                 "has_output_port": true,
-                "input_id": 312,
-                "label_id": 314,
+                "input_id": 25,
+                "label_id": 28,
+                "multiple_inputs": false,
+                "multiple_outputs": false,
+                "output_id": 26,
+                "position": {
+                    "_x": 1474.0,
+                    "_y": 291.0
+                },
+                "properties": {
+                    "calibration_cost": 200,
+                    "calibration_duration": 400,
+                    "calibration_steps": 30,
+                    "cost": 25,
+                    "duration": 100,
+                    "error_type": "ERR",
+                    "name": "Test Fixture",
+                    "test_rate": 2
+                },
+                "secondary_output_id": 27,
+                "tag_id": "1588158257.985637",
+                "type": "test",
+                "view_id": "24"
+            },
+            "target_port_id": 25,
+            "view_id": 53
+        },
+        {
+            "is_from_secondary": false,
+            "origin_node": {
+                "has_input_port": true,
+                "has_output_port": true,
+                "input_id": 25,
+                "label_id": 28,
+                "multiple_inputs": false,
+                "multiple_outputs": false,
+                "output_id": 26,
+                "position": {
+                    "_x": 1474.0,
+                    "_y": 291.0
+                },
+                "properties": {
+                    "calibration_cost": 200,
+                    "calibration_duration": 400,
+                    "calibration_steps": 30,
+                    "cost": 25,
+                    "duration": 100,
+                    "error_type": "ERR",
+                    "name": "Test Fixture",
+                    "test_rate": 2
+                },
+                "secondary_output_id": 27,
+                "tag_id": "1588158257.985637",
+                "type": "test",
+                "view_id": "24"
+            },
+            "origin_port_id": 26,
+            "target_node": {
+                "has_input_port": true,
+                "has_output_port": true,
+                "input_id": 41,
+                "label_id": 43,
                 "multiple_inputs": true,
                 "multiple_outputs": false,
-                "output_id": 313,
+                "output_id": 42,
                 "position": {
-                    "_x": 1638.0,
-                    "_y": 392.0
+                    "_x": 1772.0,
+                    "_y": 238.0
                 },
                 "properties": {
                     "name": "Confluence"
@@ -558,10 +455,63 @@
                 "secondary_output_id": -1,
                 "tag_id": "1588158286.801523",
                 "type": "convergence",
-                "view_id": "311"
+                "view_id": "40"
             },
-            "target_port_id": 312,
-            "view_id": 552
+            "target_port_id": 41,
+            "view_id": 54
+        },
+        {
+            "is_from_secondary": false,
+            "origin_node": {
+                "has_input_port": true,
+                "has_output_port": true,
+                "input_id": 5,
+                "label_id": 7,
+                "multiple_inputs": true,
+                "multiple_outputs": false,
+                "output_id": 6,
+                "position": {
+                    "_x": 464.0,
+                    "_y": 194.0
+                },
+                "properties": {
+                    "calibration_cost": 200,
+                    "calibration_duration": 400,
+                    "calibration_steps": 30,
+                    "cost": 25,
+                    "duration": 100,
+                    "name": "Transform",
+                    "output_type": "TypeB"
+                },
+                "secondary_output_id": -1,
+                "tag_id": "1588158251.050637",
+                "type": "custom",
+                "view_id": "4"
+            },
+            "origin_port_id": 6,
+            "target_node": {
+                "has_input_port": true,
+                "has_output_port": true,
+                "input_id": 13,
+                "label_id": 15,
+                "multiple_inputs": false,
+                "multiple_outputs": false,
+                "output_id": 14,
+                "position": {
+                    "_x": 743.0,
+                    "_y": 219.0
+                },
+                "properties": {
+                    "capacity": 20,
+                    "name": "Buffer"
+                },
+                "secondary_output_id": -1,
+                "tag_id": "1588158253.194242",
+                "type": "buffer",
+                "view_id": "12"
+            },
+            "target_port_id": 13,
+            "view_id": 466
         }
     ],
     "nodes": [
@@ -569,10 +519,10 @@
             "has_input_port": false,
             "has_output_port": true,
             "input_id": -1,
-            "label_id": 7,
+            "label_id": 3,
             "multiple_inputs": false,
             "multiple_outputs": false,
-            "output_id": 6,
+            "output_id": 2,
             "position": {
                 "_x": 280.0,
                 "_y": 180.0
@@ -585,16 +535,16 @@
             "secondary_output_id": -1,
             "tag_id": "1588158250.169575",
             "type": "start",
-            "view_id": "5"
+            "view_id": "1"
         },
         {
             "has_input_port": true,
             "has_output_port": true,
-            "input_id": 9,
-            "label_id": 11,
+            "input_id": 5,
+            "label_id": 7,
             "multiple_inputs": true,
             "multiple_outputs": false,
-            "output_id": 10,
+            "output_id": 6,
             "position": {
                 "_x": 464.0,
                 "_y": 194.0
@@ -611,7 +561,7 @@
             "secondary_output_id": -1,
             "tag_id": "1588158251.050637",
             "type": "custom",
-            "view_id": "8"
+            "view_id": "4"
         },
         {
             "has_input_port": true,
@@ -622,30 +572,8 @@
             "multiple_outputs": false,
             "output_id": 14,
             "position": {
-                "_x": 646.0,
-                "_y": 185.0
-            },
-            "properties": {
-                "cost": 50,
-                "duration": 120,
-                "name": "Transport"
-            },
-            "secondary_output_id": -1,
-            "tag_id": "1588158252.193611",
-            "type": "transport",
-            "view_id": "12"
-        },
-        {
-            "has_input_port": true,
-            "has_output_port": true,
-            "input_id": 17,
-            "label_id": 19,
-            "multiple_inputs": false,
-            "multiple_outputs": false,
-            "output_id": 18,
-            "position": {
-                "_x": 800.0,
-                "_y": 247.0
+                "_x": 743.0,
+                "_y": 219.0
             },
             "properties": {
                 "capacity": 20,
@@ -654,19 +582,19 @@
             "secondary_output_id": -1,
             "tag_id": "1588158253.194242",
             "type": "buffer",
-            "view_id": "16"
+            "view_id": "12"
         },
         {
             "has_input_port": true,
             "has_output_port": true,
-            "input_id": 21,
-            "label_id": 23,
+            "input_id": 17,
+            "label_id": 19,
             "multiple_inputs": true,
             "multiple_outputs": false,
-            "output_id": 22,
+            "output_id": 18,
             "position": {
-                "_x": 973.0,
-                "_y": 245.0
+                "_x": 944.0,
+                "_y": 274.0
             },
             "properties": {
                 "name": "Confluence"
@@ -674,16 +602,16 @@
             "secondary_output_id": -1,
             "tag_id": "1588158254.073597",
             "type": "convergence",
-            "view_id": "20"
+            "view_id": "16"
         },
         {
             "has_input_port": true,
             "has_output_port": true,
-            "input_id": 25,
-            "label_id": 27,
+            "input_id": 21,
+            "label_id": 23,
             "multiple_inputs": false,
             "multiple_outputs": true,
-            "output_id": 26,
+            "output_id": 22,
             "position": {
                 "_x": 1127.0,
                 "_y": 307.0
@@ -694,19 +622,19 @@
             "secondary_output_id": -1,
             "tag_id": "1588158256.553466",
             "type": "DIVERGENCE",
-            "view_id": "24"
+            "view_id": "20"
         },
         {
             "has_input_port": true,
             "has_output_port": true,
-            "input_id": 29,
-            "label_id": 32,
+            "input_id": 25,
+            "label_id": 28,
             "multiple_inputs": false,
             "multiple_outputs": false,
-            "output_id": 30,
+            "output_id": 26,
             "position": {
-                "_x": 1276.0,
-                "_y": 303.0
+                "_x": 1474.0,
+                "_y": 291.0
             },
             "properties": {
                 "calibration_cost": 200,
@@ -718,22 +646,22 @@
                 "name": "Test Fixture",
                 "test_rate": 2
             },
-            "secondary_output_id": 31,
+            "secondary_output_id": 27,
             "tag_id": "1588158257.985637",
             "type": "test",
-            "view_id": "28"
+            "view_id": "24"
         },
         {
             "has_input_port": true,
             "has_output_port": true,
-            "input_id": 34,
-            "label_id": 36,
+            "input_id": 30,
+            "label_id": 32,
             "multiple_inputs": false,
             "multiple_outputs": false,
-            "output_id": 35,
+            "output_id": 31,
             "position": {
-                "_x": 1412.0,
-                "_y": 479.0
+                "_x": 1615.0,
+                "_y": 422.0
             },
             "properties": {
                 "calibration_cost": 200,
@@ -747,19 +675,19 @@
             "secondary_output_id": -1,
             "tag_id": "1588158259.241464",
             "type": "repair",
-            "view_id": "33"
+            "view_id": "29"
         },
         {
             "has_input_port": true,
             "has_output_port": true,
-            "input_id": 38,
-            "label_id": 40,
+            "input_id": 34,
+            "label_id": 36,
             "multiple_inputs": false,
             "multiple_outputs": false,
-            "output_id": 39,
+            "output_id": 35,
             "position": {
-                "_x": 1477.0,
-                "_y": 310.0
+                "_x": 1307.0,
+                "_y": 292.0
             },
             "properties": {
                 "error_rate": 0.5,
@@ -769,19 +697,19 @@
             "secondary_output_id": -1,
             "tag_id": "1588158260.417369",
             "type": "random_error",
-            "view_id": "37"
+            "view_id": "33"
         },
         {
             "has_input_port": true,
             "has_output_port": false,
-            "input_id": 42,
-            "label_id": 43,
+            "input_id": 38,
+            "label_id": 39,
             "multiple_inputs": false,
             "multiple_outputs": false,
             "output_id": -1,
             "position": {
-                "_x": 1817.0,
-                "_y": 389.0
+                "_x": 2196.0,
+                "_y": 271.0
             },
             "properties": {
                 "name": "Warehouse"
@@ -789,19 +717,19 @@
             "secondary_output_id": -1,
             "tag_id": "1588158261.649799",
             "type": "end",
-            "view_id": "41"
+            "view_id": "37"
         },
         {
             "has_input_port": true,
             "has_output_port": true,
-            "input_id": 312,
-            "label_id": 314,
+            "input_id": 41,
+            "label_id": 43,
             "multiple_inputs": true,
             "multiple_outputs": false,
-            "output_id": 313,
+            "output_id": 42,
             "position": {
-                "_x": 1638.0,
-                "_y": 392.0
+                "_x": 1772.0,
+                "_y": 238.0
             },
             "properties": {
                 "name": "Confluence"
@@ -809,7 +737,7 @@
             "secondary_output_id": -1,
             "tag_id": "1588158286.801523",
             "type": "convergence",
-            "view_id": "311"
+            "view_id": "40"
         }
     ]
 }

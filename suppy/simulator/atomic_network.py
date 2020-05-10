@@ -1,5 +1,5 @@
 from suppy.simulator.atomics.atomic import Atomic
-from typing import Dict, List, Set
+from typing import Any, Dict, List, Set
 
 
 class AtomicNetwork:
@@ -13,6 +13,15 @@ class AtomicNetwork:
 
     def mark_as_start(self, atomic_uid: str) -> None:
         self._start_uids.add(atomic_uid)
+
+    def get_atomic_by_uid(self, atomic_uid: str) -> Atomic:
+        return self._atomics[atomic_uid]
+
+    def get_stats(self) -> List[Dict[str, Any]]:
+        stats = []
+        for _, atomic in self._atomics.items():
+            stats.append(atomic.get_stats())
+        return stats
 
     @property
     def start_atomics(self) -> List[Atomic]:
