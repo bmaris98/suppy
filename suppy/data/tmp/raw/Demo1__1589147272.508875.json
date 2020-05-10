@@ -1,0 +1,1040 @@
+{
+    "project_name": "Demo1",
+    "stats": [
+        {
+            "active_time": 0,
+            "has_calibration": false,
+            "idle_time": 55120000,
+            "name": "Aluminiu",
+            "not_used_resources": 0,
+            "resource_count": 30,
+            "resource_type": "Lingou Alu",
+            "runs": 30,
+            "semi_finite": [],
+            "total_cost": 0,
+            "type": "start",
+            "uid": "1589144228.330096"
+        },
+        {
+            "active_time": 0,
+            "has_calibration": false,
+            "idle_time": 55120000,
+            "name": "Manere",
+            "not_used_resources": 0,
+            "resource_count": 30,
+            "resource_type": "Maner",
+            "runs": 30,
+            "semi_finite": [],
+            "total_cost": 0,
+            "type": "start",
+            "uid": "1589144230.041849"
+        },
+        {
+            "active_time": 0,
+            "has_calibration": false,
+            "idle_time": 55120000,
+            "name": "Nituri",
+            "not_used_resources": 0,
+            "resource_count": 30,
+            "resource_type": "Nit",
+            "runs": 30,
+            "semi_finite": [],
+            "total_cost": 0,
+            "type": "start",
+            "uid": "1589144348.265267"
+        },
+        {
+            "active_time": 3600,
+            "has_calibration": false,
+            "idle_time": 55116400,
+            "name": "Banda Transportoare",
+            "runs": 30,
+            "semi_finite": [],
+            "total_cost": 30,
+            "type": "transport",
+            "uid": "1589144359.930066"
+        },
+        {
+            "active_time": 3600000,
+            "calibration_count": 0,
+            "calibration_left": 9969,
+            "calibration_time": 0,
+            "has_calibration": true,
+            "idle_time": 51520000,
+            "name": "Masina Injectie",
+            "runs": 30,
+            "semi_finite": [],
+            "total_calibration_cost": 0,
+            "total_cost": 30,
+            "type": "custom",
+            "uid": "1589144397.041948"
+        },
+        {
+            "active_time": 3600,
+            "has_calibration": false,
+            "idle_time": 55116400,
+            "name": "Brat Robot 1",
+            "runs": 30,
+            "semi_finite": [],
+            "total_cost": 0,
+            "type": "transport",
+            "uid": "1589144527.161676"
+        },
+        {
+            "active_time": 300000,
+            "calibration_count": 1,
+            "calibration_left": 10,
+            "calibration_time": 1200000,
+            "has_calibration": true,
+            "idle_time": 53620000,
+            "name": "Masina de stantat",
+            "runs": 30,
+            "semi_finite": [],
+            "total_calibration_cost": 30,
+            "total_cost": 90,
+            "type": "custom",
+            "uid": "1589144540.769882"
+        },
+        {
+            "active_time": 0,
+            "has_calibration": false,
+            "idle_time": 55120000,
+            "name": "Nituri2",
+            "not_used_resources": 0,
+            "resource_count": 30,
+            "resource_type": "Nit",
+            "runs": 30,
+            "semi_finite": [],
+            "total_cost": 0,
+            "type": "start",
+            "uid": "1589144724.866438"
+        },
+        {
+            "active_time": 3120,
+            "has_calibration": false,
+            "idle_time": 55116880,
+            "name": "Brat Robot Q",
+            "runs": 26,
+            "semi_finite": [],
+            "total_cost": 26,
+            "type": "transport",
+            "uid": "1589144781.361851"
+        },
+        {
+            "active_time": 3000,
+            "calibration_count": 3,
+            "calibration_left": 6,
+            "calibration_time": 1200,
+            "has_calibration": true,
+            "idle_time": 55115800,
+            "name": "Nituri in maner",
+            "runs": 30,
+            "semi_finite": [],
+            "total_calibration_cost": 9,
+            "total_cost": 90,
+            "type": "custom",
+            "uid": "1589144797.576716"
+        },
+        {
+            "active_time": 560,
+            "has_calibration": false,
+            "idle_time": 55119440,
+            "name": "Brat robot",
+            "runs": 28,
+            "semi_finite": [
+                {
+                    "_category": "MANERE_CU_NIT",
+                    "_errors": []
+                },
+                {
+                    "_category": "MANERE_CU_NIT",
+                    "_errors": []
+                }
+            ],
+            "total_cost": 28,
+            "type": "transport",
+            "uid": "1589144833.569316"
+        },
+        {
+            "active_time": 2600,
+            "calibration_count": 1,
+            "calibration_left": 24,
+            "calibration_time": 1200000,
+            "has_calibration": true,
+            "idle_time": 53917400,
+            "name": "Masa asamblare finala",
+            "runs": 26,
+            "semi_finite": [],
+            "total_calibration_cost": 10,
+            "total_cost": 78,
+            "type": "custom",
+            "uid": "1589144839.081639"
+        },
+        {
+            "active_time": 0,
+            "capacity": 10,
+            "has_calibration": false,
+            "idle_time": 55120000,
+            "name": "Depozit intermediar",
+            "runs": 40,
+            "semi_finite": [
+                {
+                    "_category": "MANERE_CU_NIT",
+                    "_errors": []
+                },
+                {
+                    "_category": "MANERE_CU_NIT",
+                    "_errors": []
+                }
+            ],
+            "total_cost": 0,
+            "type": "buffer",
+            "uid": "1589144910.122335",
+            "was_full": true
+        },
+        {
+            "active_time": 0,
+            "has_calibration": false,
+            "idle_time": 55120000,
+            "name": "Erori fisura",
+            "runs": 30,
+            "semi_finite": [],
+            "total_cost": 0,
+            "type": "random_error",
+            "uid": "1589144939.937978"
+        },
+        {
+            "active_time": 0,
+            "has_calibration": false,
+            "idle_time": 55120000,
+            "name": "Etanseitate Nituire",
+            "runs": 26,
+            "semi_finite": [],
+            "total_cost": 0,
+            "type": "random_error",
+            "uid": "1589144941.266601"
+        },
+        {
+            "active_time": 3000,
+            "calibration_count": 3,
+            "calibration_left": 10,
+            "calibration_time": 180000,
+            "errors_found": 4,
+            "errors_missed": 0,
+            "has_calibration": true,
+            "idle_time": 54937000,
+            "name": "Test Fisura",
+            "runs": 30,
+            "semi_finite": [],
+            "total_calibration_cost": 15,
+            "total_cost": 30,
+            "type": "test",
+            "uid": "1589145031.994232",
+            "with_error_count": 4,
+            "without_error_count": 26
+        },
+        {
+            "active_time": 0,
+            "has_calibration": false,
+            "idle_time": 55120000,
+            "name": "Start + Err",
+            "runs": 30,
+            "semi_finite": [],
+            "total_cost": 0,
+            "type": "convergence",
+            "uid": "1589145058.450312"
+        },
+        {
+            "active_time": 26000,
+            "calibration_count": 1,
+            "calibration_left": 24,
+            "calibration_time": 40000,
+            "errors_found": 3,
+            "errors_missed": 0,
+            "has_calibration": true,
+            "idle_time": 55054000,
+            "name": "Test Etanseitate",
+            "runs": 26,
+            "semi_finite": [],
+            "total_calibration_cost": 7,
+            "total_cost": 52,
+            "type": "test",
+            "uid": "1589145267.074516",
+            "with_error_count": 3,
+            "without_error_count": 23
+        },
+        {
+            "active_time": 0,
+            "errors": {
+                "ETAN": 3
+            },
+            "has_calibration": false,
+            "idle_time": 55120000,
+            "name": "Depozit",
+            "resource_count": 56,
+            "resources": [
+                {
+                    "_category": "Nit",
+                    "_errors": []
+                },
+                {
+                    "_category": "Nit",
+                    "_errors": []
+                },
+                {
+                    "_category": "Nit",
+                    "_errors": []
+                },
+                {
+                    "_category": "ASAMBLAT",
+                    "_errors": []
+                },
+                {
+                    "_category": "ASAMBLAT",
+                    "_errors": [
+                        "ETAN"
+                    ]
+                },
+                {
+                    "_category": "ASAMBLAT",
+                    "_errors": []
+                },
+                {
+                    "_category": "ASAMBLAT",
+                    "_errors": []
+                },
+                {
+                    "_category": "ASAMBLAT",
+                    "_errors": []
+                },
+                {
+                    "_category": "ASAMBLAT",
+                    "_errors": []
+                },
+                {
+                    "_category": "ASAMBLAT",
+                    "_errors": []
+                },
+                {
+                    "_category": "ASAMBLAT",
+                    "_errors": []
+                },
+                {
+                    "_category": "ASAMBLAT",
+                    "_errors": []
+                },
+                {
+                    "_category": "ASAMBLAT",
+                    "_errors": []
+                },
+                {
+                    "_category": "ASAMBLAT",
+                    "_errors": []
+                },
+                {
+                    "_category": "ASAMBLAT",
+                    "_errors": []
+                },
+                {
+                    "_category": "ASAMBLAT",
+                    "_errors": []
+                },
+                {
+                    "_category": "ASAMBLAT",
+                    "_errors": []
+                },
+                {
+                    "_category": "ASAMBLAT",
+                    "_errors": []
+                },
+                {
+                    "_category": "ASAMBLAT",
+                    "_errors": []
+                },
+                {
+                    "_category": "ASAMBLAT",
+                    "_errors": []
+                },
+                {
+                    "_category": "ASAMBLAT",
+                    "_errors": []
+                },
+                {
+                    "_category": "ASAMBLAT",
+                    "_errors": []
+                },
+                {
+                    "_category": "ASAMBLAT",
+                    "_errors": [
+                        "ETAN"
+                    ]
+                },
+                {
+                    "_category": "ASAMBLAT",
+                    "_errors": [
+                        "ETAN"
+                    ]
+                },
+                {
+                    "_category": "ASAMBLAT",
+                    "_errors": []
+                },
+                {
+                    "_category": "ASAMBLAT",
+                    "_errors": []
+                },
+                {
+                    "_category": "ASAMBLAT",
+                    "_errors": []
+                },
+                {
+                    "_category": "ASAMBLAT",
+                    "_errors": []
+                },
+                {
+                    "_category": "ASAMBLAT",
+                    "_errors": []
+                },
+                {
+                    "_category": "Nit",
+                    "_errors": []
+                },
+                {
+                    "_category": "Nit",
+                    "_errors": []
+                },
+                {
+                    "_category": "Nit",
+                    "_errors": []
+                },
+                {
+                    "_category": "Nit",
+                    "_errors": []
+                },
+                {
+                    "_category": "Nit",
+                    "_errors": []
+                },
+                {
+                    "_category": "Nit",
+                    "_errors": []
+                },
+                {
+                    "_category": "Nit",
+                    "_errors": []
+                },
+                {
+                    "_category": "Nit",
+                    "_errors": []
+                },
+                {
+                    "_category": "Nit",
+                    "_errors": []
+                },
+                {
+                    "_category": "Nit",
+                    "_errors": []
+                },
+                {
+                    "_category": "Nit",
+                    "_errors": []
+                },
+                {
+                    "_category": "Nit",
+                    "_errors": []
+                },
+                {
+                    "_category": "Nit",
+                    "_errors": []
+                },
+                {
+                    "_category": "Nit",
+                    "_errors": []
+                },
+                {
+                    "_category": "Nit",
+                    "_errors": []
+                },
+                {
+                    "_category": "Nit",
+                    "_errors": []
+                },
+                {
+                    "_category": "Nit",
+                    "_errors": []
+                },
+                {
+                    "_category": "Nit",
+                    "_errors": []
+                },
+                {
+                    "_category": "Nit",
+                    "_errors": []
+                },
+                {
+                    "_category": "Nit",
+                    "_errors": []
+                },
+                {
+                    "_category": "Nit",
+                    "_errors": []
+                },
+                {
+                    "_category": "Nit",
+                    "_errors": []
+                },
+                {
+                    "_category": "Nit",
+                    "_errors": []
+                },
+                {
+                    "_category": "Nit",
+                    "_errors": []
+                },
+                {
+                    "_category": "Nit",
+                    "_errors": []
+                },
+                {
+                    "_category": "Nit",
+                    "_errors": []
+                },
+                {
+                    "_category": "Nit",
+                    "_errors": []
+                }
+            ],
+            "runs": 56,
+            "semi_finite": [],
+            "total_cost": 0,
+            "type": "end",
+            "uid": "1589145380.146341",
+            "valid_resource_count": 53
+        },
+        {
+            "active_time": 53000000,
+            "calibration_count": 53,
+            "calibration_left": 1,
+            "calibration_time": 2120000,
+            "has_calibration": true,
+            "idle_time": 0,
+            "name": "Reparare Etan",
+            "non_repairs": 53,
+            "repairs": 0,
+            "runs": 53,
+            "semi_finite": [],
+            "total_calibration_cost": 265,
+            "total_cost": 1325,
+            "type": "repair",
+            "uid": "1589145827.618106"
+        },
+        {
+            "active_time": 0,
+            "has_calibration": false,
+            "idle_time": 55120000,
+            "name": "Nituri",
+            "not_used_resources": 0,
+            "resource_count": 30,
+            "resource_type": "Nit",
+            "runs": 30,
+            "semi_finite": [],
+            "total_cost": 0,
+            "type": "start",
+            "uid": "1589145839.066367"
+        },
+        {
+            "active_time": 0,
+            "has_calibration": false,
+            "idle_time": 55120000,
+            "name": "Confluence",
+            "runs": 53,
+            "semi_finite": [],
+            "total_cost": 0,
+            "type": "convergence",
+            "uid": "1589145900.322896"
+        },
+        {
+            "active_time": 0,
+            "has_calibration": false,
+            "idle_time": 55120000,
+            "name": "Confluence",
+            "runs": 56,
+            "semi_finite": [],
+            "total_cost": 0,
+            "type": "convergence",
+            "uid": "1589145970.490244"
+        },
+        {
+            "active_time": 0,
+            "errors": {
+                "FISURA": 4
+            },
+            "has_calibration": false,
+            "idle_time": 55120000,
+            "name": "Warehouse",
+            "resource_count": 4,
+            "resources": [
+                {
+                    "_category": "Stantate",
+                    "_errors": [
+                        "FISURA"
+                    ]
+                },
+                {
+                    "_category": "Stantate",
+                    "_errors": [
+                        "FISURA"
+                    ]
+                },
+                {
+                    "_category": "Stantate",
+                    "_errors": [
+                        "FISURA"
+                    ]
+                },
+                {
+                    "_category": "Stantate",
+                    "_errors": [
+                        "FISURA"
+                    ]
+                }
+            ],
+            "runs": 4,
+            "semi_finite": [],
+            "total_cost": 0,
+            "type": "end",
+            "uid": "1589147246.146602",
+            "valid_resource_count": 0
+        },
+        {
+            "active_time": 0,
+            "has_calibration": false,
+            "idle_time": 55120000,
+            "name": "Start",
+            "not_used_resources": 0,
+            "resource_count": 30,
+            "resource_type": "TypeA",
+            "runs": 30,
+            "semi_finite": [],
+            "total_cost": 0,
+            "type": "start",
+            "uid": "1589147254.259333"
+        },
+        {
+            "active_time": 0,
+            "has_calibration": false,
+            "idle_time": 55120000,
+            "name": "Start",
+            "not_used_resources": 0,
+            "resource_count": 30,
+            "resource_type": "TypeA",
+            "runs": 30,
+            "semi_finite": [],
+            "total_cost": 0,
+            "type": "start",
+            "uid": "1589147255.091249"
+        },
+        {
+            "active_time": 0,
+            "has_calibration": false,
+            "idle_time": 55120000,
+            "name": "Start",
+            "not_used_resources": 0,
+            "resource_count": 30,
+            "resource_type": "TypeA",
+            "runs": 30,
+            "semi_finite": [],
+            "total_cost": 0,
+            "type": "start",
+            "uid": "1589147256.07476"
+        },
+        {
+            "active_time": 0,
+            "has_calibration": false,
+            "idle_time": 55120000,
+            "name": "Confluence",
+            "runs": 90,
+            "semi_finite": [],
+            "total_cost": 0,
+            "type": "convergence",
+            "uid": "1589147258.042507"
+        },
+        {
+            "active_time": 0,
+            "errors": {},
+            "has_calibration": false,
+            "idle_time": 55120000,
+            "name": "Warehouse",
+            "resource_count": 90,
+            "resources": [
+                {
+                    "_category": "TypeA",
+                    "_errors": []
+                },
+                {
+                    "_category": "TypeA",
+                    "_errors": []
+                },
+                {
+                    "_category": "TypeA",
+                    "_errors": []
+                },
+                {
+                    "_category": "TypeA",
+                    "_errors": []
+                },
+                {
+                    "_category": "TypeA",
+                    "_errors": []
+                },
+                {
+                    "_category": "TypeA",
+                    "_errors": []
+                },
+                {
+                    "_category": "TypeA",
+                    "_errors": []
+                },
+                {
+                    "_category": "TypeA",
+                    "_errors": []
+                },
+                {
+                    "_category": "TypeA",
+                    "_errors": []
+                },
+                {
+                    "_category": "TypeA",
+                    "_errors": []
+                },
+                {
+                    "_category": "TypeA",
+                    "_errors": []
+                },
+                {
+                    "_category": "TypeA",
+                    "_errors": []
+                },
+                {
+                    "_category": "TypeA",
+                    "_errors": []
+                },
+                {
+                    "_category": "TypeA",
+                    "_errors": []
+                },
+                {
+                    "_category": "TypeA",
+                    "_errors": []
+                },
+                {
+                    "_category": "TypeA",
+                    "_errors": []
+                },
+                {
+                    "_category": "TypeA",
+                    "_errors": []
+                },
+                {
+                    "_category": "TypeA",
+                    "_errors": []
+                },
+                {
+                    "_category": "TypeA",
+                    "_errors": []
+                },
+                {
+                    "_category": "TypeA",
+                    "_errors": []
+                },
+                {
+                    "_category": "TypeA",
+                    "_errors": []
+                },
+                {
+                    "_category": "TypeA",
+                    "_errors": []
+                },
+                {
+                    "_category": "TypeA",
+                    "_errors": []
+                },
+                {
+                    "_category": "TypeA",
+                    "_errors": []
+                },
+                {
+                    "_category": "TypeA",
+                    "_errors": []
+                },
+                {
+                    "_category": "TypeA",
+                    "_errors": []
+                },
+                {
+                    "_category": "TypeA",
+                    "_errors": []
+                },
+                {
+                    "_category": "TypeA",
+                    "_errors": []
+                },
+                {
+                    "_category": "TypeA",
+                    "_errors": []
+                },
+                {
+                    "_category": "TypeA",
+                    "_errors": []
+                },
+                {
+                    "_category": "TypeA",
+                    "_errors": []
+                },
+                {
+                    "_category": "TypeA",
+                    "_errors": []
+                },
+                {
+                    "_category": "TypeA",
+                    "_errors": []
+                },
+                {
+                    "_category": "TypeA",
+                    "_errors": []
+                },
+                {
+                    "_category": "TypeA",
+                    "_errors": []
+                },
+                {
+                    "_category": "TypeA",
+                    "_errors": []
+                },
+                {
+                    "_category": "TypeA",
+                    "_errors": []
+                },
+                {
+                    "_category": "TypeA",
+                    "_errors": []
+                },
+                {
+                    "_category": "TypeA",
+                    "_errors": []
+                },
+                {
+                    "_category": "TypeA",
+                    "_errors": []
+                },
+                {
+                    "_category": "TypeA",
+                    "_errors": []
+                },
+                {
+                    "_category": "TypeA",
+                    "_errors": []
+                },
+                {
+                    "_category": "TypeA",
+                    "_errors": []
+                },
+                {
+                    "_category": "TypeA",
+                    "_errors": []
+                },
+                {
+                    "_category": "TypeA",
+                    "_errors": []
+                },
+                {
+                    "_category": "TypeA",
+                    "_errors": []
+                },
+                {
+                    "_category": "TypeA",
+                    "_errors": []
+                },
+                {
+                    "_category": "TypeA",
+                    "_errors": []
+                },
+                {
+                    "_category": "TypeA",
+                    "_errors": []
+                },
+                {
+                    "_category": "TypeA",
+                    "_errors": []
+                },
+                {
+                    "_category": "TypeA",
+                    "_errors": []
+                },
+                {
+                    "_category": "TypeA",
+                    "_errors": []
+                },
+                {
+                    "_category": "TypeA",
+                    "_errors": []
+                },
+                {
+                    "_category": "TypeA",
+                    "_errors": []
+                },
+                {
+                    "_category": "TypeA",
+                    "_errors": []
+                },
+                {
+                    "_category": "TypeA",
+                    "_errors": []
+                },
+                {
+                    "_category": "TypeA",
+                    "_errors": []
+                },
+                {
+                    "_category": "TypeA",
+                    "_errors": []
+                },
+                {
+                    "_category": "TypeA",
+                    "_errors": []
+                },
+                {
+                    "_category": "TypeA",
+                    "_errors": []
+                },
+                {
+                    "_category": "TypeA",
+                    "_errors": []
+                },
+                {
+                    "_category": "TypeA",
+                    "_errors": []
+                },
+                {
+                    "_category": "TypeA",
+                    "_errors": []
+                },
+                {
+                    "_category": "TypeA",
+                    "_errors": []
+                },
+                {
+                    "_category": "TypeA",
+                    "_errors": []
+                },
+                {
+                    "_category": "TypeA",
+                    "_errors": []
+                },
+                {
+                    "_category": "TypeA",
+                    "_errors": []
+                },
+                {
+                    "_category": "TypeA",
+                    "_errors": []
+                },
+                {
+                    "_category": "TypeA",
+                    "_errors": []
+                },
+                {
+                    "_category": "TypeA",
+                    "_errors": []
+                },
+                {
+                    "_category": "TypeA",
+                    "_errors": []
+                },
+                {
+                    "_category": "TypeA",
+                    "_errors": []
+                },
+                {
+                    "_category": "TypeA",
+                    "_errors": []
+                },
+                {
+                    "_category": "TypeA",
+                    "_errors": []
+                },
+                {
+                    "_category": "TypeA",
+                    "_errors": []
+                },
+                {
+                    "_category": "TypeA",
+                    "_errors": []
+                },
+                {
+                    "_category": "TypeA",
+                    "_errors": []
+                },
+                {
+                    "_category": "TypeA",
+                    "_errors": []
+                },
+                {
+                    "_category": "TypeA",
+                    "_errors": []
+                },
+                {
+                    "_category": "TypeA",
+                    "_errors": []
+                },
+                {
+                    "_category": "TypeA",
+                    "_errors": []
+                },
+                {
+                    "_category": "TypeA",
+                    "_errors": []
+                },
+                {
+                    "_category": "TypeA",
+                    "_errors": []
+                },
+                {
+                    "_category": "TypeA",
+                    "_errors": []
+                },
+                {
+                    "_category": "TypeA",
+                    "_errors": []
+                },
+                {
+                    "_category": "TypeA",
+                    "_errors": []
+                },
+                {
+                    "_category": "TypeA",
+                    "_errors": []
+                },
+                {
+                    "_category": "TypeA",
+                    "_errors": []
+                },
+                {
+                    "_category": "TypeA",
+                    "_errors": []
+                },
+                {
+                    "_category": "TypeA",
+                    "_errors": []
+                }
+            ],
+            "runs": 90,
+            "semi_finite": [],
+            "total_cost": 0,
+            "type": "end",
+            "uid": "1589147269.362888",
+            "valid_resource_count": 90
+        }
+    ],
+    "time": 55120000
+}

@@ -1,0 +1,571 @@
+{
+    "project_name": "Demo1",
+    "stats": [
+        {
+            "active_time": 0,
+            "has_calibration": false,
+            "idle_time": 50960000,
+            "name": "Aluminiu",
+            "not_used_resources": 0,
+            "resource_count": 20,
+            "resource_type": "Lingou Alu",
+            "runs": 20,
+            "semi_finite": [],
+            "total_cost": 0,
+            "type": "start",
+            "uid": "1589144228.330096"
+        },
+        {
+            "active_time": 0,
+            "has_calibration": false,
+            "idle_time": 50960000,
+            "name": "Manere",
+            "not_used_resources": 0,
+            "resource_count": 30,
+            "resource_type": "Maner",
+            "runs": 30,
+            "semi_finite": [],
+            "total_cost": 0,
+            "type": "start",
+            "uid": "1589144230.041849"
+        },
+        {
+            "active_time": 0,
+            "has_calibration": false,
+            "idle_time": 50960000,
+            "name": "Nituri",
+            "not_used_resources": 0,
+            "resource_count": 30,
+            "resource_type": "Nit",
+            "runs": 30,
+            "semi_finite": [],
+            "total_cost": 0,
+            "type": "start",
+            "uid": "1589144348.265267"
+        },
+        {
+            "active_time": 2640,
+            "has_calibration": false,
+            "idle_time": 50957360,
+            "name": "Banda Transportoare",
+            "runs": 22,
+            "semi_finite": [],
+            "total_cost": 22,
+            "type": "transport",
+            "uid": "1589144359.930066"
+        },
+        {
+            "active_time": 2640000,
+            "calibration_count": 0,
+            "calibration_left": 9977,
+            "calibration_time": 0,
+            "has_calibration": true,
+            "idle_time": 48320000,
+            "name": "Masina Injectie",
+            "runs": 22,
+            "semi_finite": [],
+            "total_calibration_cost": 0,
+            "total_cost": 22,
+            "type": "custom",
+            "uid": "1589144397.041948"
+        },
+        {
+            "active_time": 2640,
+            "has_calibration": false,
+            "idle_time": 50957360,
+            "name": "Brat Robot 1",
+            "runs": 22,
+            "semi_finite": [],
+            "total_cost": 0,
+            "type": "transport",
+            "uid": "1589144527.161676"
+        },
+        {
+            "active_time": 220000,
+            "calibration_count": 1,
+            "calibration_left": 18,
+            "calibration_time": 1200000,
+            "has_calibration": true,
+            "idle_time": 49540000,
+            "name": "Masina de stantat",
+            "runs": 22,
+            "semi_finite": [],
+            "total_calibration_cost": 30,
+            "total_cost": 66,
+            "type": "custom",
+            "uid": "1589144540.769882"
+        },
+        {
+            "active_time": 0,
+            "has_calibration": false,
+            "idle_time": 50960000,
+            "name": "Nituri2",
+            "not_used_resources": 0,
+            "resource_count": 30,
+            "resource_type": "Nit",
+            "runs": 30,
+            "semi_finite": [],
+            "total_cost": 0,
+            "type": "start",
+            "uid": "1589144724.866438"
+        },
+        {
+            "active_time": 2400,
+            "has_calibration": false,
+            "idle_time": 50957600,
+            "name": "Brat Robot Q",
+            "runs": 20,
+            "semi_finite": [],
+            "total_cost": 20,
+            "type": "transport",
+            "uid": "1589144781.361851"
+        },
+        {
+            "active_time": 3000,
+            "calibration_count": 3,
+            "calibration_left": 6,
+            "calibration_time": 1200,
+            "has_calibration": true,
+            "idle_time": 50955800,
+            "name": "Nituri in maner",
+            "runs": 30,
+            "semi_finite": [],
+            "total_calibration_cost": 9,
+            "total_cost": 90,
+            "type": "custom",
+            "uid": "1589144797.576716"
+        },
+        {
+            "active_time": 440,
+            "has_calibration": false,
+            "idle_time": 50959560,
+            "name": "Brat robot",
+            "runs": 22,
+            "semi_finite": [
+                {
+                    "_category": "MANERE_CU_NIT",
+                    "_errors": []
+                },
+                {
+                    "_category": "MANERE_CU_NIT",
+                    "_errors": []
+                }
+            ],
+            "total_cost": 22,
+            "type": "transport",
+            "uid": "1589144833.569316"
+        },
+        {
+            "active_time": 2000,
+            "calibration_count": 0,
+            "calibration_left": 5,
+            "calibration_time": 0,
+            "has_calibration": true,
+            "idle_time": 50958000,
+            "name": "Masa asamblare finala",
+            "runs": 20,
+            "semi_finite": [],
+            "total_calibration_cost": 0,
+            "total_cost": 60,
+            "type": "custom",
+            "uid": "1589144839.081639"
+        },
+        {
+            "active_time": 0,
+            "capacity": 10,
+            "has_calibration": false,
+            "idle_time": 50960000,
+            "name": "Depozit intermediar",
+            "runs": 34,
+            "semi_finite": [
+                {
+                    "_category": "MANERE_CU_NIT",
+                    "_errors": []
+                },
+                {
+                    "_category": "MANERE_CU_NIT",
+                    "_errors": []
+                }
+            ],
+            "total_cost": 0,
+            "type": "buffer",
+            "uid": "1589144910.122335",
+            "was_full": true
+        },
+        {
+            "active_time": 0,
+            "has_calibration": false,
+            "idle_time": 50960000,
+            "name": "Erori fisura",
+            "runs": 22,
+            "semi_finite": [],
+            "total_cost": 0,
+            "type": "random_error",
+            "uid": "1589144939.937978"
+        },
+        {
+            "active_time": 0,
+            "has_calibration": false,
+            "idle_time": 50960000,
+            "name": "Etanseitate Nituire",
+            "runs": 20,
+            "semi_finite": [],
+            "total_cost": 0,
+            "type": "random_error",
+            "uid": "1589144941.266601"
+        },
+        {
+            "active_time": 2200,
+            "calibration_count": 2,
+            "calibration_left": 8,
+            "calibration_time": 120000,
+            "errors_found": 2,
+            "errors_missed": 0,
+            "has_calibration": true,
+            "idle_time": 50837800,
+            "name": "Test Fisura",
+            "runs": 22,
+            "semi_finite": [],
+            "total_calibration_cost": 10,
+            "total_cost": 22,
+            "type": "test",
+            "uid": "1589145031.994232",
+            "with_error_count": 2,
+            "without_error_count": 20
+        },
+        {
+            "active_time": 0,
+            "has_calibration": false,
+            "idle_time": 50960000,
+            "name": "Start + Err",
+            "runs": 22,
+            "semi_finite": [],
+            "total_cost": 0,
+            "type": "convergence",
+            "uid": "1589145058.450312"
+        },
+        {
+            "active_time": 20000,
+            "calibration_count": 0,
+            "calibration_left": 5,
+            "calibration_time": 0,
+            "errors_found": 1,
+            "errors_missed": 0,
+            "has_calibration": true,
+            "idle_time": 50940000,
+            "name": "Test Etanseitate",
+            "runs": 20,
+            "semi_finite": [],
+            "total_calibration_cost": 0,
+            "total_cost": 40,
+            "type": "test",
+            "uid": "1589145267.074516",
+            "with_error_count": 1,
+            "without_error_count": 19
+        },
+        {
+            "active_time": 0,
+            "errors": {
+                "ETAN": 1
+            },
+            "has_calibration": false,
+            "idle_time": 50960000,
+            "name": "Depozit",
+            "resource_count": 50,
+            "resources": [
+                {
+                    "_category": "Nit",
+                    "_errors": []
+                },
+                {
+                    "_category": "Nit",
+                    "_errors": []
+                },
+                {
+                    "_category": "Nit",
+                    "_errors": []
+                },
+                {
+                    "_category": "ASAMBLAT",
+                    "_errors": []
+                },
+                {
+                    "_category": "ASAMBLAT",
+                    "_errors": []
+                },
+                {
+                    "_category": "ASAMBLAT",
+                    "_errors": []
+                },
+                {
+                    "_category": "ASAMBLAT",
+                    "_errors": []
+                },
+                {
+                    "_category": "ASAMBLAT",
+                    "_errors": []
+                },
+                {
+                    "_category": "ASAMBLAT",
+                    "_errors": []
+                },
+                {
+                    "_category": "ASAMBLAT",
+                    "_errors": []
+                },
+                {
+                    "_category": "ASAMBLAT",
+                    "_errors": []
+                },
+                {
+                    "_category": "ASAMBLAT",
+                    "_errors": [
+                        "ETAN"
+                    ]
+                },
+                {
+                    "_category": "ASAMBLAT",
+                    "_errors": []
+                },
+                {
+                    "_category": "ASAMBLAT",
+                    "_errors": []
+                },
+                {
+                    "_category": "ASAMBLAT",
+                    "_errors": []
+                },
+                {
+                    "_category": "ASAMBLAT",
+                    "_errors": []
+                },
+                {
+                    "_category": "ASAMBLAT",
+                    "_errors": []
+                },
+                {
+                    "_category": "ASAMBLAT",
+                    "_errors": []
+                },
+                {
+                    "_category": "ASAMBLAT",
+                    "_errors": []
+                },
+                {
+                    "_category": "ASAMBLAT",
+                    "_errors": []
+                },
+                {
+                    "_category": "ASAMBLAT",
+                    "_errors": []
+                },
+                {
+                    "_category": "ASAMBLAT",
+                    "_errors": []
+                },
+                {
+                    "_category": "ASAMBLAT",
+                    "_errors": []
+                },
+                {
+                    "_category": "Nit",
+                    "_errors": []
+                },
+                {
+                    "_category": "Nit",
+                    "_errors": []
+                },
+                {
+                    "_category": "Nit",
+                    "_errors": []
+                },
+                {
+                    "_category": "Nit",
+                    "_errors": []
+                },
+                {
+                    "_category": "Nit",
+                    "_errors": []
+                },
+                {
+                    "_category": "Nit",
+                    "_errors": []
+                },
+                {
+                    "_category": "Nit",
+                    "_errors": []
+                },
+                {
+                    "_category": "Nit",
+                    "_errors": []
+                },
+                {
+                    "_category": "Nit",
+                    "_errors": []
+                },
+                {
+                    "_category": "Nit",
+                    "_errors": []
+                },
+                {
+                    "_category": "Nit",
+                    "_errors": []
+                },
+                {
+                    "_category": "Nit",
+                    "_errors": []
+                },
+                {
+                    "_category": "Nit",
+                    "_errors": []
+                },
+                {
+                    "_category": "Nit",
+                    "_errors": []
+                },
+                {
+                    "_category": "Nit",
+                    "_errors": []
+                },
+                {
+                    "_category": "Nit",
+                    "_errors": []
+                },
+                {
+                    "_category": "Nit",
+                    "_errors": []
+                },
+                {
+                    "_category": "Nit",
+                    "_errors": []
+                },
+                {
+                    "_category": "Nit",
+                    "_errors": []
+                },
+                {
+                    "_category": "Nit",
+                    "_errors": []
+                },
+                {
+                    "_category": "Nit",
+                    "_errors": []
+                },
+                {
+                    "_category": "Nit",
+                    "_errors": []
+                },
+                {
+                    "_category": "Nit",
+                    "_errors": []
+                },
+                {
+                    "_category": "Nit",
+                    "_errors": []
+                },
+                {
+                    "_category": "Nit",
+                    "_errors": []
+                },
+                {
+                    "_category": "Nit",
+                    "_errors": []
+                },
+                {
+                    "_category": "Nit",
+                    "_errors": []
+                }
+            ],
+            "runs": 50,
+            "semi_finite": [],
+            "total_cost": 0,
+            "type": "end",
+            "uid": "1589145380.146341",
+            "valid_resource_count": 49
+        },
+        {
+            "active_time": 49000000,
+            "calibration_count": 49,
+            "calibration_left": 1,
+            "calibration_time": 1960000,
+            "has_calibration": true,
+            "idle_time": 0,
+            "name": "Reparare Etan",
+            "non_repairs": 49,
+            "repairs": 0,
+            "runs": 49,
+            "semi_finite": [],
+            "total_calibration_cost": 245,
+            "total_cost": 1225,
+            "type": "repair",
+            "uid": "1589145827.618106"
+        },
+        {
+            "active_time": 0,
+            "has_calibration": false,
+            "idle_time": 50960000,
+            "name": "Nituri",
+            "not_used_resources": 0,
+            "resource_count": 30,
+            "resource_type": "Nit",
+            "runs": 30,
+            "semi_finite": [],
+            "total_cost": 0,
+            "type": "start",
+            "uid": "1589145839.066367"
+        },
+        {
+            "active_time": 0,
+            "has_calibration": false,
+            "idle_time": 50960000,
+            "name": "Confluence",
+            "runs": 49,
+            "semi_finite": [],
+            "total_cost": 0,
+            "type": "convergence",
+            "uid": "1589145900.322896"
+        },
+        {
+            "active_time": 0,
+            "has_calibration": false,
+            "idle_time": 50960000,
+            "name": "Confluence",
+            "runs": 50,
+            "semi_finite": [],
+            "total_cost": 0,
+            "type": "convergence",
+            "uid": "1589145970.490244"
+        },
+        {
+            "active_time": 0,
+            "capacity": 200,
+            "has_calibration": false,
+            "idle_time": 50960000,
+            "name": "TMP",
+            "runs": 2,
+            "semi_finite": [],
+            "total_cost": 0,
+            "type": "buffer",
+            "uid": "1589147458.002859",
+            "was_full": false
+        },
+        {
+            "active_time": 0,
+            "calibration_count": 0,
+            "calibration_left": 99997,
+            "calibration_time": 0,
+            "has_calibration": true,
+            "idle_time": 50960000,
+            "name": "Pseudo Repair",
+            "non_repairs": 0,
+            "repairs": 2,
+            "runs": 2,
+            "semi_finite": [],
+            "total_calibration_cost": 0,
+            "total_cost": 0,
+            "type": "repair",
+            "uid": "1589148465.675089"
+        }
+    ],
+    "time": 50960000
+}
