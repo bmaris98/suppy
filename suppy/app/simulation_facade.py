@@ -46,7 +46,7 @@ class SimulationFacade:
             atomic = self._create_custom_atomic(node)
 
         if node.type == DIVERGENCE:
-            atomic = self._create_convergence_atomic(node)
+            atomic = self._create_divergence_atomic(node)
 
         if node.type == END:
             atomic = self._create_end_atomic(node)
@@ -163,13 +163,15 @@ class SimulationFacade:
         time = self._seh.time
         data = {
             'stats': stats,
-            'time': time
+            'time': time,
+            'project_name': project_name
         }
         timestamp = SimulationFacade._generate_timestamp_id()
-        raw_path = (self._data_path / ('tmp/raw/' + project_name + '___' + timestamp + '.json')).resolve()
+        report_namespace = project_name + '__' + timestamp
+        raw_path = (self._data_path / ('tmp/raw/' + report_namespace + '.json')).resolve()
         with open(raw_path, 'w') as outfile:
             json.dump(data, outfile, default=lambda o: o.__dict__, sort_keys=True, indent=4)
-        rg = ReportGenerator(project_name, data)
+        rg = ReportGenerator(report_namespace, data)
 
     @staticmethod
     def _generate_timestamp_id() -> str:

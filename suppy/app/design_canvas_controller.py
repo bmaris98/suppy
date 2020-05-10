@@ -279,8 +279,8 @@ class DesignCanvasController(Frame):
     
     def _add_output_ports_for_test_stand(self, node: Node):
         x, y = node.position.value
-        image_ok = self._image_loader.get_image(PORT1OK)
-        image_err = self._image_loader.get_image(PORT1ERR)
+        image_ok = self._image_loader.get_image(PORT1ERR)
+        image_err = self._image_loader.get_image(PORT1OK)
         port_id_ok = node.tag_id + 'out'
         port_id_err = node.tag_id + 'out_err'
         node.output_id = self.canvas.create_image(x+int(4*NODE_WIDTH/3), y, image=image_ok, anchor=NE, tags=port_id_ok)
