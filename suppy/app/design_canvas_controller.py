@@ -1,3 +1,5 @@
+from suppy.app.node_config import BUFFER_CONFIG, CONVERGENCE_CONFIG, DIVERGENCE_CONFIG, END_CONFIG, RANDOM_ERROR_CONFIG, REPAIR_CONFIG, START_CONFIG, TRANSFORM_CONFIG, TRANSPORT_CONFIG, VERIFICATION_CONFIG
+from suppy.app.window.update_node_window import UpdateNodeWindow
 from suppy.app.defaults import DEFAULT_BUFFER_PROPS, DEFAULT_CONVERGENCE_PROPS, DEFAULT_CUSTOM_PROPS, DEFAULT_DIVERGENCE_PROPS, DEFAULT_END_PROPS, DEFAULT_ERROR_PROPS, DEFAULT_REPAIR_PROPS, DEFAULT_START_PROPS, DEFAULT_TRANSPORT_PROPS, DEFAULT_VERIFICATION_PROPS
 from suppy.app.line import Line
 from suppy.utils.stats_constants import BUFFER, CONVERGENCE, CUSTOM, DIVERGENCE, END, RANDOM_ERROR, REPAIR, START, TEST, TRANSPORT
@@ -17,6 +19,8 @@ class DesignCanvasController(Frame):
 
     def __init__(self, root):
         Frame.__init__(self, root)
+        self._root = root
+        self._update_window = None
         self._image_loader = ImageLoader()
         self._node_insertion_position = Position(100, 100)
         self._node_count = 0
@@ -83,9 +87,37 @@ class DesignCanvasController(Frame):
 
     def _get_node_menu(self):
         menu = Menu(self, tearoff=0)
-        menu.add_command(label='Update Node', command=print(1))
+        menu.add_command(label='Update Node', command=self._update_menu_target_node)
         menu.add_command(label='Delete Node', command=self._delete_menu_taget_node) 
         return menu
+
+    def _update_menu_target_node(self):
+        config = self._get_node_update_config()
+        values = self._node_menu_target.properties
+        self._update_window = UpdateNodeWindow(self._root, self, config, values)
+
+    def _get_node_update_config(self) -> List[str]:
+        if self._node_menu_target.type == START:
+            return START_CONFIG
+        elif self._node_menu_target.type == END:
+            return END_CONFIG
+        elif self._node_menu_target.type == BUFFER:
+            return BUFFER_CONFIG
+        elif self._node_menu_target.type == CONVERGENCE:
+            return CONVERGENCE_CONFIG
+        elif self._node_menu_target.type == DIVERGENCE:
+            return DIVERGENCE_CONFIG
+        elif self._node_menu_target.type == CUSTOM:
+            return TRANSFORM_CONFIG
+        elif self._node_menu_target.type == REPAIR:
+            return REPAIR_CONFIG
+        elif self._node_menu_target.type == TEST:
+            return VERIFICATION_CONFIG
+        elif self._node_menu_target.type == RANDOM_ERROR:
+            return RANDOM_ERROR_CONFIG
+        elif self._node_menu_target.type == TRANSPORT:
+            return TRANSPORT_CONFIG
+        return []
 
     def _delete_menu_taget_node(self):
         self._nodes = [node for node in self._nodes if node.tag_id != self._node_menu_target.tag_id]
@@ -98,6 +130,11 @@ class DesignCanvasController(Frame):
         for port_id in port_ids:
             if not port_id == -1:
                 self.canvas.delete(port_id)
+
+    def update_node(self, new_properties):
+        self._node_menu_target.properties = new_properties
+        label_id = self._node_menu_target.label_id
+        self.canvas.itemconfigure(label_id, text=new_properties['name'])
 
     def _get_popup_menu(self):
         menu = Menu(self, tearoff=0)
