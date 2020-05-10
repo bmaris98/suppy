@@ -1,0 +1,1946 @@
+{
+    "lines": [
+        {
+            "is_from_secondary": false,
+            "origin_node": {
+                "has_input_port": true,
+                "has_output_port": true,
+                "input_id": 11,
+                "label_id": 13,
+                "multiple_inputs": false,
+                "multiple_outputs": false,
+                "output_id": 12,
+                "position": {
+                    "_x": 392.0,
+                    "_y": 167.0
+                },
+                "properties": {
+                    "cost": 1,
+                    "duration": 120,
+                    "name": "Banda Transportoare"
+                },
+                "secondary_output_id": -1,
+                "tag_id": "1589144359.930066",
+                "type": "transport",
+                "view_id": "10"
+            },
+            "origin_port_id": 12,
+            "target_node": {
+                "has_input_port": true,
+                "has_output_port": true,
+                "input_id": 15,
+                "label_id": 17,
+                "multiple_inputs": true,
+                "multiple_outputs": false,
+                "output_id": 16,
+                "position": {
+                    "_x": 602.0,
+                    "_y": 171.0
+                },
+                "properties": {
+                    "calibration_cost": 200,
+                    "calibration_duration": 300,
+                    "calibration_steps": 9999,
+                    "cost": 1,
+                    "duration": 120000,
+                    "name": "Masina Injectie",
+                    "output_type": "CAPAC_TURNAT_ALUMINIU"
+                },
+                "secondary_output_id": -1,
+                "tag_id": "1589144397.041948",
+                "type": "custom",
+                "view_id": "14"
+            },
+            "target_port_id": 15,
+            "view_id": 93
+        },
+        {
+            "is_from_secondary": false,
+            "origin_node": {
+                "has_input_port": true,
+                "has_output_port": true,
+                "input_id": 15,
+                "label_id": 17,
+                "multiple_inputs": true,
+                "multiple_outputs": false,
+                "output_id": 16,
+                "position": {
+                    "_x": 602.0,
+                    "_y": 171.0
+                },
+                "properties": {
+                    "calibration_cost": 200,
+                    "calibration_duration": 300,
+                    "calibration_steps": 9999,
+                    "cost": 1,
+                    "duration": 120000,
+                    "name": "Masina Injectie",
+                    "output_type": "CAPAC_TURNAT_ALUMINIU"
+                },
+                "secondary_output_id": -1,
+                "tag_id": "1589144397.041948",
+                "type": "custom",
+                "view_id": "14"
+            },
+            "origin_port_id": 16,
+            "target_node": {
+                "has_input_port": true,
+                "has_output_port": true,
+                "input_id": 19,
+                "label_id": 21,
+                "multiple_inputs": false,
+                "multiple_outputs": false,
+                "output_id": 20,
+                "position": {
+                    "_x": 791.0,
+                    "_y": 63.0
+                },
+                "properties": {
+                    "cost": 0,
+                    "duration": 120,
+                    "name": "Brat Robot 1"
+                },
+                "secondary_output_id": -1,
+                "tag_id": "1589144527.161676",
+                "type": "transport",
+                "view_id": "18"
+            },
+            "target_port_id": 19,
+            "view_id": 94
+        },
+        {
+            "is_from_secondary": false,
+            "origin_node": {
+                "has_input_port": true,
+                "has_output_port": true,
+                "input_id": 19,
+                "label_id": 21,
+                "multiple_inputs": false,
+                "multiple_outputs": false,
+                "output_id": 20,
+                "position": {
+                    "_x": 791.0,
+                    "_y": 63.0
+                },
+                "properties": {
+                    "cost": 0,
+                    "duration": 120,
+                    "name": "Brat Robot 1"
+                },
+                "secondary_output_id": -1,
+                "tag_id": "1589144527.161676",
+                "type": "transport",
+                "view_id": "18"
+            },
+            "origin_port_id": 20,
+            "target_node": {
+                "has_input_port": true,
+                "has_output_port": true,
+                "input_id": 23,
+                "label_id": 25,
+                "multiple_inputs": true,
+                "multiple_outputs": false,
+                "output_id": 24,
+                "position": {
+                    "_x": 976.0,
+                    "_y": 63.0
+                },
+                "properties": {
+                    "calibration_cost": 30,
+                    "calibration_duration": 1200000,
+                    "calibration_steps": 20,
+                    "cost": 3,
+                    "duration": 10000,
+                    "name": "Masina de stantat",
+                    "output_type": "Stantate"
+                },
+                "secondary_output_id": -1,
+                "tag_id": "1589144540.769882",
+                "type": "custom",
+                "view_id": "22"
+            },
+            "target_port_id": 23,
+            "view_id": 95
+        },
+        {
+            "is_from_secondary": false,
+            "origin_node": {
+                "has_input_port": false,
+                "has_output_port": true,
+                "input_id": -1,
+                "label_id": 28,
+                "multiple_inputs": false,
+                "multiple_outputs": false,
+                "output_id": 27,
+                "position": {
+                    "_x": 781.0,
+                    "_y": 278.0
+                },
+                "properties": {
+                    "count": 30,
+                    "name": "Nituri2",
+                    "output_type": "Nit"
+                },
+                "secondary_output_id": -1,
+                "tag_id": "1589144724.866438",
+                "type": "start",
+                "view_id": "26"
+            },
+            "origin_port_id": 27,
+            "target_node": {
+                "has_input_port": true,
+                "has_output_port": true,
+                "input_id": 34,
+                "label_id": 36,
+                "multiple_inputs": true,
+                "multiple_outputs": false,
+                "output_id": 35,
+                "position": {
+                    "_x": 1055.0,
+                    "_y": 456.0
+                },
+                "properties": {
+                    "calibration_cost": 3,
+                    "calibration_duration": 400,
+                    "calibration_steps": 9,
+                    "cost": 3,
+                    "duration": 100,
+                    "name": "Nituri in maner",
+                    "output_type": "MANERE_CU_NIT"
+                },
+                "secondary_output_id": -1,
+                "tag_id": "1589144797.576716",
+                "type": "custom",
+                "view_id": "33"
+            },
+            "target_port_id": 34,
+            "view_id": 96
+        },
+        {
+            "is_from_secondary": false,
+            "origin_node": {
+                "has_input_port": false,
+                "has_output_port": true,
+                "input_id": -1,
+                "label_id": 9,
+                "multiple_inputs": false,
+                "multiple_outputs": false,
+                "output_id": 8,
+                "position": {
+                    "_x": 780.0,
+                    "_y": 443.0
+                },
+                "properties": {
+                    "count": 30,
+                    "name": "Nituri",
+                    "output_type": "Nit"
+                },
+                "secondary_output_id": -1,
+                "tag_id": "1589144348.265267",
+                "type": "start",
+                "view_id": "7"
+            },
+            "origin_port_id": 8,
+            "target_node": {
+                "has_input_port": true,
+                "has_output_port": true,
+                "input_id": 34,
+                "label_id": 36,
+                "multiple_inputs": true,
+                "multiple_outputs": false,
+                "output_id": 35,
+                "position": {
+                    "_x": 1055.0,
+                    "_y": 456.0
+                },
+                "properties": {
+                    "calibration_cost": 3,
+                    "calibration_duration": 400,
+                    "calibration_steps": 9,
+                    "cost": 3,
+                    "duration": 100,
+                    "name": "Nituri in maner",
+                    "output_type": "MANERE_CU_NIT"
+                },
+                "secondary_output_id": -1,
+                "tag_id": "1589144797.576716",
+                "type": "custom",
+                "view_id": "33"
+            },
+            "target_port_id": 34,
+            "view_id": 97
+        },
+        {
+            "is_from_secondary": false,
+            "origin_node": {
+                "has_input_port": false,
+                "has_output_port": true,
+                "input_id": -1,
+                "label_id": 6,
+                "multiple_inputs": false,
+                "multiple_outputs": false,
+                "output_id": 5,
+                "position": {
+                    "_x": 784.0,
+                    "_y": 622.0
+                },
+                "properties": {
+                    "count": 30,
+                    "name": "Manere",
+                    "output_type": "Maner"
+                },
+                "secondary_output_id": -1,
+                "tag_id": "1589144230.041849",
+                "type": "start",
+                "view_id": "4"
+            },
+            "origin_port_id": 5,
+            "target_node": {
+                "has_input_port": true,
+                "has_output_port": true,
+                "input_id": 34,
+                "label_id": 36,
+                "multiple_inputs": true,
+                "multiple_outputs": false,
+                "output_id": 35,
+                "position": {
+                    "_x": 1055.0,
+                    "_y": 456.0
+                },
+                "properties": {
+                    "calibration_cost": 3,
+                    "calibration_duration": 400,
+                    "calibration_steps": 9,
+                    "cost": 3,
+                    "duration": 100,
+                    "name": "Nituri in maner",
+                    "output_type": "MANERE_CU_NIT"
+                },
+                "secondary_output_id": -1,
+                "tag_id": "1589144797.576716",
+                "type": "custom",
+                "view_id": "33"
+            },
+            "target_port_id": 34,
+            "view_id": 98
+        },
+        {
+            "is_from_secondary": false,
+            "origin_node": {
+                "has_input_port": true,
+                "has_output_port": true,
+                "input_id": 30,
+                "label_id": 32,
+                "multiple_inputs": false,
+                "multiple_outputs": false,
+                "output_id": 31,
+                "position": {
+                    "_x": 1557.0,
+                    "_y": 208.0
+                },
+                "properties": {
+                    "cost": 1,
+                    "duration": 120,
+                    "name": "Brat Robot Q"
+                },
+                "secondary_output_id": -1,
+                "tag_id": "1589144781.361851",
+                "type": "transport",
+                "view_id": "29"
+            },
+            "origin_port_id": 31,
+            "target_node": {
+                "has_input_port": true,
+                "has_output_port": true,
+                "input_id": 42,
+                "label_id": 44,
+                "multiple_inputs": true,
+                "multiple_outputs": false,
+                "output_id": 43,
+                "position": {
+                    "_x": 1814.0,
+                    "_y": 297.0
+                },
+                "properties": {
+                    "calibration_cost": 10,
+                    "calibration_duration": 1200000,
+                    "calibration_steps": 25,
+                    "cost": 3,
+                    "duration": 100,
+                    "name": "Masa asamblare finala",
+                    "output_type": "ASAMBLAT"
+                },
+                "secondary_output_id": -1,
+                "tag_id": "1589144839.081639",
+                "type": "custom",
+                "view_id": "41"
+            },
+            "target_port_id": 42,
+            "view_id": 99
+        },
+        {
+            "is_from_secondary": false,
+            "origin_node": {
+                "has_input_port": true,
+                "has_output_port": true,
+                "input_id": 38,
+                "label_id": 40,
+                "multiple_inputs": false,
+                "multiple_outputs": false,
+                "output_id": 39,
+                "position": {
+                    "_x": 1498.0,
+                    "_y": 464.0
+                },
+                "properties": {
+                    "cost": 1,
+                    "duration": 20,
+                    "name": "Brat robot"
+                },
+                "secondary_output_id": -1,
+                "tag_id": "1589144833.569316",
+                "type": "transport",
+                "view_id": "37"
+            },
+            "origin_port_id": 39,
+            "target_node": {
+                "has_input_port": true,
+                "has_output_port": true,
+                "input_id": 42,
+                "label_id": 44,
+                "multiple_inputs": true,
+                "multiple_outputs": false,
+                "output_id": 43,
+                "position": {
+                    "_x": 1814.0,
+                    "_y": 297.0
+                },
+                "properties": {
+                    "calibration_cost": 10,
+                    "calibration_duration": 1200000,
+                    "calibration_steps": 25,
+                    "cost": 3,
+                    "duration": 100,
+                    "name": "Masa asamblare finala",
+                    "output_type": "ASAMBLAT"
+                },
+                "secondary_output_id": -1,
+                "tag_id": "1589144839.081639",
+                "type": "custom",
+                "view_id": "41"
+            },
+            "target_port_id": 42,
+            "view_id": 100
+        },
+        {
+            "is_from_secondary": false,
+            "origin_node": {
+                "has_input_port": true,
+                "has_output_port": true,
+                "input_id": 34,
+                "label_id": 36,
+                "multiple_inputs": true,
+                "multiple_outputs": false,
+                "output_id": 35,
+                "position": {
+                    "_x": 1055.0,
+                    "_y": 456.0
+                },
+                "properties": {
+                    "calibration_cost": 3,
+                    "calibration_duration": 400,
+                    "calibration_steps": 9,
+                    "cost": 3,
+                    "duration": 100,
+                    "name": "Nituri in maner",
+                    "output_type": "MANERE_CU_NIT"
+                },
+                "secondary_output_id": -1,
+                "tag_id": "1589144797.576716",
+                "type": "custom",
+                "view_id": "33"
+            },
+            "origin_port_id": 35,
+            "target_node": {
+                "has_input_port": true,
+                "has_output_port": true,
+                "input_id": 46,
+                "label_id": 48,
+                "multiple_inputs": false,
+                "multiple_outputs": false,
+                "output_id": 47,
+                "position": {
+                    "_x": 1289.0,
+                    "_y": 467.0
+                },
+                "properties": {
+                    "capacity": 10,
+                    "name": "Depozit intermediar"
+                },
+                "secondary_output_id": -1,
+                "tag_id": "1589144910.122335",
+                "type": "buffer",
+                "view_id": "45"
+            },
+            "target_port_id": 46,
+            "view_id": 101
+        },
+        {
+            "is_from_secondary": false,
+            "origin_node": {
+                "has_input_port": true,
+                "has_output_port": true,
+                "input_id": 46,
+                "label_id": 48,
+                "multiple_inputs": false,
+                "multiple_outputs": false,
+                "output_id": 47,
+                "position": {
+                    "_x": 1289.0,
+                    "_y": 467.0
+                },
+                "properties": {
+                    "capacity": 10,
+                    "name": "Depozit intermediar"
+                },
+                "secondary_output_id": -1,
+                "tag_id": "1589144910.122335",
+                "type": "buffer",
+                "view_id": "45"
+            },
+            "origin_port_id": 47,
+            "target_node": {
+                "has_input_port": true,
+                "has_output_port": true,
+                "input_id": 38,
+                "label_id": 40,
+                "multiple_inputs": false,
+                "multiple_outputs": false,
+                "output_id": 39,
+                "position": {
+                    "_x": 1498.0,
+                    "_y": 464.0
+                },
+                "properties": {
+                    "cost": 1,
+                    "duration": 20,
+                    "name": "Brat robot"
+                },
+                "secondary_output_id": -1,
+                "tag_id": "1589144833.569316",
+                "type": "transport",
+                "view_id": "37"
+            },
+            "target_port_id": 38,
+            "view_id": 102
+        },
+        {
+            "is_from_secondary": false,
+            "origin_node": {
+                "has_input_port": true,
+                "has_output_port": true,
+                "input_id": 23,
+                "label_id": 25,
+                "multiple_inputs": true,
+                "multiple_outputs": false,
+                "output_id": 24,
+                "position": {
+                    "_x": 976.0,
+                    "_y": 63.0
+                },
+                "properties": {
+                    "calibration_cost": 30,
+                    "calibration_duration": 1200000,
+                    "calibration_steps": 20,
+                    "cost": 3,
+                    "duration": 10000,
+                    "name": "Masina de stantat",
+                    "output_type": "Stantate"
+                },
+                "secondary_output_id": -1,
+                "tag_id": "1589144540.769882",
+                "type": "custom",
+                "view_id": "22"
+            },
+            "origin_port_id": 24,
+            "target_node": {
+                "has_input_port": true,
+                "has_output_port": true,
+                "input_id": 50,
+                "label_id": 52,
+                "multiple_inputs": false,
+                "multiple_outputs": false,
+                "output_id": 51,
+                "position": {
+                    "_x": 1187.0,
+                    "_y": 64.0
+                },
+                "properties": {
+                    "error_rate": 0.1,
+                    "error_type": "FISURA",
+                    "name": "Erori fisura"
+                },
+                "secondary_output_id": -1,
+                "tag_id": "1589144939.937978",
+                "type": "random_error",
+                "view_id": "49"
+            },
+            "target_port_id": 50,
+            "view_id": 103
+        },
+        {
+            "is_from_secondary": false,
+            "origin_node": {
+                "has_input_port": false,
+                "has_output_port": true,
+                "input_id": -1,
+                "label_id": 3,
+                "multiple_inputs": false,
+                "multiple_outputs": false,
+                "output_id": 2,
+                "position": {
+                    "_x": 24.0,
+                    "_y": 51.0
+                },
+                "properties": {
+                    "count": 20,
+                    "name": "Aluminiu",
+                    "output_type": "Lingou Alu"
+                },
+                "secondary_output_id": -1,
+                "tag_id": "1589144228.330096",
+                "type": "start",
+                "view_id": "1"
+            },
+            "origin_port_id": 2,
+            "target_node": {
+                "has_input_port": true,
+                "has_output_port": true,
+                "input_id": 63,
+                "label_id": 65,
+                "multiple_inputs": true,
+                "multiple_outputs": false,
+                "output_id": 64,
+                "position": {
+                    "_x": 215.0,
+                    "_y": 165.0
+                },
+                "properties": {
+                    "name": "Start + Err"
+                },
+                "secondary_output_id": -1,
+                "tag_id": "1589145058.450312",
+                "type": "convergence",
+                "view_id": "62"
+            },
+            "target_port_id": 63,
+            "view_id": 104
+        },
+        {
+            "is_from_secondary": false,
+            "origin_node": {
+                "has_input_port": true,
+                "has_output_port": true,
+                "input_id": 63,
+                "label_id": 65,
+                "multiple_inputs": true,
+                "multiple_outputs": false,
+                "output_id": 64,
+                "position": {
+                    "_x": 215.0,
+                    "_y": 165.0
+                },
+                "properties": {
+                    "name": "Start + Err"
+                },
+                "secondary_output_id": -1,
+                "tag_id": "1589145058.450312",
+                "type": "convergence",
+                "view_id": "62"
+            },
+            "origin_port_id": 64,
+            "target_node": {
+                "has_input_port": true,
+                "has_output_port": true,
+                "input_id": 11,
+                "label_id": 13,
+                "multiple_inputs": false,
+                "multiple_outputs": false,
+                "output_id": 12,
+                "position": {
+                    "_x": 392.0,
+                    "_y": 167.0
+                },
+                "properties": {
+                    "cost": 1,
+                    "duration": 120,
+                    "name": "Banda Transportoare"
+                },
+                "secondary_output_id": -1,
+                "tag_id": "1589144359.930066",
+                "type": "transport",
+                "view_id": "10"
+            },
+            "target_port_id": 11,
+            "view_id": 105
+        },
+        {
+            "is_from_secondary": false,
+            "origin_node": {
+                "has_input_port": true,
+                "has_output_port": true,
+                "input_id": 42,
+                "label_id": 44,
+                "multiple_inputs": true,
+                "multiple_outputs": false,
+                "output_id": 43,
+                "position": {
+                    "_x": 1814.0,
+                    "_y": 297.0
+                },
+                "properties": {
+                    "calibration_cost": 10,
+                    "calibration_duration": 1200000,
+                    "calibration_steps": 25,
+                    "cost": 3,
+                    "duration": 100,
+                    "name": "Masa asamblare finala",
+                    "output_type": "ASAMBLAT"
+                },
+                "secondary_output_id": -1,
+                "tag_id": "1589144839.081639",
+                "type": "custom",
+                "view_id": "41"
+            },
+            "origin_port_id": 43,
+            "target_node": {
+                "has_input_port": true,
+                "has_output_port": true,
+                "input_id": 54,
+                "label_id": 56,
+                "multiple_inputs": false,
+                "multiple_outputs": false,
+                "output_id": 55,
+                "position": {
+                    "_x": 2020.0,
+                    "_y": 299.0
+                },
+                "properties": {
+                    "error_rate": 0.1,
+                    "error_type": "ETAN",
+                    "name": "Etanseitate Nituire"
+                },
+                "secondary_output_id": -1,
+                "tag_id": "1589144941.266601",
+                "type": "random_error",
+                "view_id": "53"
+            },
+            "target_port_id": 54,
+            "view_id": 106
+        },
+        {
+            "is_from_secondary": false,
+            "origin_node": {
+                "has_input_port": true,
+                "has_output_port": true,
+                "input_id": 54,
+                "label_id": 56,
+                "multiple_inputs": false,
+                "multiple_outputs": false,
+                "output_id": 55,
+                "position": {
+                    "_x": 2020.0,
+                    "_y": 299.0
+                },
+                "properties": {
+                    "error_rate": 0.1,
+                    "error_type": "ETAN",
+                    "name": "Etanseitate Nituire"
+                },
+                "secondary_output_id": -1,
+                "tag_id": "1589144941.266601",
+                "type": "random_error",
+                "view_id": "53"
+            },
+            "origin_port_id": 55,
+            "target_node": {
+                "has_input_port": true,
+                "has_output_port": true,
+                "input_id": 67,
+                "label_id": 70,
+                "multiple_inputs": false,
+                "multiple_outputs": false,
+                "output_id": 68,
+                "position": {
+                    "_x": 2225.0,
+                    "_y": 294.0
+                },
+                "properties": {
+                    "calibration_cost": 7,
+                    "calibration_duration": 40000,
+                    "calibration_steps": 25,
+                    "cost": 2,
+                    "duration": 1000,
+                    "error_type": "ETAN",
+                    "name": "Test Etanseitate",
+                    "test_rate": 1
+                },
+                "secondary_output_id": 69,
+                "tag_id": "1589145267.074516",
+                "type": "test",
+                "view_id": "66"
+            },
+            "target_port_id": 67,
+            "view_id": 107
+        },
+        {
+            "is_from_secondary": false,
+            "origin_node": {
+                "has_input_port": true,
+                "has_output_port": true,
+                "input_id": 67,
+                "label_id": 70,
+                "multiple_inputs": false,
+                "multiple_outputs": false,
+                "output_id": 68,
+                "position": {
+                    "_x": 2225.0,
+                    "_y": 294.0
+                },
+                "properties": {
+                    "calibration_cost": 7,
+                    "calibration_duration": 40000,
+                    "calibration_steps": 25,
+                    "cost": 2,
+                    "duration": 1000,
+                    "error_type": "ETAN",
+                    "name": "Test Etanseitate",
+                    "test_rate": 1
+                },
+                "secondary_output_id": 69,
+                "tag_id": "1589145267.074516",
+                "type": "test",
+                "view_id": "66"
+            },
+            "origin_port_id": 68,
+            "target_node": {
+                "has_input_port": true,
+                "has_output_port": true,
+                "input_id": 82,
+                "label_id": 84,
+                "multiple_inputs": true,
+                "multiple_outputs": false,
+                "output_id": 83,
+                "position": {
+                    "_x": 2419.0,
+                    "_y": 142.0
+                },
+                "properties": {
+                    "name": "Confluence"
+                },
+                "secondary_output_id": -1,
+                "tag_id": "1589145900.322896",
+                "type": "convergence",
+                "view_id": "81"
+            },
+            "target_port_id": 82,
+            "view_id": 108
+        },
+        {
+            "is_from_secondary": false,
+            "origin_node": {
+                "has_input_port": false,
+                "has_output_port": true,
+                "input_id": -1,
+                "label_id": 80,
+                "multiple_inputs": false,
+                "multiple_outputs": false,
+                "output_id": 79,
+                "position": {
+                    "_x": 2116.0,
+                    "_y": 28.0
+                },
+                "properties": {
+                    "count": 30,
+                    "name": "Nituri",
+                    "output_type": "Nit"
+                },
+                "secondary_output_id": -1,
+                "tag_id": "1589145839.066367",
+                "type": "start",
+                "view_id": "78"
+            },
+            "origin_port_id": 79,
+            "target_node": {
+                "has_input_port": true,
+                "has_output_port": true,
+                "input_id": 82,
+                "label_id": 84,
+                "multiple_inputs": true,
+                "multiple_outputs": false,
+                "output_id": 83,
+                "position": {
+                    "_x": 2419.0,
+                    "_y": 142.0
+                },
+                "properties": {
+                    "name": "Confluence"
+                },
+                "secondary_output_id": -1,
+                "tag_id": "1589145900.322896",
+                "type": "convergence",
+                "view_id": "81"
+            },
+            "target_port_id": 82,
+            "view_id": 109
+        },
+        {
+            "is_from_secondary": false,
+            "origin_node": {
+                "has_input_port": true,
+                "has_output_port": true,
+                "input_id": 82,
+                "label_id": 84,
+                "multiple_inputs": true,
+                "multiple_outputs": false,
+                "output_id": 83,
+                "position": {
+                    "_x": 2419.0,
+                    "_y": 142.0
+                },
+                "properties": {
+                    "name": "Confluence"
+                },
+                "secondary_output_id": -1,
+                "tag_id": "1589145900.322896",
+                "type": "convergence",
+                "view_id": "81"
+            },
+            "origin_port_id": 83,
+            "target_node": {
+                "has_input_port": true,
+                "has_output_port": true,
+                "input_id": 75,
+                "label_id": 77,
+                "multiple_inputs": false,
+                "multiple_outputs": false,
+                "output_id": 76,
+                "position": {
+                    "_x": 2572.0,
+                    "_y": 74.0
+                },
+                "properties": {
+                    "calibration_cost": 5,
+                    "calibration_duration": 40000,
+                    "calibration_steps": 1,
+                    "cost": 25,
+                    "duration": 1000000,
+                    "error_type": "ETAN",
+                    "name": "Reparare Etan"
+                },
+                "secondary_output_id": -1,
+                "tag_id": "1589145827.618106",
+                "type": "repair",
+                "view_id": "74"
+            },
+            "target_port_id": 75,
+            "view_id": 110
+        },
+        {
+            "is_from_secondary": true,
+            "origin_node": {
+                "has_input_port": true,
+                "has_output_port": true,
+                "input_id": 67,
+                "label_id": 70,
+                "multiple_inputs": false,
+                "multiple_outputs": false,
+                "output_id": 68,
+                "position": {
+                    "_x": 2225.0,
+                    "_y": 294.0
+                },
+                "properties": {
+                    "calibration_cost": 7,
+                    "calibration_duration": 40000,
+                    "calibration_steps": 25,
+                    "cost": 2,
+                    "duration": 1000,
+                    "error_type": "ETAN",
+                    "name": "Test Etanseitate",
+                    "test_rate": 1
+                },
+                "secondary_output_id": 69,
+                "tag_id": "1589145267.074516",
+                "type": "test",
+                "view_id": "66"
+            },
+            "origin_port_id": 69,
+            "target_node": {
+                "has_input_port": true,
+                "has_output_port": true,
+                "input_id": 86,
+                "label_id": 88,
+                "multiple_inputs": true,
+                "multiple_outputs": false,
+                "output_id": 87,
+                "position": {
+                    "_x": 2702.0,
+                    "_y": 241.0
+                },
+                "properties": {
+                    "name": "Confluence"
+                },
+                "secondary_output_id": -1,
+                "tag_id": "1589145970.490244",
+                "type": "convergence",
+                "view_id": "85"
+            },
+            "target_port_id": 86,
+            "view_id": 111
+        },
+        {
+            "is_from_secondary": false,
+            "origin_node": {
+                "has_input_port": true,
+                "has_output_port": true,
+                "input_id": 75,
+                "label_id": 77,
+                "multiple_inputs": false,
+                "multiple_outputs": false,
+                "output_id": 76,
+                "position": {
+                    "_x": 2572.0,
+                    "_y": 74.0
+                },
+                "properties": {
+                    "calibration_cost": 5,
+                    "calibration_duration": 40000,
+                    "calibration_steps": 1,
+                    "cost": 25,
+                    "duration": 1000000,
+                    "error_type": "ETAN",
+                    "name": "Reparare Etan"
+                },
+                "secondary_output_id": -1,
+                "tag_id": "1589145827.618106",
+                "type": "repair",
+                "view_id": "74"
+            },
+            "origin_port_id": 76,
+            "target_node": {
+                "has_input_port": true,
+                "has_output_port": true,
+                "input_id": 86,
+                "label_id": 88,
+                "multiple_inputs": true,
+                "multiple_outputs": false,
+                "output_id": 87,
+                "position": {
+                    "_x": 2702.0,
+                    "_y": 241.0
+                },
+                "properties": {
+                    "name": "Confluence"
+                },
+                "secondary_output_id": -1,
+                "tag_id": "1589145970.490244",
+                "type": "convergence",
+                "view_id": "85"
+            },
+            "target_port_id": 86,
+            "view_id": 112
+        },
+        {
+            "is_from_secondary": false,
+            "origin_node": {
+                "has_input_port": true,
+                "has_output_port": true,
+                "input_id": 86,
+                "label_id": 88,
+                "multiple_inputs": true,
+                "multiple_outputs": false,
+                "output_id": 87,
+                "position": {
+                    "_x": 2702.0,
+                    "_y": 241.0
+                },
+                "properties": {
+                    "name": "Confluence"
+                },
+                "secondary_output_id": -1,
+                "tag_id": "1589145970.490244",
+                "type": "convergence",
+                "view_id": "85"
+            },
+            "origin_port_id": 87,
+            "target_node": {
+                "has_input_port": true,
+                "has_output_port": false,
+                "input_id": 72,
+                "label_id": 73,
+                "multiple_inputs": false,
+                "multiple_outputs": false,
+                "output_id": -1,
+                "position": {
+                    "_x": 2930.0,
+                    "_y": 228.0
+                },
+                "properties": {
+                    "name": "Depozit"
+                },
+                "secondary_output_id": -1,
+                "tag_id": "1589145380.146341",
+                "type": "end",
+                "view_id": "71"
+            },
+            "target_port_id": 72,
+            "view_id": 113
+        },
+        {
+            "is_from_secondary": false,
+            "origin_node": {
+                "has_input_port": true,
+                "has_output_port": true,
+                "input_id": 50,
+                "label_id": 52,
+                "multiple_inputs": false,
+                "multiple_outputs": false,
+                "output_id": 51,
+                "position": {
+                    "_x": 1187.0,
+                    "_y": 64.0
+                },
+                "properties": {
+                    "error_rate": 0.1,
+                    "error_type": "FISURA",
+                    "name": "Erori fisura"
+                },
+                "secondary_output_id": -1,
+                "tag_id": "1589144939.937978",
+                "type": "random_error",
+                "view_id": "49"
+            },
+            "origin_port_id": 51,
+            "target_node": {
+                "has_input_port": true,
+                "has_output_port": true,
+                "input_id": 58,
+                "label_id": 61,
+                "multiple_inputs": false,
+                "multiple_outputs": false,
+                "output_id": 59,
+                "position": {
+                    "_x": 1358.0,
+                    "_y": -79.0
+                },
+                "properties": {
+                    "calibration_cost": 5,
+                    "calibration_duration": 60000,
+                    "calibration_steps": 10,
+                    "cost": 1,
+                    "duration": 100,
+                    "error_type": "FISURA",
+                    "name": "Test Fisura",
+                    "test_rate": 1
+                },
+                "secondary_output_id": 60,
+                "tag_id": "1589145031.994232",
+                "type": "test",
+                "view_id": "57"
+            },
+            "target_port_id": 58,
+            "view_id": 114
+        },
+        {
+            "is_from_secondary": true,
+            "origin_node": {
+                "has_input_port": true,
+                "has_output_port": true,
+                "input_id": 58,
+                "label_id": 61,
+                "multiple_inputs": false,
+                "multiple_outputs": false,
+                "output_id": 59,
+                "position": {
+                    "_x": 1358.0,
+                    "_y": -79.0
+                },
+                "properties": {
+                    "calibration_cost": 5,
+                    "calibration_duration": 60000,
+                    "calibration_steps": 10,
+                    "cost": 1,
+                    "duration": 100,
+                    "error_type": "FISURA",
+                    "name": "Test Fisura",
+                    "test_rate": 1
+                },
+                "secondary_output_id": 60,
+                "tag_id": "1589145031.994232",
+                "type": "test",
+                "view_id": "57"
+            },
+            "origin_port_id": 60,
+            "target_node": {
+                "has_input_port": true,
+                "has_output_port": true,
+                "input_id": 90,
+                "label_id": 92,
+                "multiple_inputs": false,
+                "multiple_outputs": false,
+                "output_id": 91,
+                "position": {
+                    "_x": 15.0,
+                    "_y": -242.0
+                },
+                "properties": {
+                    "capacity": 200,
+                    "name": "TMP"
+                },
+                "secondary_output_id": -1,
+                "tag_id": "1589147458.002859",
+                "type": "buffer",
+                "view_id": "89"
+            },
+            "target_port_id": 90,
+            "view_id": 168
+        },
+        {
+            "is_from_secondary": false,
+            "origin_node": {
+                "has_input_port": true,
+                "has_output_port": true,
+                "input_id": 58,
+                "label_id": 61,
+                "multiple_inputs": false,
+                "multiple_outputs": false,
+                "output_id": 59,
+                "position": {
+                    "_x": 1358.0,
+                    "_y": -79.0
+                },
+                "properties": {
+                    "calibration_cost": 5,
+                    "calibration_duration": 60000,
+                    "calibration_steps": 10,
+                    "cost": 1,
+                    "duration": 100,
+                    "error_type": "FISURA",
+                    "name": "Test Fisura",
+                    "test_rate": 1
+                },
+                "secondary_output_id": 60,
+                "tag_id": "1589145031.994232",
+                "type": "test",
+                "view_id": "57"
+            },
+            "origin_port_id": 59,
+            "target_node": {
+                "has_input_port": true,
+                "has_output_port": true,
+                "input_id": 30,
+                "label_id": 32,
+                "multiple_inputs": false,
+                "multiple_outputs": false,
+                "output_id": 31,
+                "position": {
+                    "_x": 1557.0,
+                    "_y": 208.0
+                },
+                "properties": {
+                    "cost": 1,
+                    "duration": 120,
+                    "name": "Brat Robot Q"
+                },
+                "secondary_output_id": -1,
+                "tag_id": "1589144781.361851",
+                "type": "transport",
+                "view_id": "29"
+            },
+            "target_port_id": 30,
+            "view_id": 116
+        },
+        {
+            "is_from_secondary": false,
+            "origin_node": {
+                "has_input_port": true,
+                "has_output_port": true,
+                "input_id": 90,
+                "label_id": 92,
+                "multiple_inputs": false,
+                "multiple_outputs": false,
+                "output_id": 91,
+                "position": {
+                    "_x": 15.0,
+                    "_y": -242.0
+                },
+                "properties": {
+                    "capacity": 200,
+                    "name": "TMP"
+                },
+                "secondary_output_id": -1,
+                "tag_id": "1589147458.002859",
+                "type": "buffer",
+                "view_id": "89"
+            },
+            "origin_port_id": 91,
+            "target_node": {
+                "has_input_port": true,
+                "has_output_port": true,
+                "input_id": 171,
+                "label_id": 173,
+                "multiple_inputs": false,
+                "multiple_outputs": false,
+                "output_id": 172,
+                "position": {
+                    "_x": 152.0,
+                    "_y": -85.0
+                },
+                "properties": {
+                    "calibration_cost": 0,
+                    "calibration_duration": 0,
+                    "calibration_steps": 99999,
+                    "cost": 0,
+                    "duration": 0,
+                    "error_type": "FISURA",
+                    "name": "Pseudo Repair"
+                },
+                "secondary_output_id": -1,
+                "tag_id": "1589148465.675089",
+                "type": "repair",
+                "view_id": "170"
+            },
+            "target_port_id": 171,
+            "view_id": 238
+        },
+        {
+            "is_from_secondary": false,
+            "origin_node": {
+                "has_input_port": true,
+                "has_output_port": true,
+                "input_id": 171,
+                "label_id": 173,
+                "multiple_inputs": false,
+                "multiple_outputs": false,
+                "output_id": 172,
+                "position": {
+                    "_x": 152.0,
+                    "_y": -85.0
+                },
+                "properties": {
+                    "calibration_cost": 0,
+                    "calibration_duration": 0,
+                    "calibration_steps": 99999,
+                    "cost": 0,
+                    "duration": 0,
+                    "error_type": "FISURA",
+                    "name": "Pseudo Repair"
+                },
+                "secondary_output_id": -1,
+                "tag_id": "1589148465.675089",
+                "type": "repair",
+                "view_id": "170"
+            },
+            "origin_port_id": 172,
+            "target_node": {
+                "has_input_port": true,
+                "has_output_port": true,
+                "input_id": 63,
+                "label_id": 65,
+                "multiple_inputs": true,
+                "multiple_outputs": false,
+                "output_id": 64,
+                "position": {
+                    "_x": 215.0,
+                    "_y": 165.0
+                },
+                "properties": {
+                    "name": "Start + Err"
+                },
+                "secondary_output_id": -1,
+                "tag_id": "1589145058.450312",
+                "type": "convergence",
+                "view_id": "62"
+            },
+            "target_port_id": 63,
+            "view_id": 293
+        }
+    ],
+    "nodes": [
+        {
+            "has_input_port": false,
+            "has_output_port": true,
+            "input_id": -1,
+            "label_id": 3,
+            "multiple_inputs": false,
+            "multiple_outputs": false,
+            "output_id": 2,
+            "position": {
+                "_x": 24.0,
+                "_y": 51.0
+            },
+            "properties": {
+                "count": 20,
+                "name": "Aluminiu",
+                "output_type": "Lingou Alu"
+            },
+            "secondary_output_id": -1,
+            "tag_id": "1589144228.330096",
+            "type": "start",
+            "view_id": "1"
+        },
+        {
+            "has_input_port": false,
+            "has_output_port": true,
+            "input_id": -1,
+            "label_id": 6,
+            "multiple_inputs": false,
+            "multiple_outputs": false,
+            "output_id": 5,
+            "position": {
+                "_x": 784.0,
+                "_y": 622.0
+            },
+            "properties": {
+                "count": 30,
+                "name": "Manere",
+                "output_type": "Maner"
+            },
+            "secondary_output_id": -1,
+            "tag_id": "1589144230.041849",
+            "type": "start",
+            "view_id": "4"
+        },
+        {
+            "has_input_port": false,
+            "has_output_port": true,
+            "input_id": -1,
+            "label_id": 9,
+            "multiple_inputs": false,
+            "multiple_outputs": false,
+            "output_id": 8,
+            "position": {
+                "_x": 780.0,
+                "_y": 443.0
+            },
+            "properties": {
+                "count": 30,
+                "name": "Nituri",
+                "output_type": "Nit"
+            },
+            "secondary_output_id": -1,
+            "tag_id": "1589144348.265267",
+            "type": "start",
+            "view_id": "7"
+        },
+        {
+            "has_input_port": true,
+            "has_output_port": true,
+            "input_id": 11,
+            "label_id": 13,
+            "multiple_inputs": false,
+            "multiple_outputs": false,
+            "output_id": 12,
+            "position": {
+                "_x": 392.0,
+                "_y": 167.0
+            },
+            "properties": {
+                "cost": 1,
+                "duration": 120,
+                "name": "Banda Transportoare"
+            },
+            "secondary_output_id": -1,
+            "tag_id": "1589144359.930066",
+            "type": "transport",
+            "view_id": "10"
+        },
+        {
+            "has_input_port": true,
+            "has_output_port": true,
+            "input_id": 15,
+            "label_id": 17,
+            "multiple_inputs": true,
+            "multiple_outputs": false,
+            "output_id": 16,
+            "position": {
+                "_x": 602.0,
+                "_y": 171.0
+            },
+            "properties": {
+                "calibration_cost": 200,
+                "calibration_duration": 300,
+                "calibration_steps": 9999,
+                "cost": 1,
+                "duration": 120000,
+                "name": "Masina Injectie",
+                "output_type": "CAPAC_TURNAT_ALUMINIU"
+            },
+            "secondary_output_id": -1,
+            "tag_id": "1589144397.041948",
+            "type": "custom",
+            "view_id": "14"
+        },
+        {
+            "has_input_port": true,
+            "has_output_port": true,
+            "input_id": 19,
+            "label_id": 21,
+            "multiple_inputs": false,
+            "multiple_outputs": false,
+            "output_id": 20,
+            "position": {
+                "_x": 791.0,
+                "_y": 63.0
+            },
+            "properties": {
+                "cost": 0,
+                "duration": 120,
+                "name": "Brat Robot 1"
+            },
+            "secondary_output_id": -1,
+            "tag_id": "1589144527.161676",
+            "type": "transport",
+            "view_id": "18"
+        },
+        {
+            "has_input_port": true,
+            "has_output_port": true,
+            "input_id": 23,
+            "label_id": 25,
+            "multiple_inputs": true,
+            "multiple_outputs": false,
+            "output_id": 24,
+            "position": {
+                "_x": 976.0,
+                "_y": 63.0
+            },
+            "properties": {
+                "calibration_cost": 30,
+                "calibration_duration": 1200000,
+                "calibration_steps": 20,
+                "cost": 3,
+                "duration": 10000,
+                "name": "Masina de stantat",
+                "output_type": "Stantate"
+            },
+            "secondary_output_id": -1,
+            "tag_id": "1589144540.769882",
+            "type": "custom",
+            "view_id": "22"
+        },
+        {
+            "has_input_port": false,
+            "has_output_port": true,
+            "input_id": -1,
+            "label_id": 28,
+            "multiple_inputs": false,
+            "multiple_outputs": false,
+            "output_id": 27,
+            "position": {
+                "_x": 781.0,
+                "_y": 278.0
+            },
+            "properties": {
+                "count": 30,
+                "name": "Nituri2",
+                "output_type": "Nit"
+            },
+            "secondary_output_id": -1,
+            "tag_id": "1589144724.866438",
+            "type": "start",
+            "view_id": "26"
+        },
+        {
+            "has_input_port": true,
+            "has_output_port": true,
+            "input_id": 30,
+            "label_id": 32,
+            "multiple_inputs": false,
+            "multiple_outputs": false,
+            "output_id": 31,
+            "position": {
+                "_x": 1557.0,
+                "_y": 208.0
+            },
+            "properties": {
+                "cost": 1,
+                "duration": 120,
+                "name": "Brat Robot Q"
+            },
+            "secondary_output_id": -1,
+            "tag_id": "1589144781.361851",
+            "type": "transport",
+            "view_id": "29"
+        },
+        {
+            "has_input_port": true,
+            "has_output_port": true,
+            "input_id": 34,
+            "label_id": 36,
+            "multiple_inputs": true,
+            "multiple_outputs": false,
+            "output_id": 35,
+            "position": {
+                "_x": 1055.0,
+                "_y": 456.0
+            },
+            "properties": {
+                "calibration_cost": 3,
+                "calibration_duration": 400,
+                "calibration_steps": 9,
+                "cost": 3,
+                "duration": 100,
+                "name": "Nituri in maner",
+                "output_type": "MANERE_CU_NIT"
+            },
+            "secondary_output_id": -1,
+            "tag_id": "1589144797.576716",
+            "type": "custom",
+            "view_id": "33"
+        },
+        {
+            "has_input_port": true,
+            "has_output_port": true,
+            "input_id": 38,
+            "label_id": 40,
+            "multiple_inputs": false,
+            "multiple_outputs": false,
+            "output_id": 39,
+            "position": {
+                "_x": 1498.0,
+                "_y": 464.0
+            },
+            "properties": {
+                "cost": 1,
+                "duration": 20,
+                "name": "Brat robot"
+            },
+            "secondary_output_id": -1,
+            "tag_id": "1589144833.569316",
+            "type": "transport",
+            "view_id": "37"
+        },
+        {
+            "has_input_port": true,
+            "has_output_port": true,
+            "input_id": 42,
+            "label_id": 44,
+            "multiple_inputs": true,
+            "multiple_outputs": false,
+            "output_id": 43,
+            "position": {
+                "_x": 1814.0,
+                "_y": 297.0
+            },
+            "properties": {
+                "calibration_cost": 10,
+                "calibration_duration": 1200000,
+                "calibration_steps": 25,
+                "cost": 3,
+                "duration": 100,
+                "name": "Masa asamblare finala",
+                "output_type": "ASAMBLAT"
+            },
+            "secondary_output_id": -1,
+            "tag_id": "1589144839.081639",
+            "type": "custom",
+            "view_id": "41"
+        },
+        {
+            "has_input_port": true,
+            "has_output_port": true,
+            "input_id": 46,
+            "label_id": 48,
+            "multiple_inputs": false,
+            "multiple_outputs": false,
+            "output_id": 47,
+            "position": {
+                "_x": 1289.0,
+                "_y": 467.0
+            },
+            "properties": {
+                "capacity": 10,
+                "name": "Depozit intermediar"
+            },
+            "secondary_output_id": -1,
+            "tag_id": "1589144910.122335",
+            "type": "buffer",
+            "view_id": "45"
+        },
+        {
+            "has_input_port": true,
+            "has_output_port": true,
+            "input_id": 50,
+            "label_id": 52,
+            "multiple_inputs": false,
+            "multiple_outputs": false,
+            "output_id": 51,
+            "position": {
+                "_x": 1187.0,
+                "_y": 64.0
+            },
+            "properties": {
+                "error_rate": 0.1,
+                "error_type": "FISURA",
+                "name": "Erori fisura"
+            },
+            "secondary_output_id": -1,
+            "tag_id": "1589144939.937978",
+            "type": "random_error",
+            "view_id": "49"
+        },
+        {
+            "has_input_port": true,
+            "has_output_port": true,
+            "input_id": 54,
+            "label_id": 56,
+            "multiple_inputs": false,
+            "multiple_outputs": false,
+            "output_id": 55,
+            "position": {
+                "_x": 2020.0,
+                "_y": 299.0
+            },
+            "properties": {
+                "error_rate": 0.1,
+                "error_type": "ETAN",
+                "name": "Etanseitate Nituire"
+            },
+            "secondary_output_id": -1,
+            "tag_id": "1589144941.266601",
+            "type": "random_error",
+            "view_id": "53"
+        },
+        {
+            "has_input_port": true,
+            "has_output_port": true,
+            "input_id": 58,
+            "label_id": 61,
+            "multiple_inputs": false,
+            "multiple_outputs": false,
+            "output_id": 59,
+            "position": {
+                "_x": 1358.0,
+                "_y": -79.0
+            },
+            "properties": {
+                "calibration_cost": 5,
+                "calibration_duration": 60000,
+                "calibration_steps": 10,
+                "cost": 1,
+                "duration": 100,
+                "error_type": "FISURA",
+                "name": "Test Fisura",
+                "test_rate": 1
+            },
+            "secondary_output_id": 60,
+            "tag_id": "1589145031.994232",
+            "type": "test",
+            "view_id": "57"
+        },
+        {
+            "has_input_port": true,
+            "has_output_port": true,
+            "input_id": 63,
+            "label_id": 65,
+            "multiple_inputs": true,
+            "multiple_outputs": false,
+            "output_id": 64,
+            "position": {
+                "_x": 215.0,
+                "_y": 165.0
+            },
+            "properties": {
+                "name": "Start + Err"
+            },
+            "secondary_output_id": -1,
+            "tag_id": "1589145058.450312",
+            "type": "convergence",
+            "view_id": "62"
+        },
+        {
+            "has_input_port": true,
+            "has_output_port": true,
+            "input_id": 67,
+            "label_id": 70,
+            "multiple_inputs": false,
+            "multiple_outputs": false,
+            "output_id": 68,
+            "position": {
+                "_x": 2225.0,
+                "_y": 294.0
+            },
+            "properties": {
+                "calibration_cost": 7,
+                "calibration_duration": 40000,
+                "calibration_steps": 25,
+                "cost": 2,
+                "duration": 1000,
+                "error_type": "ETAN",
+                "name": "Test Etanseitate",
+                "test_rate": 1
+            },
+            "secondary_output_id": 69,
+            "tag_id": "1589145267.074516",
+            "type": "test",
+            "view_id": "66"
+        },
+        {
+            "has_input_port": true,
+            "has_output_port": false,
+            "input_id": 72,
+            "label_id": 73,
+            "multiple_inputs": false,
+            "multiple_outputs": false,
+            "output_id": -1,
+            "position": {
+                "_x": 2930.0,
+                "_y": 228.0
+            },
+            "properties": {
+                "name": "Depozit"
+            },
+            "secondary_output_id": -1,
+            "tag_id": "1589145380.146341",
+            "type": "end",
+            "view_id": "71"
+        },
+        {
+            "has_input_port": true,
+            "has_output_port": true,
+            "input_id": 75,
+            "label_id": 77,
+            "multiple_inputs": false,
+            "multiple_outputs": false,
+            "output_id": 76,
+            "position": {
+                "_x": 2572.0,
+                "_y": 74.0
+            },
+            "properties": {
+                "calibration_cost": 5,
+                "calibration_duration": 40000,
+                "calibration_steps": 1,
+                "cost": 25,
+                "duration": 1000000,
+                "error_type": "ETAN",
+                "name": "Reparare Etan"
+            },
+            "secondary_output_id": -1,
+            "tag_id": "1589145827.618106",
+            "type": "repair",
+            "view_id": "74"
+        },
+        {
+            "has_input_port": false,
+            "has_output_port": true,
+            "input_id": -1,
+            "label_id": 80,
+            "multiple_inputs": false,
+            "multiple_outputs": false,
+            "output_id": 79,
+            "position": {
+                "_x": 2116.0,
+                "_y": 28.0
+            },
+            "properties": {
+                "count": 30,
+                "name": "Nituri",
+                "output_type": "Nit"
+            },
+            "secondary_output_id": -1,
+            "tag_id": "1589145839.066367",
+            "type": "start",
+            "view_id": "78"
+        },
+        {
+            "has_input_port": true,
+            "has_output_port": true,
+            "input_id": 82,
+            "label_id": 84,
+            "multiple_inputs": true,
+            "multiple_outputs": false,
+            "output_id": 83,
+            "position": {
+                "_x": 2419.0,
+                "_y": 142.0
+            },
+            "properties": {
+                "name": "Confluence"
+            },
+            "secondary_output_id": -1,
+            "tag_id": "1589145900.322896",
+            "type": "convergence",
+            "view_id": "81"
+        },
+        {
+            "has_input_port": true,
+            "has_output_port": true,
+            "input_id": 86,
+            "label_id": 88,
+            "multiple_inputs": true,
+            "multiple_outputs": false,
+            "output_id": 87,
+            "position": {
+                "_x": 2702.0,
+                "_y": 241.0
+            },
+            "properties": {
+                "name": "Confluence"
+            },
+            "secondary_output_id": -1,
+            "tag_id": "1589145970.490244",
+            "type": "convergence",
+            "view_id": "85"
+        },
+        {
+            "has_input_port": true,
+            "has_output_port": true,
+            "input_id": 90,
+            "label_id": 92,
+            "multiple_inputs": false,
+            "multiple_outputs": false,
+            "output_id": 91,
+            "position": {
+                "_x": 15.0,
+                "_y": -242.0
+            },
+            "properties": {
+                "capacity": 200,
+                "name": "TMP"
+            },
+            "secondary_output_id": -1,
+            "tag_id": "1589147458.002859",
+            "type": "buffer",
+            "view_id": "89"
+        },
+        {
+            "has_input_port": true,
+            "has_output_port": true,
+            "input_id": 171,
+            "label_id": 173,
+            "multiple_inputs": false,
+            "multiple_outputs": false,
+            "output_id": 172,
+            "position": {
+                "_x": 152.0,
+                "_y": -85.0
+            },
+            "properties": {
+                "calibration_cost": 0,
+                "calibration_duration": 0,
+                "calibration_steps": 99999,
+                "cost": 0,
+                "duration": 0,
+                "error_type": "FISURA",
+                "name": "Pseudo Repair"
+            },
+            "secondary_output_id": -1,
+            "tag_id": "1589148465.675089",
+            "type": "repair",
+            "view_id": "170"
+        }
+    ]
+}

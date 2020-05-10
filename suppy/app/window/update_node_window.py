@@ -29,9 +29,9 @@ class UpdateNodeWindow:
         self._add_entry('Calibration Cost', 'calibration_cost')
         self._add_entry('Output Type', 'output_type')
         self._add_entry('Error Type', 'error_type')
-        self._add_entry('Error Rate', 'error_rate')
+        self._add_entry('Error Rate in [0, 1]', 'error_rate')
         self._add_entry('Count', 'count')
-        self._add_entry('Test Rate in [0, 1]', 'test_rate')
+        self._add_entry('Test Rate (test 1 every n)', 'test_rate')
 
         save_button = ttk.Button(self.window, text="Update", command=self._update)
         save_button.grid(row=self.current_row, column=0, columnspan=1, sticky=E)

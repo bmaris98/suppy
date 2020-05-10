@@ -260,7 +260,7 @@ repair_table_definition = [
         selector: x => x.repairs
     },
     {
-        name: 'None Repairs',
+        name: 'Non Repairs',
         selector: x => x.non_repairs
     }
 ]
