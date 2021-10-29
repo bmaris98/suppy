@@ -1,0 +1,690 @@
+{
+    "lines": [
+        {
+            "is_from_secondary": false,
+            "origin_node": {
+                "has_input_port": false,
+                "has_output_port": true,
+                "input_id": -1,
+                "label_id": 3,
+                "multiple_inputs": false,
+                "multiple_outputs": false,
+                "output_id": 2,
+                "position": {
+                    "_x": 206.0,
+                    "_y": 143.0
+                },
+                "properties": {
+                    "count": 30,
+                    "name": "TypeA_x30",
+                    "output_type": "TypeA"
+                },
+                "secondary_output_id": -1,
+                "tag_id": "1592161604.180677",
+                "type": "start",
+                "view_id": "1"
+            },
+            "origin_port_id": 2,
+            "target_node": {
+                "has_input_port": true,
+                "has_output_port": true,
+                "input_id": 12,
+                "label_id": 14,
+                "multiple_inputs": true,
+                "multiple_outputs": false,
+                "output_id": 13,
+                "position": {
+                    "_x": 362.0,
+                    "_y": 209.0
+                },
+                "properties": {
+                    "calibration_cost": 200,
+                    "calibration_duration": 400,
+                    "calibration_steps": 30,
+                    "cost": 25,
+                    "duration": 100,
+                    "name": "Assembly Stand",
+                    "output_type": "TypeC"
+                },
+                "secondary_output_id": -1,
+                "tag_id": "1592161618.020217",
+                "type": "custom",
+                "view_id": "11"
+            },
+            "target_port_id": 12,
+            "view_id": 393
+        },
+        {
+            "is_from_secondary": false,
+            "origin_node": {
+                "has_input_port": false,
+                "has_output_port": true,
+                "input_id": -1,
+                "label_id": 10,
+                "multiple_inputs": false,
+                "multiple_outputs": false,
+                "output_id": 9,
+                "position": {
+                    "_x": 209.0,
+                    "_y": 299.0
+                },
+                "properties": {
+                    "count": 30,
+                    "name": "TypeB_x30",
+                    "output_type": "TypeB"
+                },
+                "secondary_output_id": -1,
+                "tag_id": "1592161611.781061",
+                "type": "start",
+                "view_id": "8"
+            },
+            "origin_port_id": 9,
+            "target_node": {
+                "has_input_port": true,
+                "has_output_port": true,
+                "input_id": 12,
+                "label_id": 14,
+                "multiple_inputs": true,
+                "multiple_outputs": false,
+                "output_id": 13,
+                "position": {
+                    "_x": 362.0,
+                    "_y": 209.0
+                },
+                "properties": {
+                    "calibration_cost": 200,
+                    "calibration_duration": 400,
+                    "calibration_steps": 30,
+                    "cost": 25,
+                    "duration": 100,
+                    "name": "Assembly Stand",
+                    "output_type": "TypeC"
+                },
+                "secondary_output_id": -1,
+                "tag_id": "1592161618.020217",
+                "type": "custom",
+                "view_id": "11"
+            },
+            "target_port_id": 12,
+            "view_id": 609
+        },
+        {
+            "is_from_secondary": false,
+            "origin_node": {
+                "has_input_port": true,
+                "has_output_port": true,
+                "input_id": 12,
+                "label_id": 14,
+                "multiple_inputs": true,
+                "multiple_outputs": false,
+                "output_id": 13,
+                "position": {
+                    "_x": 362.0,
+                    "_y": 209.0
+                },
+                "properties": {
+                    "calibration_cost": 200,
+                    "calibration_duration": 400,
+                    "calibration_steps": 30,
+                    "cost": 25,
+                    "duration": 100,
+                    "name": "Assembly Stand",
+                    "output_type": "TypeC"
+                },
+                "secondary_output_id": -1,
+                "tag_id": "1592161618.020217",
+                "type": "custom",
+                "view_id": "11"
+            },
+            "origin_port_id": 13,
+            "target_node": {
+                "has_input_port": true,
+                "has_output_port": true,
+                "input_id": 105,
+                "label_id": 107,
+                "multiple_inputs": false,
+                "multiple_outputs": false,
+                "output_id": 106,
+                "position": {
+                    "_x": 539.0,
+                    "_y": 208.0
+                },
+                "properties": {
+                    "error_rate": 0.5,
+                    "error_type": "ERR",
+                    "name": "Error generator"
+                },
+                "secondary_output_id": -1,
+                "tag_id": "1592161633.908831",
+                "type": "random_error",
+                "view_id": "104"
+            },
+            "target_port_id": 105,
+            "view_id": 423
+        },
+        {
+            "is_from_secondary": true,
+            "origin_node": {
+                "has_input_port": true,
+                "has_output_port": true,
+                "input_id": 132,
+                "label_id": 135,
+                "multiple_inputs": false,
+                "multiple_outputs": false,
+                "output_id": 133,
+                "position": {
+                    "_x": 705.0,
+                    "_y": 207.0
+                },
+                "properties": {
+                    "calibration_cost": 200,
+                    "calibration_duration": 400,
+                    "calibration_steps": 30,
+                    "cost": 25,
+                    "duration": 100,
+                    "error_type": "ERR",
+                    "name": "Test Fixture",
+                    "test_rate": 1
+                },
+                "secondary_output_id": 134,
+                "tag_id": "1592161640.93283",
+                "type": "test",
+                "view_id": "131"
+            },
+            "origin_port_id": 134,
+            "target_node": {
+                "has_input_port": true,
+                "has_output_port": true,
+                "input_id": 141,
+                "label_id": 143,
+                "multiple_inputs": false,
+                "multiple_outputs": false,
+                "output_id": 142,
+                "position": {
+                    "_x": 849.0,
+                    "_y": 298.0
+                },
+                "properties": {
+                    "calibration_cost": 200,
+                    "calibration_duration": 400,
+                    "calibration_steps": 5,
+                    "cost": 25,
+                    "duration": 100,
+                    "error_type": "ERR",
+                    "name": "Remove ERR"
+                },
+                "secondary_output_id": -1,
+                "tag_id": "1592161651.507831",
+                "type": "repair",
+                "view_id": "140"
+            },
+            "target_port_id": 141,
+            "view_id": 495
+        },
+        {
+            "is_from_secondary": false,
+            "origin_node": {
+                "has_input_port": true,
+                "has_output_port": true,
+                "input_id": 141,
+                "label_id": 143,
+                "multiple_inputs": false,
+                "multiple_outputs": false,
+                "output_id": 142,
+                "position": {
+                    "_x": 849.0,
+                    "_y": 298.0
+                },
+                "properties": {
+                    "calibration_cost": 200,
+                    "calibration_duration": 400,
+                    "calibration_steps": 5,
+                    "cost": 25,
+                    "duration": 100,
+                    "error_type": "ERR",
+                    "name": "Remove ERR"
+                },
+                "secondary_output_id": -1,
+                "tag_id": "1592161651.507831",
+                "type": "repair",
+                "view_id": "140"
+            },
+            "origin_port_id": 142,
+            "target_node": {
+                "has_input_port": true,
+                "has_output_port": true,
+                "input_id": 137,
+                "label_id": 139,
+                "multiple_inputs": true,
+                "multiple_outputs": false,
+                "output_id": 138,
+                "position": {
+                    "_x": 968.0,
+                    "_y": 183.0
+                },
+                "properties": {
+                    "name": "Merge"
+                },
+                "secondary_output_id": -1,
+                "tag_id": "1592161648.37315",
+                "type": "convergence",
+                "view_id": "136"
+            },
+            "target_port_id": 137,
+            "view_id": 545
+        },
+        {
+            "is_from_secondary": false,
+            "origin_node": {
+                "has_input_port": true,
+                "has_output_port": true,
+                "input_id": 132,
+                "label_id": 135,
+                "multiple_inputs": false,
+                "multiple_outputs": false,
+                "output_id": 133,
+                "position": {
+                    "_x": 705.0,
+                    "_y": 207.0
+                },
+                "properties": {
+                    "calibration_cost": 200,
+                    "calibration_duration": 400,
+                    "calibration_steps": 30,
+                    "cost": 25,
+                    "duration": 100,
+                    "error_type": "ERR",
+                    "name": "Test Fixture",
+                    "test_rate": 1
+                },
+                "secondary_output_id": 134,
+                "tag_id": "1592161640.93283",
+                "type": "test",
+                "view_id": "131"
+            },
+            "origin_port_id": 133,
+            "target_node": {
+                "has_input_port": true,
+                "has_output_port": true,
+                "input_id": 137,
+                "label_id": 139,
+                "multiple_inputs": true,
+                "multiple_outputs": false,
+                "output_id": 138,
+                "position": {
+                    "_x": 968.0,
+                    "_y": 183.0
+                },
+                "properties": {
+                    "name": "Merge"
+                },
+                "secondary_output_id": -1,
+                "tag_id": "1592161648.37315",
+                "type": "convergence",
+                "view_id": "136"
+            },
+            "target_port_id": 137,
+            "view_id": 546
+        },
+        {
+            "is_from_secondary": false,
+            "origin_node": {
+                "has_input_port": true,
+                "has_output_port": true,
+                "input_id": 105,
+                "label_id": 107,
+                "multiple_inputs": false,
+                "multiple_outputs": false,
+                "output_id": 106,
+                "position": {
+                    "_x": 539.0,
+                    "_y": 208.0
+                },
+                "properties": {
+                    "error_rate": 0.5,
+                    "error_type": "ERR",
+                    "name": "Error generator"
+                },
+                "secondary_output_id": -1,
+                "tag_id": "1592161633.908831",
+                "type": "random_error",
+                "view_id": "104"
+            },
+            "origin_port_id": 106,
+            "target_node": {
+                "has_input_port": true,
+                "has_output_port": true,
+                "input_id": 132,
+                "label_id": 135,
+                "multiple_inputs": false,
+                "multiple_outputs": false,
+                "output_id": 133,
+                "position": {
+                    "_x": 705.0,
+                    "_y": 207.0
+                },
+                "properties": {
+                    "calibration_cost": 200,
+                    "calibration_duration": 400,
+                    "calibration_steps": 30,
+                    "cost": 25,
+                    "duration": 100,
+                    "error_type": "ERR",
+                    "name": "Test Fixture",
+                    "test_rate": 1
+                },
+                "secondary_output_id": 134,
+                "tag_id": "1592161640.93283",
+                "type": "test",
+                "view_id": "131"
+            },
+            "target_port_id": 132,
+            "view_id": 482
+        },
+        {
+            "is_from_secondary": false,
+            "origin_node": {
+                "has_input_port": true,
+                "has_output_port": true,
+                "input_id": 137,
+                "label_id": 139,
+                "multiple_inputs": true,
+                "multiple_outputs": false,
+                "output_id": 138,
+                "position": {
+                    "_x": 968.0,
+                    "_y": 183.0
+                },
+                "properties": {
+                    "name": "Merge"
+                },
+                "secondary_output_id": -1,
+                "tag_id": "1592161648.37315",
+                "type": "convergence",
+                "view_id": "136"
+            },
+            "origin_port_id": 138,
+            "target_node": {
+                "has_input_port": true,
+                "has_output_port": true,
+                "input_id": 261,
+                "label_id": 263,
+                "multiple_inputs": false,
+                "multiple_outputs": false,
+                "output_id": 262,
+                "position": {
+                    "_x": 1138.0,
+                    "_y": 180.0
+                },
+                "properties": {
+                    "cost": 50,
+                    "duration": 120,
+                    "name": "Robotic Arm"
+                },
+                "secondary_output_id": -1,
+                "tag_id": "1592161665.397634",
+                "type": "transport",
+                "view_id": "260"
+            },
+            "target_port_id": 261,
+            "view_id": 620
+        },
+        {
+            "is_from_secondary": false,
+            "origin_node": {
+                "has_input_port": true,
+                "has_output_port": true,
+                "input_id": 261,
+                "label_id": 263,
+                "multiple_inputs": false,
+                "multiple_outputs": false,
+                "output_id": 262,
+                "position": {
+                    "_x": 1138.0,
+                    "_y": 180.0
+                },
+                "properties": {
+                    "cost": 50,
+                    "duration": 120,
+                    "name": "Robotic Arm"
+                },
+                "secondary_output_id": -1,
+                "tag_id": "1592161665.397634",
+                "type": "transport",
+                "view_id": "260"
+            },
+            "origin_port_id": 262,
+            "target_node": {
+                "has_input_port": true,
+                "has_output_port": false,
+                "input_id": 258,
+                "label_id": 259,
+                "multiple_inputs": false,
+                "multiple_outputs": false,
+                "output_id": -1,
+                "position": {
+                    "_x": 1316.0,
+                    "_y": 177.0
+                },
+                "properties": {
+                    "name": "Warehouse"
+                },
+                "secondary_output_id": -1,
+                "tag_id": "1592161660.861033",
+                "type": "end",
+                "view_id": "257"
+            },
+            "target_port_id": 258,
+            "view_id": 631
+        }
+    ],
+    "nodes": [
+        {
+            "has_input_port": false,
+            "has_output_port": true,
+            "input_id": -1,
+            "label_id": 3,
+            "multiple_inputs": false,
+            "multiple_outputs": false,
+            "output_id": 2,
+            "position": {
+                "_x": 206.0,
+                "_y": 143.0
+            },
+            "properties": {
+                "count": 30,
+                "name": "TypeA_x30",
+                "output_type": "TypeA"
+            },
+            "secondary_output_id": -1,
+            "tag_id": "1592161604.180677",
+            "type": "start",
+            "view_id": "1"
+        },
+        {
+            "has_input_port": false,
+            "has_output_port": true,
+            "input_id": -1,
+            "label_id": 10,
+            "multiple_inputs": false,
+            "multiple_outputs": false,
+            "output_id": 9,
+            "position": {
+                "_x": 209.0,
+                "_y": 299.0
+            },
+            "properties": {
+                "count": 30,
+                "name": "TypeB_x30",
+                "output_type": "TypeB"
+            },
+            "secondary_output_id": -1,
+            "tag_id": "1592161611.781061",
+            "type": "start",
+            "view_id": "8"
+        },
+        {
+            "has_input_port": true,
+            "has_output_port": true,
+            "input_id": 12,
+            "label_id": 14,
+            "multiple_inputs": true,
+            "multiple_outputs": false,
+            "output_id": 13,
+            "position": {
+                "_x": 362.0,
+                "_y": 209.0
+            },
+            "properties": {
+                "calibration_cost": 200,
+                "calibration_duration": 400,
+                "calibration_steps": 30,
+                "cost": 25,
+                "duration": 100,
+                "name": "Assembly Stand",
+                "output_type": "TypeC"
+            },
+            "secondary_output_id": -1,
+            "tag_id": "1592161618.020217",
+            "type": "custom",
+            "view_id": "11"
+        },
+        {
+            "has_input_port": true,
+            "has_output_port": true,
+            "input_id": 105,
+            "label_id": 107,
+            "multiple_inputs": false,
+            "multiple_outputs": false,
+            "output_id": 106,
+            "position": {
+                "_x": 539.0,
+                "_y": 208.0
+            },
+            "properties": {
+                "error_rate": 0.5,
+                "error_type": "ERR",
+                "name": "Error generator"
+            },
+            "secondary_output_id": -1,
+            "tag_id": "1592161633.908831",
+            "type": "random_error",
+            "view_id": "104"
+        },
+        {
+            "has_input_port": true,
+            "has_output_port": true,
+            "input_id": 132,
+            "label_id": 135,
+            "multiple_inputs": false,
+            "multiple_outputs": false,
+            "output_id": 133,
+            "position": {
+                "_x": 705.0,
+                "_y": 207.0
+            },
+            "properties": {
+                "calibration_cost": 200,
+                "calibration_duration": 400,
+                "calibration_steps": 30,
+                "cost": 25,
+                "duration": 100,
+                "error_type": "ERR",
+                "name": "Test Fixture",
+                "test_rate": 1
+            },
+            "secondary_output_id": 134,
+            "tag_id": "1592161640.93283",
+            "type": "test",
+            "view_id": "131"
+        },
+        {
+            "has_input_port": true,
+            "has_output_port": true,
+            "input_id": 137,
+            "label_id": 139,
+            "multiple_inputs": true,
+            "multiple_outputs": false,
+            "output_id": 138,
+            "position": {
+                "_x": 968.0,
+                "_y": 183.0
+            },
+            "properties": {
+                "name": "Merge"
+            },
+            "secondary_output_id": -1,
+            "tag_id": "1592161648.37315",
+            "type": "convergence",
+            "view_id": "136"
+        },
+        {
+            "has_input_port": true,
+            "has_output_port": true,
+            "input_id": 141,
+            "label_id": 143,
+            "multiple_inputs": false,
+            "multiple_outputs": false,
+            "output_id": 142,
+            "position": {
+                "_x": 849.0,
+                "_y": 298.0
+            },
+            "properties": {
+                "calibration_cost": 200,
+                "calibration_duration": 400,
+                "calibration_steps": 5,
+                "cost": 25,
+                "duration": 100,
+                "error_type": "ERR",
+                "name": "Remove ERR"
+            },
+            "secondary_output_id": -1,
+            "tag_id": "1592161651.507831",
+            "type": "repair",
+            "view_id": "140"
+        },
+        {
+            "has_input_port": true,
+            "has_output_port": false,
+            "input_id": 258,
+            "label_id": 259,
+            "multiple_inputs": false,
+            "multiple_outputs": false,
+            "output_id": -1,
+            "position": {
+                "_x": 1316.0,
+                "_y": 177.0
+            },
+            "properties": {
+                "name": "Warehouse"
+            },
+            "secondary_output_id": -1,
+            "tag_id": "1592161660.861033",
+            "type": "end",
+            "view_id": "257"
+        },
+        {
+            "has_input_port": true,
+            "has_output_port": true,
+            "input_id": 261,
+            "label_id": 263,
+            "multiple_inputs": false,
+            "multiple_outputs": false,
+            "output_id": 262,
+            "position": {
+                "_x": 1138.0,
+                "_y": 180.0
+            },
+            "properties": {
+                "cost": 50,
+                "duration": 120,
+                "name": "Robotic Arm"
+            },
+            "secondary_output_id": -1,
+            "tag_id": "1592161665.397634",
+            "type": "transport",
+            "view_id": "260"
+        }
+    ]
+}
